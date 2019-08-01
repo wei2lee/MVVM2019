@@ -1,0 +1,6 @@
+framework module RxGesture {
+  umbrella header "RxGesture-iOS13.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

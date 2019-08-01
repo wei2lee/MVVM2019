@@ -12,7 +12,6 @@ import RxCocoa
 import SwifterSwift
 
 final class LoginViewModel: BaseViewModel, LoginViewModelType {
-    var a = 1
     fileprivate typealias Form = (username: String, password: String)
     //MARK: Input
     public let username = BehaviorRelay<String?>(value: nil)
@@ -36,7 +35,6 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     fileprivate var form: Driver<Form> {
         return Driver.combineLatest([username.asDriver().distinctUntilChanged().asVoid(),
                                      password.asDriver().distinctUntilChanged().asVoid()])
-            .debounce(.milliseconds(10))
             .map { _ in self.formValue }
     }
     //MARK: initializer

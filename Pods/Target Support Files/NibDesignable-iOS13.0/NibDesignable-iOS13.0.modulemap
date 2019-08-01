@@ -1,0 +1,6 @@
+framework module NibDesignable {
+  umbrella header "NibDesignable-iOS13.0-umbrella.h"
+
+  export *
+  module * { export * }
+}
