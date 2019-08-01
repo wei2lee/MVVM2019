@@ -1,0 +1,372 @@
+
+-> Coordinator (0.1)
+   A generic Swift library for coordinating state transitions.
+   pod 'Coordinator', '~> 0.1'
+   - Homepage: https://github.com/noremac/Coordinator
+   - Source:   https://github.com/noremac/Coordinator.git
+   - Versions: 0.1 [master repo]
+   - Author:   Cameron Pulsford
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    1
+   - Forks:    1
+
+-> CoordinatorFlow (0.1.3)
+   Pod to simplify usage of coordinator navigation pattern.
+   pod 'CoordinatorFlow', '~> 0.1.3'
+   - Homepage: https://github.com/negovrodion/CoordinatorFlow
+   - Source:   https://github.com/negovrodion/CoordinatorFlow.git
+   - Versions: 0.1.3, 0.1.1, 0.1.0 [master repo]
+   - Author:   negovrodion
+   - License:  MIT
+   - Platform: iOS 10.0
+   - Stars:    0
+   - Forks:    0
+
+-> CoordinatorKit (0.0.6)
+   A framework that implements the coordinator pattern in a fashion similar to how UIViewControllers work.
+   pod 'CoordinatorKit', '~> 0.0.6'
+   - Homepage: https://github.com/nathanlanza/CoordinatorKit
+   - Source:   https://github.com/nathanlanza/CoordinatorKit.git
+   - Versions: 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2 [master repo]
+   - Author:   Nathan Lanza
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    1
+   - Forks:    1
+
+-> CoordinatorKitSwift (1.1.3)
+   iOS architecture framework
+   pod 'CoordinatorKitSwift', '~> 1.1.3'
+   - Homepage: https://github.com/startupthekid/CoordinatorKit
+   - Source:   https://github.com/startupthekid/CoordinatorKit.git
+   - Versions: 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0 [master repo]
+   - Author:   startupthekid
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    3
+   - Forks:    0
+   - Subspecs:
+     - CoordinatorKitSwift/Core (1.1.3)
+
+-> Coordinators (1.0.3)
+   A framework for light flexible Swift MVVM coordinators
+   pod 'Coordinators', '~> 1.0.3'
+   - Homepage: https://github.com/Bitdreams/Coordinators
+   - Source:   https://github.com/Bitdreams/Coordinators.git
+   - Versions: 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.1.3, 0.1.2, 0.1.1, 0.1.0 [master repo]
+   - Author:   raphaelcruzeiro
+   - License:  MIT
+   - Platform: iOS 10.0
+   - Stars:    0
+   - Forks:    0
+
+-> CoordinatorType (0.0.6)
+   CoordinatorType protocol for making implementing the Coordinator pattern painless.
+   pod 'CoordinatorType', '~> 0.0.6'
+   - Homepage: https://github.com/rchatham/CoordinatorType.git
+   - Source:   https://github.com/rchatham/CoordinatorType.git
+   - Versions: 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1 [master repo]
+   - Author:   Reid Chatham
+   - License:  MIT
+   - Platform: iOS 8.0 - macOS 10.10
+   - Stars:    0
+   - Forks:    0
+
+-> MTCoordinatorView (0.8.1)
+   The view coordinate arranged to the scrolling is adjusted.
+   pod 'MTCoordinatorView', '~> 0.8.1'
+   - Homepage: https://github.com/mittsuu/MTCoordinatorView
+   - Source:   https://github.com/mittsuu/MTCoordinatorView.git
+   - Versions: 0.8.1, 0.8.0 [master repo]
+   - Author:   mittsu
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    26
+   - Forks:    5
+
+-> MTCoordinatorView-objc (0.8.1)
+   The view coordinate arranged to the scrolling is adjusted.
+   pod 'MTCoordinatorView-objc', '~> 0.8.1'
+   - Homepage: https://github.com/mittsuu/MTCoordinatorView-objc
+   - Source:   https://github.com/mittsuu/MTCoordinatorView-objc.git
+   - Versions: 0.8.1, 0.8.0 [master repo]
+   - Author:   mittsu
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    14
+   - Forks:    3
+
+-> RxCoordinator (0.3.9)
+   A Rx wrapper on Coordinator.
+   pod 'RxCoordinator', '~> 0.3.9'
+   - Homepage: https://github.com/XavierDK/Coordinator
+   - Source:   https://github.com/XavierDK/Coordinator.git
+   - Versions: 0.3.9, 0.3.8, 0.3.7, 0.3.2, 0.3.1, 0.2.0 [master repo]
+   - Author:   XavierDK
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    0
+   - Forks:    0
+
+-> NeoCoordinator (0.3.9)
+   A coordinator implementation to easilly use it.
+   pod 'NeoCoordinator', '~> 0.3.9'
+   - Homepage: https://github.com/XavierDK/Coordinator
+   - Source:   https://github.com/XavierDK/Coordinator.git
+   - Versions: 0.3.9, 0.3.8, 0.3.7, 0.3.2, 0.3.1, 0.3.0, 0.2.0, 0.1.0 [master repo]
+   - Author:   XavierDK
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    0
+   - Forks:    0
+
+-> rx-coordinator (0.6.1) [DEPRECATED in favor of XCoordinator]
+   Navigation framework based on coordinator pattern.
+   pod 'rx-coordinator', '~> 0.6.1'
+   - Homepage: https://github.com/quickbirdstudios/RxCoordinator
+   - Source:   https://github.com/quickbirdstudios/RxCoordinator.git
+   - Versions: 0.6.1, 0.6.0, 0.5.2, 0.4.0, 0.3.0, 0.2.0 [master repo]
+   - Author:   Stefan Kofler
+   - License:  MIT
+   - Platform: iOS 9.0 - tvOS 9.0
+   - Stars:    0
+   - Forks:    0
+
+-> CellCoordinator (0.0.1)
+   The ultimate API for UITableView and UICollectionView. Simple. Powerful. Objective-C and Swift compatible.
+   pod 'CellCoordinator', '~> 0.0.1'
+   - Homepage: https://github.com/DarkDarius/CellCoordinator
+   - Source:   https://github.com/DarkDarius/CellCoordinator.git
+   - Versions: 0.0.1 [master repo]
+   - Author:   Darius
+   - License:  GNU GPLv3
+   - Platform: iOS 7.0
+   - Stars:    2
+   - Forks:    1
+
+-> TinyCoordinator (2.1.4)
+   The Swift version of ThinningCoordinator focus on lighter view controllers.
+   pod 'TinyCoordinator', '~> 2.1.4'
+   - Homepage: https://github.com/cuzv/TinyCoordinator
+   - Source:   https://github.com/cuzv/TinyCoordinator.git
+   - Versions: 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.0.0, 1.0.0, 0.5.2, 0.5.1, 0.5.0, 0.4.9, 0.4.8, 0.4.7, 0.4.6, 0.4.5, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4, 0.3.1, 0.3, 0.2.1, 0.2, 0.1 [master repo]
+   - Author:   Moch Xiao
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    17
+   - Forks:    0
+
+-> ViewCoordinator (0.1.0)
+   Elegant way to manipulate your UIViews presentation and dismissal from any given Controller.
+   pod 'ViewCoordinator', '~> 0.1.0'
+   - Homepage: https://github.com/lamourBt/ViewCoordinator
+   - Source:   https://github.com/lamourBt/ViewCoordinator.git
+   - Versions: 0.1.0 [master repo]
+   - Author:   lamourBt
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    1
+   - Forks:    0
+
+-> DPFlowCoordinator (1.0.5)
+   流程协调器，用于分离业务流程代码
+   pod 'DPFlowCoordinator', '~> 1.0.5'
+   - Homepage: http://www.dpdev.cn
+   - Source:   https://github.com/DancewithPeng/DPFlowCoordinator.git
+   - Versions: 1.0.5, 1.0.4, 1.0.3 [master repo]
+   - Author:   DancewithPeng
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    1
+   - Forks:    0
+
+-> ScrollCoordinator (1.2.0)
+   ScrollCoordinator allows you to attach gestures to scrollviews and perform behaviours on these gestures
+   pod 'ScrollCoordinator', '~> 1.2.0'
+   - Homepage: https://github.com/flipkart-incubator/scroll-coordinator-ios
+   - Source:   https://github.com/flipkart-incubator/scroll-coordinator-ios.git
+   - Versions: 1.2.0, 1.1.0, 1.0.0, 0.8.0, 0.7.0, 0.6.0, 0.3.0, 0.2.0, 0.1.0 [master repo]
+   - Author:   shubhankaryash
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    0
+   - Forks:    0
+
+-> AppStateCoordinator (0.0.6)
+   A test harness that automatically navigates to the desired view controller.
+   pod 'AppStateCoordinator', '~> 0.0.6'
+   - Homepage: https://github.com/morganwilde/app-state-coordinator
+   - Source:   https://github.com/morganwilde/app-state-coordinator.git
+   - Versions: 0.0.6, 0.0.5, 0.0.4 [master repo]
+   - Author:   Morgan Wilde
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    1
+   - Forks:    0
+
+-> ThinningCoordinator (2.1.2)
+   Focus on lighter view controllers.
+   pod 'ThinningCoordinator', '~> 2.1.2'
+   - Homepage: https://github.com/cuzv/ThinningCoordinator
+   - Source:   https://github.com/cuzv/ThinningCoordinator.git
+   - Versions: 2.1.2, 2.1.1, 2.1.0, 2.0.3, 2.0.2, 2.0.1, 2.0, 1.0.1, 1.0 [master repo]
+   - Author:   Moch Xiao
+   - License:  MIT
+   - Platform: iOS 7.0
+   - Stars:    20
+   - Forks:    6
+
+-> CXTextFieldCoordinator (0.1.0)
+   A easy way to intergrate with UITextField.
+   pod 'CXTextFieldCoordinator', '~> 0.1.0'
+   - Homepage: https://github.com/ChrisXu1221/CXTextFieldCoordinator
+   - Source:   https://github.com/ChrisXu1221/CXTextFieldCoordinator.git
+   - Versions: 0.1.0 [master repo]
+   - Author:   ChrisXu
+   - License:  MIT
+   - Platform: iOS 5.0
+
+-> NavigationFlowCoordinator (1.1.2)
+   Navigation flow coordinator
+   pod 'NavigationFlowCoordinator', '~> 1.1.2'
+   - Homepage: https://github.com/RnDity/NavigationFlowCoordinator
+   - Source:   https://github.com/RnDity/NavigationFlowCoordinator.git
+   - Versions: 1.1.2, 1.1.1, 1.1.0, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0 [master repo]
+   - Author:   Rafał Urbaniak
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    4
+   - Forks:    2
+
+-> AQSyncableObjectCoordinator (0.1.0)
+   [iOS] A set of helpers for Aquasync
+   pod 'AQSyncableObjectCoordinator', '~> 0.1.0'
+   - Homepage: https://github.com/AQAquamarine/AQSyncableObjectCoordinator
+   - Source:   https://github.com/AQAquamarine/AQSyncableObjectCoordinator.git
+   - Versions: 0.1.0 [master repo]
+   - Author:   kaiinui
+   - License:  MIT
+   - Platform: iOS 7.0
+   - Stars:    0
+   - Forks:    0
+
+-> AppFlow (0.1.2)
+   AppFlow provides a type-checked declarative DSL for defining your app's user and data flow.
+   pod 'AppFlow', '~> 0.1.2'
+   - Homepage: https://github.com/johnpatrickmorgan/AppFlow
+   - Source:   https://github.com/johnpatrickmorgan/AppFlow.git
+   - Versions: 0.1.2 [master repo]
+   - Author:   johnpatrickmorgan
+   - License:  MIT
+   - Platform: iOS 8.0
+   - Stars:    7
+   - Forks:    0
+
+-> Cordux (0.1.5)
+   App Coordinators & Redux. A framework for UIKit development.
+   pod 'Cordux', '~> 0.1.5'
+   - Homepage: http://github.com/willowtreeapps/cordux
+   - Source:   https://github.com/willowtreeapps/cordux.git
+   - Versions: 0.1.5 [master repo]
+   - Author:   Ian Terrell
+   - License:  MIT
+   - Platform: iOS 9.0 - tvOS 9.1
+   - Stars:    35
+   - Forks:    2
+
+-> CoreDataStackManager (1.0.0)
+   A simple class that sets up and manages a Core Data stack.
+   pod 'CoreDataStackManager', '~> 1.0.0'
+   - Homepage: https://github.com/UberJason/CoreDataStackManager
+   - Source:   https://github.com/UberJason/CoreDataStackManager.git
+   - Versions: 1.0.0, 0.9.0, 0.8.0, 0.7.0, 0.6.4, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.0, 0.4.0, 0.3.1, 0.3.0, 0.2.0, 0.1.0 [master repo]
+   - Author:   Jason Ji
+   - License:  MIT
+   - Platform: iOS 9.0 - watchOS 4.0
+   - Stars:    1
+   - Forks:    0
+
+-> CWCoreData (0.1.4)
+   This is a small utility written in Swift to help you to use CoreData effectively throughout your app.
+   pod 'CWCoreData', '~> 0.1.4'
+   - Homepage: https://github.com/chriswunsch00/CWCoreData
+   - Source:   https://github.com/chriswunsch00/CWCoreData.git
+   - Versions: 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0, 0.0.9, 0.0.8, 0.0.5, 0.0.4, 0.0.3, 0.0.2 [master repo]
+   - Author:   Chris Wunsch
+   - License:  MIT
+   - Platform: iOS 9.0 - watchOS 3.0
+   - Stars:    1
+   - Forks:    1
+
+-> EMStore (1.4.0)
+   A simple SQLite wrapper library for faster setup of core data
+   pod 'EMStore', '~> 1.4.0'
+   - Homepage: https://github.com/EMart86/EMStore
+   - Source:   https://github.com/EMart86/EMStore.git
+   - Versions: 1.4.0, 1.3.2, 1.3.1, 1.3.0, 1.2.0, 1.1.0, 1.0.9, 1.0.8, 1.0.7, 1.0.6, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.1.0 [master repo]
+   - Author:   eberl_ma@gmx.at
+   - License:  MIT
+   - Platform: iOS 8.0 - tvOS 10.0
+   - Stars:    0
+   - Forks:    0
+
+-> Imperio (3.0.0)
+   Keep the screen flow logic out of your view controllers & make them testable.
+   pod 'Imperio', '~> 3.0.0'
+   - Homepage: https://github.com/Flinesoft/Imperio
+   - Source:   https://github.com/Flinesoft/Imperio.git
+   - Versions: 3.0.0, 2.0.1, 1.0.0 [master repo]
+   - Author:   Cihat Gündüz
+   - License:  MIT
+   - Platform: iOS 8.0 - tvOS 9.0
+   - Stars:    12
+   - Forks:    2
+
+-> MAFOverlay (0.1.1)
+   Popover-style overlay presentation coordinator for both iPhone and iPad on iOS 7+.
+   pod 'MAFOverlay', '~> 0.1.1'
+   - Homepage: https://github.com/jedlewison/MAFOverlay
+   - Source:   https://github.com/jedlewison/MAFOverlay.git
+   - Versions: 0.1.1, 0.1.0.1, 0.1.0, 0.0.4 [master repo]
+   - Author:   Jed Lewison
+   - License:  MIT
+   - Platform: iOS 7.0
+   - Stars:    8
+   - Forks:    0
+
+-> PhiLipsStack (2.0.0)
+   A Swift library to init Core Data Stack
+   pod 'PhiLipsStack', '~> 2.0.0'
+   - Homepage: https://github.com/phimage/PhiLipsStack
+   - Source:   https://github.com/phimage/PhiLipsStack.git
+   - Versions: 2.0.0, 1.0.0 [master repo]
+   - Author:   phimage
+   - License:  MIT
+   - Platform: iOS 8.0 - macOS 10.9
+   - Stars:    6
+   - Forks:    1
+
+-> RxFlow (2.3.0)
+   RxFlow is a navigation framework for iOS applications, based on a Reactive Coordinator pattern.
+   pod 'RxFlow', '~> 2.3.0'
+   - Homepage: https://github.com/RxSwiftCommunity/RxFlow
+   - Source:   https://github.com/RxSwiftCommunity/RxFlow.git
+   - Versions: 2.3.0, 2.2.0, 2.1.0, 2.0.0, 1.6.2, 1.6.1, 1.6.0, 1.5.0, 1.4.0, 1.3.2, 1.3.1, 1.3.0, 1.2.0, 1.1.0, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0 [master repo]
+   - Author:   Thibault Wittemberg and RxSwiftCommunity
+   - License:  MIT
+   - Platform: iOS 9.0
+   - Stars:    2
+   - Forks:    0
+
+-> Yui (0.1.0)
+   Use Coordinators, avoid reference cycles
+   pod 'Yui', '~> 0.1.0'
+   - Homepage: https://github.com/CallMeSH/Yui/
+   - Source:   https://github.com/CallMeSH/Yui.git
+   - Versions: 0.1.0 [master repo]
+   - Author:   Charles-Henri DUMALIN
+   - License:  MIT
+   - Platform: iOS 11.2
+   - Stars:    0
+   - Forks:    0

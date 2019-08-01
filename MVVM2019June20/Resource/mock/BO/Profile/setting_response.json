@@ -1,0 +1,7 @@
+{
+    "tokenExpiryDate": "2008-09-15T15:53:00",
+    "list": [
+        {"key": "isActivated", "value": "false"},
+        {"key": "isShowedTutorial", "value": "false"}
+    ]
+}

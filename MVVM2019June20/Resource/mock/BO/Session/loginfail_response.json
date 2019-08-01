@@ -1,0 +1,5 @@
+{
+    "errorCode": "9999",
+    "errorHeader": "Server Error",
+    "errorDescription": "Invalid username and password. Enter username 'A' and password 'a' to proceed."
+}

@@ -1,0 +1,191 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CodableExtensions (0.3.0)
+  - DeviceKit (2.0.0)
+  - Differentiator (4.0.1)
+  - ESPullToRefresh (2.9)
+  - FCUUID (1.3.1):
+    - UICKeyChainStore (~> 2.1.0)
+  - FLEX (3.0.0)
+  - IQKeyboardManagerSwift (6.4.0)
+  - Kingfisher (5.3.1)
+  - MBProgressHUD (1.1.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - NibDesignable (3.0.4)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - Permission/Camera (2.0.5):
+    - Permission/Core
+  - Permission/Core (2.0.5)
+  - Permission/Photos (2.0.5):
+    - Permission/Core
+  - Result (4.1.0)
+  - RxBiBinding (0.2.3):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxPermission/Camera (1.0.0):
+    - Permission/Camera
+    - RxPermission/Core
+  - RxPermission/Core (1.0.0):
+    - Permission/Core
+    - RxSwift
+  - RxPermission/Photos (1.0.0):
+    - Permission/Photos
+    - RxPermission/Core
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SemanticVersioning (2.0.1)
+  - SwiftDate (5.1.0)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+  - SwiftyUserDefaults (4.0.0-beta.2)
+  - Swinject (2.5.0)
+  - TagListView (1.4.0)
+  - UICKeyChainStore (2.1.2)
+  - XCGLogger (7.0.0):
+    - XCGLogger/Core (= 7.0.0)
+  - XCGLogger/Core (7.0.0):
+    - ObjcExceptionBridging
+  - XCGLogger/UserInfoHelpers (7.0.0):
+    - XCGLogger/Core
+
+DEPENDENCIES:
+  - CodableExtensions
+  - DeviceKit (~> 2.0)
+  - ESPullToRefresh
+  - FCUUID (~> 1.3.1)
+  - FLEX (~> 3.0.0)
+  - IQKeyboardManagerSwift (~> 6.4.0)
+  - Kingfisher (~> 5.3.0)
+  - MBProgressHUD (~> 1.1.0)
+  - Moya (~> 12.0.1)
+  - NibDesignable (from `https://github.com/wei2lee/NibDesignable.git`)
+  - Permission/Camera (from `https://github.com/aiaagentapp/Permission`)
+  - Permission/Photos (from `https://github.com/aiaagentapp/Permission`)
+  - RxBiBinding (~> 0.2.3)
+  - RxCocoa (~> 5.0.0)
+  - RxDataSources (~> 4.0.1)
+  - RxGesture (~> 3.0.0)
+  - RxPermission/Camera
+  - RxPermission/Photos
+  - RxSwift (~> 5.0.0)
+  - SemanticVersioning
+  - SwiftDate (~> 5.1.0)
+  - SwifterSwift (~> 4.6.0)
+  - SwiftyUserDefaults (= 4.0.0-beta.2)
+  - Swinject (~> 2.5.0)
+  - TagListView (~> 1.0)
+  - XCGLogger (~> 7.0.0)
+  - XCGLogger/UserInfoHelpers
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CodableExtensions
+    - DeviceKit
+    - Differentiator
+    - ESPullToRefresh
+    - FCUUID
+    - FLEX
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MBProgressHUD
+    - Moya
+    - ObjcExceptionBridging
+    - Result
+    - RxBiBinding
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxPermission
+    - RxRelay
+    - RxSwift
+    - SemanticVersioning
+    - SwiftDate
+    - SwifterSwift
+    - SwiftyUserDefaults
+    - Swinject
+    - TagListView
+    - UICKeyChainStore
+    - XCGLogger
+
+EXTERNAL SOURCES:
+  NibDesignable:
+    :git: https://github.com/wei2lee/NibDesignable.git
+  Permission:
+    :git: https://github.com/aiaagentapp/Permission
+
+CHECKOUT OPTIONS:
+  NibDesignable:
+    :commit: 9ceb0df0633a27678e56c0d646381d11b04fa7e5
+    :git: https://github.com/wei2lee/NibDesignable.git
+  Permission:
+    :commit: c4966c4a37f0a958ce1c5a4df6470997ac249468
+    :git: https://github.com/aiaagentapp/Permission
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CodableExtensions: 59a7093d64af2ee11009890594a13cd64befc8a0
+  DeviceKit: 72d36709552d4b3582abd76a53949148acad9811
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  ESPullToRefresh: ce058a36454a5032519cc9d8b45da217728cf104
+  FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  NibDesignable: d84087cac5cdd9a1464792dc1c224789c5b4e6a3
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  Permission: 8a7a9440a9c22bb9095c377aea381f733304c84a
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxBiBinding: 1eb9091d17cb6ac4e450709054da80f5041fa92e
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: 0cd8e37ff9a266e1c31f46bcaed6de1c536bc81e
+  RxPermission: acca72f2f9b75cfb5c90e34030ab774f4088bccb
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SemanticVersioning: 0071f84e4682793878ebc82ce49f8cdf52ce2d5d
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  SwiftyUserDefaults: 39ec70433f22f3052a64bc5fbfb34f46932b8bf1
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
+
+PODFILE CHECKSUM: b365a134c1292b3635f83d27f23dc02ee5e154b1
+
+COCOAPODS: 1.7.5

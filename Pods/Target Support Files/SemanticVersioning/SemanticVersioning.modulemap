@@ -1,0 +1,6 @@
+framework module SemanticVersioning {
+  umbrella header "SemanticVersioning-umbrella.h"
+
+  export *
+  module * { export * }
+}

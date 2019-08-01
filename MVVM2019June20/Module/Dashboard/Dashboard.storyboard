@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard Navigation Controller-->
+        <scene sceneID="ScH-eK-ULH">
+            <objects>
+                <navigationController storyboardIdentifier="DashboardNavigationController" id="BpC-Xn-dpV" customClass="DashboardNavigationController" customModule="MVVM2019June20" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RFy-0J-vkO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hcy-E3-1Tm" kind="relationship" relationship="rootViewController" id="0am-Zw-2R3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bx-c7-zCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="-86"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="x8c-Cb-lax">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="hcy-E3-1Tm" customClass="DashboardViewController" customModule="MVVM2019June20" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCE-Kf-dWR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-wY-plJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5I-yE-bDq" userLabel="ScrollContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-LJ-gff">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9q-HW-8kh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                        <state key="normal" title="Show Profile"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tII-Ct-V8p">
+                                                        <rect key="frame" x="0.0" y="30" width="414" height="30"/>
+                                                        <state key="normal" title="Show Movie List"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klj-fh-VT0">
+                                                        <rect key="frame" x="0.0" y="60" width="414" height="30"/>
+                                                        <state key="normal" title="Logout current user"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5P-Rn-X5H">
+                                                        <rect key="frame" x="0.0" y="90" width="414" height="30"/>
+                                                        <state key="normal" title="Login another user"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fc-M7-0wC" userLabel="Lock Screen Button">
+                                                        <rect key="frame" x="0.0" y="120" width="414" height="30"/>
+                                                        <state key="normal" title="Lock Screen"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="6xm-LJ-gff" secondAttribute="bottom" id="grW-5J-3wc"/>
+                                            <constraint firstAttribute="trailing" secondItem="6xm-LJ-gff" secondAttribute="trailing" id="moK-7H-lnQ"/>
+                                            <constraint firstItem="6xm-LJ-gff" firstAttribute="top" secondItem="A5I-yE-bDq" secondAttribute="top" id="viv-lY-OwQ"/>
+                                            <constraint firstItem="6xm-LJ-gff" firstAttribute="leading" secondItem="A5I-yE-bDq" secondAttribute="leading" id="yqn-9w-OCU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="A5I-yE-bDq" firstAttribute="trailing" secondItem="Vaf-8d-Udd" secondAttribute="trailing" id="ApD-an-ign"/>
+                                    <constraint firstItem="A5I-yE-bDq" firstAttribute="bottom" secondItem="Vaf-8d-Udd" secondAttribute="bottom" id="C72-AE-wRi"/>
+                                    <constraint firstItem="A5I-yE-bDq" firstAttribute="width" secondItem="OfE-cf-GNZ" secondAttribute="width" id="WdG-2B-Wk8"/>
+                                    <constraint firstItem="A5I-yE-bDq" firstAttribute="leading" secondItem="Vaf-8d-Udd" secondAttribute="leading" id="XM6-h4-cWG"/>
+                                    <constraint firstItem="A5I-yE-bDq" firstAttribute="top" secondItem="Vaf-8d-Udd" secondAttribute="top" id="gFx-Ew-iDv"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Vaf-8d-Udd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OfE-cf-GNZ"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mpe-Ei-aZ9" firstAttribute="trailing" secondItem="jeN-wY-plJ" secondAttribute="trailing" id="AZU-I5-m6s"/>
+                            <constraint firstItem="Mpe-Ei-aZ9" firstAttribute="bottom" secondItem="jeN-wY-plJ" secondAttribute="bottom" id="NzH-1c-aeo"/>
+                            <constraint firstItem="jeN-wY-plJ" firstAttribute="top" secondItem="Mpe-Ei-aZ9" secondAttribute="top" id="ZXx-XV-LTG"/>
+                            <constraint firstItem="jeN-wY-plJ" firstAttribute="leading" secondItem="Mpe-Ei-aZ9" secondAttribute="leading" id="kgK-Bw-DZo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mpe-Ei-aZ9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nUd-0A-5DU"/>
+                    <connections>
+                        <outlet property="lockScreenButton" destination="8Fc-M7-0wC" id="FgY-MR-CGG"/>
+                        <outlet property="loginOtherUserButton" destination="z5P-Rn-X5H" id="if3-QA-gXp"/>
+                        <outlet property="logoutButton" destination="klj-fh-VT0" id="5tO-il-j2i"/>
+                        <outlet property="movieListButton" destination="tII-Ct-V8p" id="Yd1-pz-6JT"/>
+                        <outlet property="profileButton" destination="i9q-HW-8kh" id="P9j-7P-7r6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePf-hp-3tN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274" y="-86"/>
+        </scene>
+    </scenes>
+</document>
