@@ -9,8 +9,16 @@
 import Foundation
 
 extension DialogAction {
-    static func OK() -> DialogAction {
-        let title = "OK"
+    static func download() -> DialogAction {
+        let title = "DOWNLOAD"
+        return DialogAction(title: title, style: .default, kind: .positive)
+    }
+    static func refresh() -> DialogAction {
+        let title = "REFRESH"
+        return DialogAction(title: title, style: .default, kind: .positive)
+    }
+    static func retry() -> DialogAction {
+        let title = "RETRY"
         return DialogAction(title: title, style: .default, kind: .positive)
     }
 }

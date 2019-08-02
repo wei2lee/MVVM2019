@@ -164,7 +164,7 @@ class LoginViewModelSpec: QuickSpec {
                     object.username.accept("A")
                     object.password.accept("a")
                     startSubmit.accept(())
-                    expect( view.isRouteToActivation ).toEventually(equal( true ), timeout: 3, pollInterval: 0.1, description: nil)
+                    expect( view.isRouteToActivation ).toEventually(equal( true ), timeout: 2, pollInterval: 0.1, description: nil)
                 }
                 it("route to dashboard if activated") {
                     Defaults[.isActivated] = true
@@ -174,7 +174,7 @@ class LoginViewModelSpec: QuickSpec {
                     object.username.accept("A")
                     object.password.accept("a")
                     startSubmit.accept(())
-                    expect( view.isRouteToDashboard ).toEventually(equal( true ), timeout: 3, pollInterval: 0.1, description: nil)
+                    expect( view.isRouteToDashboard ).toEventually(equal( true ), timeout: 2, pollInterval: 0.1, description: nil)
                 }
             }
         }

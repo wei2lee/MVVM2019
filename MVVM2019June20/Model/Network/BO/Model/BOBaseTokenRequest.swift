@@ -15,9 +15,7 @@ extension BO {
         var token:String? = nil
         
         override init() {
-            let loginSessionRepository = DI.container.resolve(LoginSessionRepositoryType.self)!
-            let loginSession = loginSessionRepository.currentLoginSession
-            token = loginSession?.token
+            token = LoginSession.current?.token
         }
         
         init(loginSession: LoginSession) {

@@ -143,6 +143,7 @@
 		224EE7D522E1946A008AD449 /* LoginTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224EE7D422E1946A008AD449 /* LoginTypes.swift */; };
 		224EE7D722E19651008AD449 /* BaseViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224EE7D622E19651008AD449 /* BaseViewModelType.swift */; };
 		224EE7D922E19D4B008AD449 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224EE7D822E19D4B008AD449 /* DI.swift */; };
+		225C4BD522F411C900604FA0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BD422F411C900604FA0 /* NetworkError.swift */; };
 		227C9DA422F149A300C5A968 /* RequestActivationFormValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DA322F149A300C5A968 /* RequestActivationFormValidationError.swift */; };
 		227C9DA622F165C400C5A968 /* TimeIntervalFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DA522F165C400C5A968 /* TimeIntervalFormats.swift */; };
 		227C9DA822F18FDE00C5A968 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DA722F18FDE00C5A968 /* LoginNavigationController.swift */; };
@@ -433,6 +434,12 @@
 		22ABDD0822E6D1D50051B2F4 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABDD0722E6D1D50051B2F4 /* LoginSession.swift */; };
 		22ABDD0A22E6D3D90051B2F4 /* BOMockPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABDD0922E6D3D90051B2F4 /* BOMockPlugin.swift */; };
 		22ABDD0D22E6DB8B0051B2F4 /* mock in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD0C22E6DB8B0051B2F4 /* mock */; };
+		22C8520222F3E20C00632FC7 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C8520122F3E20C00632FC7 /* Splash.storyboard */; };
+		22C8520522F3E22300632FC7 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520422F3E22300632FC7 /* SplashViewModel.swift */; };
+		22C8520722F3E22E00632FC7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520622F3E22E00632FC7 /* SplashViewController.swift */; };
+		22C8520922F3E23D00632FC7 /* SplashTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520822F3E23D00632FC7 /* SplashTypes.swift */; };
+		22C8520E22F3E77000632FC7 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520D22F3E77000632FC7 /* AppInfo.swift */; };
+		22C8521022F3E91600632FC7 /* BOConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520F22F3E91600632FC7 /* BOConstant.swift */; };
 		22F28AF422C6081A0009BE71 /* OMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F28AF322C6081A0009BE71 /* OMDb.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
@@ -588,6 +595,7 @@
 		224EE7D422E1946A008AD449 /* LoginTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypes.swift; sourceTree = "<group>"; };
 		224EE7D622E19651008AD449 /* BaseViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelType.swift; sourceTree = "<group>"; };
 		224EE7D822E19D4B008AD449 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		225C4BD422F411C900604FA0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		227C9DA322F149A300C5A968 /* RequestActivationFormValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestActivationFormValidationError.swift; sourceTree = "<group>"; };
 		227C9DA522F165C400C5A968 /* TimeIntervalFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalFormats.swift; sourceTree = "<group>"; };
 		227C9DA722F18FDE00C5A968 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
@@ -684,6 +692,12 @@
 		22ABDD0722E6D1D50051B2F4 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
 		22ABDD0922E6D3D90051B2F4 /* BOMockPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOMockPlugin.swift; sourceTree = "<group>"; };
 		22ABDD0C22E6DB8B0051B2F4 /* mock */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mock; sourceTree = "<group>"; };
+		22C8520122F3E20C00632FC7 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		22C8520422F3E22300632FC7 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		22C8520622F3E22E00632FC7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		22C8520822F3E23D00632FC7 /* SplashTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTypes.swift; sourceTree = "<group>"; };
+		22C8520D22F3E77000632FC7 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		22C8520F22F3E91600632FC7 /* BOConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOConstant.swift; sourceTree = "<group>"; };
 		22F28AF322C6081A0009BE71 /* OMDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDb.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
 		7A820A35ED016807E34AEB94 /* Pods-MVVM2019June20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.debug.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.debug.xcconfig"; sourceTree = "<group>"; };
@@ -759,6 +773,7 @@
 		2228792222BB756100C6B842 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				22C8520022F3E1F800632FC7 /* Splash */,
 				229D7C6E22CAF69A00D04836 /* Base */,
 				229D7C4B22CA082B00D04836 /* Movie */,
 				2228792422BB7E3700C6B842 /* Dashboard */,
@@ -809,7 +824,6 @@
 			isa = PBXGroup;
 			children = (
 				22ABDCE522E6B2BF0051B2F4 /* BO */,
-				229D7C8A22CB543500D04836 /* Transformer */,
 				229D7C8122CB406900D04836 /* Moya */,
 				22F28AF222C6035B0009BE71 /* OMDb */,
 			);
@@ -819,6 +833,7 @@
 		2228792822BB7E6C00C6B842 /* Persistency */ = {
 			isa = PBXGroup;
 			children = (
+				229D7C8A22CB543500D04836 /* Transformer */,
 				22ABDCCF22E562210051B2F4 /* UserDefault */,
 			);
 			path = Persistency;
@@ -1672,6 +1687,7 @@
 				229D7C8E22CC4C8900D04836 /* LoginFormValidationError.swift */,
 				22ABDCE222E5B6370051B2F4 /* ActivationFormValidationError.swift */,
 				227C9DA322F149A300C5A968 /* RequestActivationFormValidationError.swift */,
+				225C4BD422F411C900604FA0 /* NetworkError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -1768,6 +1784,7 @@
 				22ABDCE622E6B2DE0051B2F4 /* Provider */,
 				22ABDCE922E6B2FD0051B2F4 /* BO.swift */,
 				22ABDCEB22E6B30E0051B2F4 /* BOError.swift */,
+				22C8520F22F3E91600632FC7 /* BOConstant.swift */,
 			);
 			path = BO;
 			sourceTree = "<group>";
@@ -1784,6 +1801,7 @@
 		22ABDCE722E6B2EC0051B2F4 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
+				22C8520C22F3E75B00632FC7 /* Setting */,
 				228D9D2A22E6F88400E40407 /* Activation */,
 				228D9D2922E6F87800E40407 /* Profile */,
 				22ABDCF922E6BD260051B2F4 /* Session */,
@@ -1810,6 +1828,33 @@
 				22ABDCFA22E6BD360051B2F4 /* Login.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		22C8520022F3E1F800632FC7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				22C8520322F3E21200632FC7 /* Splash */,
+				22C8520122F3E20C00632FC7 /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		22C8520322F3E21200632FC7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				22C8520422F3E22300632FC7 /* SplashViewModel.swift */,
+				22C8520622F3E22E00632FC7 /* SplashViewController.swift */,
+				22C8520822F3E23D00632FC7 /* SplashTypes.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		22C8520C22F3E75B00632FC7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				22C8520D22F3E77000632FC7 /* AppInfo.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		22F28AF022C601CE0009BE71 /* Resource */ = {
@@ -1946,6 +1991,7 @@
 				2228791B22BB755300C6B842 /* LaunchScreen.storyboard in Resources */,
 				2228791822BB755300C6B842 /* Assets.xcassets in Resources */,
 				229D7C4D22CA099400D04836 /* Movie.storyboard in Resources */,
+				22C8520222F3E20C00632FC7 /* Splash.storyboard in Resources */,
 				223C15B522E1C9E300365121 /* Dashboard.storyboard in Resources */,
 				22ABDD0D22E6DB8B0051B2F4 /* mock in Resources */,
 				229D7C8022CB2D8A00D04836 /* SearchResultView.xib in Resources */,
@@ -2067,6 +2113,7 @@
 				229D7C5E22CA0C8C00D04836 /* BasePaginationViewType.swift in Sources */,
 				22287A7D22BB8BEE00C6B842 /* String+IsNilOrEmpty.swift in Sources */,
 				22287A7722BB8BEE00C6B842 /* Collection+IsNilOrEmpty.swift in Sources */,
+				22C8520922F3E23D00632FC7 /* SplashTypes.swift in Sources */,
 				22ABDCD722E58DD20051B2F4 /* SwiftDateExtensions.swift in Sources */,
 				22ABDD0822E6D1D50051B2F4 /* LoginSession.swift in Sources */,
 				22287A5C22BB8BEE00C6B842 /* UIViewController+DismissWithResultHelper.swift in Sources */,
@@ -2142,6 +2189,7 @@
 				22287A5422BB8BEE00C6B842 /* BarItemsViewType.swift in Sources */,
 				22287A5F22BB8BEE00C6B842 /* DismissWithResultProtocol.swift in Sources */,
 				22287ACA22BB8EDF00C6B842 /* PresentErrorProtocolImpl.swift in Sources */,
+				22C8521022F3E91600632FC7 /* BOConstant.swift in Sources */,
 				22287A4C22BB8BEE00C6B842 /* RxImagePickerDelegateProxy.swift in Sources */,
 				22287ACC22BB8EDF00C6B842 /* UIView+PresentErrorProtocol.swift in Sources */,
 				229D7C0B22C9B11C00D04836 /* StagingBuildConfig.swift in Sources */,
@@ -2174,6 +2222,7 @@
 				229D7C7222CAF6F900D04836 /* MovieCardCollectionViewCell.swift in Sources */,
 				22287A4D22BB8BEE00C6B842 /* RxTextFieldDelegateProxy.swift in Sources */,
 				22287ADA22BB8EDF00C6B842 /* UIViewController+ErrorHandlingViewType.swift in Sources */,
+				225C4BD522F411C900604FA0 /* NetworkError.swift in Sources */,
 				223C15BA22E1CA0900365121 /* DashboardViewModel.swift in Sources */,
 				22287A7122BB8BEE00C6B842 /* UIImageExtensions.swift in Sources */,
 				22ABDCCD22E55D340051B2F4 /* EnumRegionExtensions.swift in Sources */,
@@ -2211,6 +2260,7 @@
 				22287A4E22BB8BEE00C6B842 /* DisposeBagHolderType+Extension.swift in Sources */,
 				229D7C9222CC4DAF00D04836 /* LoginFormValidationService.swift in Sources */,
 				22287A6622BB8BEE00C6B842 /* ViewControllerCycleImplType.swift in Sources */,
+				22C8520522F3E22300632FC7 /* SplashViewModel.swift in Sources */,
 				229D7C1022C9B30700D04836 /* AuthService.swift in Sources */,
 				229D7C9C22CCA4B400D04836 /* App+Logger.swift in Sources */,
 				229D7BFD22C9A8CC00D04836 /* OMDbRating.swift in Sources */,
@@ -2226,6 +2276,7 @@
 				22287A6222BB8BEE00C6B842 /* UIView+Disposable.swift in Sources */,
 				223C15C222E1CB0900365121 /* DI+DIRegistor.swift in Sources */,
 				22287A4722BB8BEE00C6B842 /* ActivityIndicator.swift in Sources */,
+				22C8520E22F3E77000632FC7 /* AppInfo.swift in Sources */,
 				22287A8322BB8BEE00C6B842 /* OptionalString+OrEmpty.swift in Sources */,
 				229D7C8322CB408600D04836 /* MoyaLoggerPlugin.swift in Sources */,
 				22287AC722BB8EDF00C6B842 /* ShowProgressHUDProtocolImpl.swift in Sources */,
@@ -2235,6 +2286,7 @@
 				229D7C3C22C9E41300D04836 /* AuthConstant.swift in Sources */,
 				22287AD422BB8EDF00C6B842 /* BaseViewTypeExtensions.swift in Sources */,
 				22287A4822BB8BEE00C6B842 /* Observable+Ext.swift in Sources */,
+				22C8520722F3E22E00632FC7 /* SplashViewController.swift in Sources */,
 				223C15BC22E1CA1500365121 /* DashboardTypes.swift in Sources */,
 				22287A6822BB8BEE00C6B842 /* UIViewController+ViewControllerCycleImplType.swift in Sources */,
 				229D7C5C22CA0C6400D04836 /* BasePaginationViewModel.swift in Sources */,

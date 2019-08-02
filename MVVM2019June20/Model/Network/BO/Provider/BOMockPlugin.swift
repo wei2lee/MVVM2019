@@ -8,6 +8,7 @@
 
 import Foundation
 import Moya
+import SemanticVersioning
 
 extension BO {
     class MockProvider: BO.Provider {
@@ -59,6 +60,18 @@ extension BO {
             }
             if target is EndPoint.Revalidate {
                 return createEndPoint(target: target, dataPath: "Session/revalidate_response.json")
+            }
+            //Setting
+            if let target = target as? EndPoint.AppInfo {
+                let input = target.i!
+                let targetVersion = Version("0.1")
+                if let appVersion = try? Version(input.version.orEmpty) {
+                    if appVersion < targetVersion {
+                        return createEndPoint(target: target, dataPath: "Setting/appinfoforceupdate_response.json")
+                    } else {
+                        return createEndPoint(target: target, dataPath: "Setting/appinfonoforceupdate_response.json")
+                    }
+                }
             }
             return Endpoint(
                 url: URL(target: target).absoluteString,
