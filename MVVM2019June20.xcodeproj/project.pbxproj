@@ -146,7 +146,13 @@
 		225C4BD522F411C900604FA0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BD422F411C900604FA0 /* NetworkError.swift */; };
 		225C4BD622F7E1B400604FA0 /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DC822F2963500C5A968 /* LoginViewModelSpec.swift */; };
 		225C4BD722F7E1B700604FA0 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9E8C22F29AD500C5A968 /* GlobalVariables.swift */; };
-		225C4BDC22F80CB600604FA0 /* BOMockPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BDB22F80CB600604FA0 /* BOMockPlugin.swift */; };
+		225C4BDC22F80CB600604FA0 /* MockBOProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BDB22F80CB600604FA0 /* MockBOProvider.swift */; };
+		225C4BDF22F8284A00604FA0 /* SplashViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BDE22F8284A00604FA0 /* SplashViewModelSpec.swift */; };
+		225C4BE322F82E7E00604FA0 /* MockUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BE222F82E7E00604FA0 /* MockUserDefault.swift */; };
+		225C4BE822F8321E00604FA0 /* MockLoginSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BE722F8321E00604FA0 /* MockLoginSessionRepository.swift */; };
+		225C4BEB22F832CD00604FA0 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BEA22F832CD00604FA0 /* MockAuthService.swift */; };
+		225C4BEE22F835BD00604FA0 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BED22F835BD00604FA0 /* BaseViewModel.swift */; };
+		225C4BF222F8364500604FA0 /* MockDateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C4BF122F8364500604FA0 /* MockDateProvider.swift */; };
 		227C9DA422F149A300C5A968 /* RequestActivationFormValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DA322F149A300C5A968 /* RequestActivationFormValidationError.swift */; };
 		227C9DA622F165C400C5A968 /* TimeIntervalFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DA522F165C400C5A968 /* TimeIntervalFormats.swift */; };
 		227C9DA822F18FDE00C5A968 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C9DA722F18FDE00C5A968 /* LoginNavigationController.swift */; };
@@ -400,7 +406,13 @@
 		224EE7D622E19651008AD449 /* BaseViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelType.swift; sourceTree = "<group>"; };
 		224EE7D822E19D4B008AD449 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		225C4BD422F411C900604FA0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		225C4BDB22F80CB600604FA0 /* BOMockPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOMockPlugin.swift; sourceTree = "<group>"; };
+		225C4BDB22F80CB600604FA0 /* MockBOProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBOProvider.swift; sourceTree = "<group>"; };
+		225C4BDE22F8284A00604FA0 /* SplashViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelSpec.swift; sourceTree = "<group>"; };
+		225C4BE222F82E7E00604FA0 /* MockUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefault.swift; sourceTree = "<group>"; };
+		225C4BE722F8321E00604FA0 /* MockLoginSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginSessionRepository.swift; sourceTree = "<group>"; };
+		225C4BEA22F832CD00604FA0 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		225C4BED22F835BD00604FA0 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		225C4BF122F8364500604FA0 /* MockDateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDateProvider.swift; sourceTree = "<group>"; };
 		227C9DA322F149A300C5A968 /* RequestActivationFormValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestActivationFormValidationError.swift; sourceTree = "<group>"; };
 		227C9DA522F165C400C5A968 /* TimeIntervalFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalFormats.swift; sourceTree = "<group>"; };
 		227C9DA722F18FDE00C5A968 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
@@ -1240,6 +1252,10 @@
 		225C4BD822F80C8000604FA0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				225C4BF022F8363B00604FA0 /* Date */,
+				225C4BE922F832A800604FA0 /* Authenticate */,
+				225C4BE522F831ED00604FA0 /* Repository */,
+				225C4BE022F82E5800604FA0 /* Persistence */,
 				225C4BD922F80C9000604FA0 /* Network */,
 			);
 			path = Model;
@@ -1256,9 +1272,91 @@
 		225C4BDA22F80CA400604FA0 /* BO */ = {
 			isa = PBXGroup;
 			children = (
-				225C4BDB22F80CB600604FA0 /* BOMockPlugin.swift */,
+				225C4BDB22F80CB600604FA0 /* MockBOProvider.swift */,
 			);
 			path = BO;
+			sourceTree = "<group>";
+		};
+		225C4BDD22F8283400604FA0 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BDE22F8284A00604FA0 /* SplashViewModelSpec.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		225C4BE022F82E5800604FA0 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BE122F82E6A00604FA0 /* UserDefault */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		225C4BE122F82E6A00604FA0 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BE222F82E7E00604FA0 /* MockUserDefault.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		225C4BE422F831DD00604FA0 /* LoginSession */ = {
+			isa = PBXGroup;
+			children = (
+				22ABDD0722E6D1D50051B2F4 /* LoginSession.swift */,
+				229D7C3922C9E3F400D04836 /* LoginSessionRepository.swift */,
+				22ABDCE022E5A37C0051B2F4 /* LoginSessionRepositoryType.swift */,
+			);
+			path = LoginSession;
+			sourceTree = "<group>";
+		};
+		225C4BE522F831ED00604FA0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BE622F831F600604FA0 /* LoginSession */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		225C4BE622F831F600604FA0 /* LoginSession */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BE722F8321E00604FA0 /* MockLoginSessionRepository.swift */,
+			);
+			path = LoginSession;
+			sourceTree = "<group>";
+		};
+		225C4BE922F832A800604FA0 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BEA22F832CD00604FA0 /* MockAuthService.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		225C4BEC22F835B000604FA0 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BEF22F835C400604FA0 /* MVVM */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		225C4BEF22F835C400604FA0 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BED22F835BD00604FA0 /* BaseViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		225C4BF022F8363B00604FA0 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				225C4BF122F8364500604FA0 /* MockDateProvider.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		227C9DA922F1904C00C5A968 /* LoginNavigation */ = {
@@ -1297,6 +1395,7 @@
 		227C9DBC22F2926200C5A968 /* ModuleTests */ = {
 			isa = PBXGroup;
 			children = (
+				225C4BEC22F835B000604FA0 /* Architecture */,
 				225C4BD822F80C8000604FA0 /* Model */,
 				227C9DC622F2946500C5A968 /* Module */,
 				227C9DC522F2945700C5A968 /* Starter */,
@@ -1317,6 +1416,7 @@
 		227C9DC622F2946500C5A968 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				225C4BDD22F8283400604FA0 /* Splash */,
 				227C9DC722F2947E00C5A968 /* Login */,
 			);
 			path = Module;
@@ -1404,9 +1504,7 @@
 		229D7C3822C9E3DF00D04836 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				22ABDD0722E6D1D50051B2F4 /* LoginSession.swift */,
-				229D7C3922C9E3F400D04836 /* LoginSessionRepository.swift */,
-				22ABDCE022E5A37C0051B2F4 /* LoginSessionRepositoryType.swift */,
+				225C4BE422F831DD00604FA0 /* LoginSession */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -2156,8 +2254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225C4BEB22F832CD00604FA0 /* MockAuthService.swift in Sources */,
 				225C4BD622F7E1B400604FA0 /* LoginViewModelSpec.swift in Sources */,
-				225C4BDC22F80CB600604FA0 /* BOMockPlugin.swift in Sources */,
+				225C4BDC22F80CB600604FA0 /* MockBOProvider.swift in Sources */,
+				225C4BE322F82E7E00604FA0 /* MockUserDefault.swift in Sources */,
+				225C4BDF22F8284A00604FA0 /* SplashViewModelSpec.swift in Sources */,
+				225C4BEE22F835BD00604FA0 /* BaseViewModel.swift in Sources */,
+				225C4BE822F8321E00604FA0 /* MockLoginSessionRepository.swift in Sources */,
+				225C4BF222F8364500604FA0 /* MockDateProvider.swift in Sources */,
 				225C4BD722F7E1B700604FA0 /* GlobalVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

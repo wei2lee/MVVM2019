@@ -89,36 +89,22 @@ fileprivate class MockLoginView: NSObject, LoginViewType {
     
 }
 
-fileprivate func mockDI() {
-    DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
-        return LoginSessionRepository()
-    }).inObjectScope(.container)
-    
-    DI.container.register(BuildConfigType.self, factory: { r -> BuildConfigType in
-        return DevelopmentBuildConfig()
-    }).inObjectScope(.container)
-    
-    DI.container.register(LoginFormValidationServiceType.self, factory: { r -> LoginFormValidationServiceType in
-        return LoginFormValidationService()
-    }).inObjectScope(.container)
-    
-    DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
-        return AuthService()
-    }).inObjectScope(.container)
-    
-    DI.container.register(BO.Provider.self, factory: { r -> BO.Provider in
-        let ret = BO.MockProvider.UnitTest
-        return ret
-    }).inObjectScope(.container)
-    
-    DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
-        return UserDefaults.standard
-    }).inObjectScope(.container)
+extension LoginViewModel {
+    fileprivate static func setupLoginViewModelDI() {
+        BaseViewModel.setupBaseViewModelDI()
+        DI.container.register(LoginFormValidationServiceType.self, factory: { r -> LoginFormValidationServiceType in
+            return LoginFormValidationService()
+        }).inObjectScope(.container)
+        
+        DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
+            return MockAuthService()
+        }).inObjectScope(.container)
+    }
 }
+
 
 class LoginViewModelSpec: QuickSpec {
     override func spec() {
-        var Defaults: UserDefaults!
         let intent = LoginIntent(isModal: false,
                                  initialView: .login,
                                  enableDismiss: false)
@@ -126,8 +112,8 @@ class LoginViewModelSpec: QuickSpec {
         var view: MockLoginView!
         describe("after screen is shown") {
             beforeEach {
-                mockDI()
-                Defaults = DI.container.resolve(UserDefaults.self)!
+                DI.container.removeAll()
+                LoginViewModel.setupLoginViewModelDI()
                 object = LoginViewModel(intent: intent)
                 view = MockLoginView()
                 object.view = view
@@ -160,8 +146,8 @@ class LoginViewModelSpec: QuickSpec {
                     expect( view.isPresentedError ).toEventually(equal( true ))
                 }
                 it("prompt error dialog for no internet connection") {
-                    DI.container.register(BO.Provider.self, factory: { r -> BO.Provider in
-                        return BO.MockProvider.UnitTestWithNoInternet
+                    DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
+                        return MockNoInternetAuthService()
                     }).inObjectScope(.container)
                     
                      let startSubmit = PublishRelay<Void>()
@@ -173,7 +159,10 @@ class LoginViewModelSpec: QuickSpec {
                      expect( view.isPresentedError ).toEventually(equal( true ))
                  }
                 it("route to activation if not activated") {
-                    Defaults[.isActivated] = false
+                    DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
+                        return UserDefaults.NotActivated
+                    }).inObjectScope(.container)
+                    
                     let startSubmit = PublishRelay<Void>()
                     object.startSubmit = startSubmit.asDriverOnErrorJustComplete()
                     object.transform()
@@ -183,7 +172,10 @@ class LoginViewModelSpec: QuickSpec {
                     expect( view.isRouteToActivation ).toEventually(equal( true ))
                 }
                 it("route to dashboard if activated") {
-                    Defaults[.isActivated] = true
+                    DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
+                        return UserDefaults.Activated
+                    }).inObjectScope(.container)
+                    
                     let startSubmit = PublishRelay<Void>()
                     object.startSubmit = startSubmit.asDriverOnErrorJustComplete()
                     object.transform()

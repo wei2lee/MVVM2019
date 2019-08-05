@@ -10,11 +10,11 @@ import SwiftyUserDefaults
 
 extension DefaultsKeys {
     //MARK: Startup
-    static let forceLogoutOnAppStartup = DefaultsKey<Bool>("forceLogoutOnAppStartup", defaultValue: false)
-    static let appLaunchBefore = DefaultsKey<Bool>("appLaunchBefore", defaultValue: false)
-    static let lastLaunchAppVersion = DefaultsKey<String>("lastLaunchAppVersion", defaultValue: "")
-    static let lastLaunchAppBuild = DefaultsKey<String>("lastLaunchAppBuild", defaultValue: "")
+    public static let forceLogoutOnAppStartup = DefaultsKey<Bool>("forceLogoutOnAppStartup", defaultValue: false)
+    public static let appLaunchBefore = DefaultsKey<Bool>("appLaunchBefore", defaultValue: false)
+    public static let lastLaunchAppVersion = DefaultsKey<String>("lastLaunchAppVersion", defaultValue: "")
+    public static let lastLaunchAppBuild = DefaultsKey<String>("lastLaunchAppBuild", defaultValue: "")
     //MARK: Login
-    static let isActivated = DefaultsKey<Bool>("isActivated", defaultValue: false)
-    static let lastRequestActivationDate = DefaultsKey<Date?>("lastRequestActivationDate")
+    public static let isActivated = DefaultsKey<Bool>("isActivated", defaultValue: false)
+    public static let lastRequestActivationDate = DefaultsKey<Date?>("lastRequestActivationDate")
 }

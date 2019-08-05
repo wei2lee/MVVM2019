@@ -1312,7 +1312,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "124D8087-B852-4DEA-B4FE-0142C8D3D11E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVVM2019June20/Model/Validation/LoginFormValidationService.swift"
@@ -1334,8 +1334,8 @@
             filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "spec()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1350,8 +1350,8 @@
             filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "spec()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1366,8 +1366,8 @@
             filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "spec()"
             landmarkType = "7">
             <Locations>
@@ -1414,8 +1414,8 @@
             filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "spec()"
             landmarkType = "7">
             <Locations>

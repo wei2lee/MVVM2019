@@ -18,6 +18,7 @@ final class SplashViewModel: BaseViewModel {
     public weak var view: SplashViewType? = nil
     //MARK: Dependency
     @Injected fileprivate var provider: BO.Provider
+    @Injected fileprivate var authService: AuthServiceType
     //MARK: State
     //MARK: initializer
     override init() {
@@ -26,10 +27,15 @@ final class SplashViewModel: BaseViewModel {
     //MARK: transform
     override func transform() {
         super.transform()
+        
         let start = startLoad
             .flatMap(getAppInfo)
         
         let routeTo = start.asVoid()
+            //authorize function can be either just
+            //api call to verify the token,
+            //or screens to enter fingerprint/pincode+verifying the token
+            .flatMap(authorize)
             .do(onNext: loginRoute)
         
         //subscribe
@@ -42,13 +48,33 @@ final class SplashViewModel: BaseViewModel {
     }
     //MARK: Helper
     fileprivate func getAppInfo() -> Driver<BO.ResponseAppInfo> {
-        return appInfo()
+        let input = BO.RequestAppInfo()
+        input.platform = .ios
+        input.version = SwifterSwift.appVersion
+        let api = BO.EndPoint.AppInfo(input: input).request(provider: provider)
+        return api
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
             .observeOn(MainScheduler.instance)
             .retryWhen(self.retryWhen)
             .trackActivity(activityIndicator)
             .asDriverOnErrorJustComplete()
     }
+    
+    fileprivate func authorize() -> Driver<Event<Void>> {
+        if let session = LoginSession.current {
+            return authService.revalidate(loginSession: session, catchErrorJustNext: false)
+                .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
+                .observeOn(MainScheduler.instance)
+                .trackActivity(activityIndicator)
+                .materialize()
+                .asDriverOnErrorJustComplete()
+        } else {
+            return Observable<Void>.just(())
+                .materialize()
+                .asDriverOnErrorJustComplete()
+        }
+    }
+    
     fileprivate func retryWhen(errors: Observable<Error>) -> Observable<Void> {
         return errors.flatMapLatest { error -> Observable<Void> in
             if error as NSError == NetworkError.noInternetConnection.error {
@@ -61,19 +87,18 @@ final class SplashViewModel: BaseViewModel {
         }.asVoid()
     }
     
-    fileprivate func loginRoute() {
-        if self.Defaults[.isActivated] == false {
-            view?.routeToActivation()
-        } else {
-            view?.routeToDashboard()
+    fileprivate func loginRoute(revalidateResult: Event<()>) {
+        switch revalidateResult {
+        case .next:
+            if self.Defaults[.isActivated] == false {
+                view?.routeToActivation()
+            } else {
+                view?.routeToDashboard()
+            }
+        case .error(_):
+            view?.routeToLogin()
+        case .completed:
+            break
         }
-    }
-    
-    fileprivate func appInfo() -> Observable<BO.ResponseAppInfo> {
-        let input = BO.RequestAppInfo()
-        input.platform = .ios
-        input.version = SwifterSwift.appVersion
-        let api = BO.EndPoint.AppInfo(input: input).request(provider: provider)
-        return api
     }
 }
