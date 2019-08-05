@@ -12,6 +12,7 @@ import SemanticVersioning
 
 extension BO {
     class MockProvider: BO.Provider {
+        
         public override init(endpointClosure: @escaping MoyaProvider<Target>.EndpointClosure = MockProvider.endpointMapping,
                              requestClosure: @escaping MoyaProvider<Target>.RequestClosure = Provider.defaultRequestMapping,
                              stubClosure: @escaping MoyaProvider<Target>.StubClosure = MockProvider.stubBehavior,
@@ -92,6 +93,16 @@ extension BO {
             )
         }
         
+        public final class func createErrorEndPoint(target: BO.UntypedBaseTarget, dataPath: String, error: NSError) -> Endpoint {
+            return Endpoint(
+                url: createURL(dataPath: dataPath),
+                sampleResponseClosure: { .networkError(error) },
+                method: target.method,
+                task: target.task,
+                httpHeaderFields: target.headers
+            )
+        }
+        
         public final class func createURL(dataPath: String) -> String {
             let path = MockProvider.mockBasePath.appendingPathComponent(dataPath)
             return path
@@ -104,10 +115,14 @@ extension BO {
             return data
         }
         
-        public final class func stubBehavior(_: BO.UntypedBaseTarget) -> Moya.StubBehavior {
-            let maxDelayed: TimeInterval = 2.0
-            let apiDelay:TimeInterval = TimeInterval(arc4random_uniform(100)) / 100.0 * maxDelayed
+        public final class func stubBehavior(_: BO.UntypedBaseTarget, stubMinDelayed: TimeInterval, stubMaxDelayed: TimeInterval) -> Moya.StubBehavior {
+            let maxDelayed: TimeInterval = (stubMaxDelayed - stubMinDelayed)
+            let apiDelay:TimeInterval = stubMinDelayed + TimeInterval(arc4random_uniform(100)) / 100.0 * maxDelayed
             return .delayed(seconds: apiDelay)
+        }
+        
+        public final class func stubBehavior(o: BO.UntypedBaseTarget) -> Moya.StubBehavior {
+            return stubBehavior(o, stubMinDelayed: 0.0, stubMaxDelayed: 2.0)
         }
     }
 }

@@ -17,7 +17,7 @@ final class SplashViewModel: BaseViewModel {
     //MARK: Output
     public weak var view: SplashViewType? = nil
     //MARK: Dependency
-
+    @Injected fileprivate var provider: BO.Provider
     //MARK: State
     //MARK: initializer
     override init() {
@@ -73,7 +73,7 @@ final class SplashViewModel: BaseViewModel {
         let input = BO.RequestAppInfo()
         input.platform = .ios
         input.version = SwifterSwift.appVersion
-        let api = BO.EndPoint.AppInfo(input: input).request()
+        let api = BO.EndPoint.AppInfo(input: input).request(provider: provider)
         return api
     }
 }

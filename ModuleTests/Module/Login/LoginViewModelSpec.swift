@@ -12,6 +12,7 @@ import Quick
 import RxBlocking
 import RxSwift
 import RxCocoa
+@testable import MVVM2019June20
 
 fileprivate class MockLoginView: NSObject, LoginViewType {
     var intent: LoginIntent!
@@ -106,7 +107,8 @@ fileprivate func mockDI() {
     }).inObjectScope(.container)
     
     DI.container.register(BO.Provider.self, factory: { r -> BO.Provider in
-        return BO.MockProvider()
+        let ret = BO.MockProvider.UnitTest
+        return ret
     }).inObjectScope(.container)
     
     DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
@@ -116,8 +118,7 @@ fileprivate func mockDI() {
 
 class LoginViewModelSpec: QuickSpec {
     override func spec() {
-        mockDI()
-        let Defaults = DI.container.resolve(UserDefaults.self)!
+        var Defaults: UserDefaults!
         let intent = LoginIntent(isModal: false,
                                  initialView: .login,
                                  enableDismiss: false)
@@ -125,6 +126,8 @@ class LoginViewModelSpec: QuickSpec {
         var view: MockLoginView!
         describe("after screen is shown") {
             beforeEach {
+                mockDI()
+                Defaults = DI.container.resolve(UserDefaults.self)!
                 object = LoginViewModel(intent: intent)
                 view = MockLoginView()
                 object.view = view
@@ -156,6 +159,19 @@ class LoginViewModelSpec: QuickSpec {
                     startSubmit.accept(())
                     expect( view.isPresentedError ).toEventually(equal( true ))
                 }
+                it("prompt error dialog for no internet connection") {
+                    DI.container.register(BO.Provider.self, factory: { r -> BO.Provider in
+                        return BO.MockProvider.UnitTestWithNoInternet
+                    }).inObjectScope(.container)
+                    
+                     let startSubmit = PublishRelay<Void>()
+                     object.startSubmit = startSubmit.asDriverOnErrorJustComplete()
+                     object.transform()
+                     object.username.accept("A")
+                     object.password.accept("a")
+                     startSubmit.accept(())
+                     expect( view.isPresentedError ).toEventually(equal( true ))
+                 }
                 it("route to activation if not activated") {
                     Defaults[.isActivated] = false
                     let startSubmit = PublishRelay<Void>()
@@ -164,7 +180,7 @@ class LoginViewModelSpec: QuickSpec {
                     object.username.accept("A")
                     object.password.accept("a")
                     startSubmit.accept(())
-                    expect( view.isRouteToActivation ).toEventually(equal( true ), timeout: 2, pollInterval: 0.1, description: nil)
+                    expect( view.isRouteToActivation ).toEventually(equal( true ))
                 }
                 it("route to dashboard if activated") {
                     Defaults[.isActivated] = true
@@ -174,7 +190,7 @@ class LoginViewModelSpec: QuickSpec {
                     object.username.accept("A")
                     object.password.accept("a")
                     startSubmit.accept(())
-                    expect( view.isRouteToDashboard ).toEventually(equal( true ), timeout: 2, pollInterval: 0.1, description: nil)
+                    expect( view.isRouteToDashboard ).toEventually(equal( true ))
                 }
             }
         }

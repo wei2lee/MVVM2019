@@ -35,7 +35,41 @@ extension OMDb {
         func typedRequest<I, O>(_ target: OMDb.BaseTarget<I, O>,
                                 callbackQueue: DispatchQueue? = .none,
                                 progress: ProgressBlock? = .none,
-                                completion: @escaping ((_ result: Result<O, MoyaError>) -> ())) -> Cancellable where O: Decodable {
+                                completion: @escaping ((_ result: Result<O, Swift.Error>) -> ())) -> Cancellable where O: Decodable {
+            
+            func mapError(_ moyaError: MoyaError) -> Swift.Error {
+                switch moyaError {
+                case .imageMapping(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .jsonMapping(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .stringMapping(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .objectMapping(_, _):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .encodableMapping(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .statusCode(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .underlying(let error, _):
+                    if let urlError = error as? URLError, urlError.code  == URLError.Code.notConnectedToInternet {
+                        return NetworkError.noInternetConnection.error.with(underlyingError: urlError as NSError)
+                    }
+                    if let urlError = error as? URLError {
+                        switch urlError {
+                        case URLError.timedOut, URLError.cannotFindHost, URLError.cannotConnectToHost:
+                            return NetworkError.connectionTimeout.error.with(underlyingError: urlError as NSError)
+                        default:
+                            return NetworkError.generic.error.with(underlyingError: urlError as NSError)
+                        }
+                    }
+                    return BO.Error.generic.error.with(underlyingError: error as NSError)
+                case .requestMapping(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                case .parameterEncoding(_):
+                    return BO.Error.generic.error.with(underlyingError: moyaError)
+                }
+            }
             
             func validateResponseError(_ response: Moya.Response) -> MoyaError? {
                 do {
@@ -58,22 +92,22 @@ extension OMDb {
                                     switch result {
                                     case .success(let response):
                                         if let error = validateResponseError(response) {
-                                            let result: Result<O, MoyaError> = .failure(error)
+                                            let result: Result<O, Swift.Error> = .failure(mapError(error))
                                             completion(result)
                                             return
                                         }
                                         do {
                                             let object = try response.map(O.self)
-                                            let result: Result<O, MoyaError> = .success(object)
+                                            let result: Result<O, Swift.Error> = .success(object)
                                             completion(result)
                                         } catch {
                                             let error: MoyaError = error as! MoyaError
-                                            let result: Result<O, MoyaError> = .failure(error)
+                                            let result: Result<O, Swift.Error> = .failure(mapError(error))
                                             completion(result)
                                         }
                                         break
                                     case .failure(let error):
-                                        let result: Result<O, MoyaError> = .failure(error)
+                                        let result: Result<O, Swift.Error> = .failure(mapError(error))
                                         completion(result)
                                     }
                                     

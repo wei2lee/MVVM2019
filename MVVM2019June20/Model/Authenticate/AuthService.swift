@@ -15,6 +15,7 @@ import FCUUID
 class AuthService : AuthServiceType {
     //Dependency
     @Injected fileprivate var loginSessionRepository: LoginSessionRepositoryType
+    @Injected fileprivate var provider: BO.Provider
     //static
     public static let shared = AuthService()
     //
@@ -23,7 +24,7 @@ class AuthService : AuthServiceType {
         input.username = username
         input.password = password
         input.deviceId = FCUUID.uuidForDevice()
-        let api = BO.EndPoint.Login(input: input).request()
+        let api = BO.EndPoint.Login(input: input).request(provider: provider)
         return api
             .map { response -> EnumLoginComparision in
                 let newLoginSession = LoginSession(response: response)
@@ -71,7 +72,7 @@ class AuthService : AuthServiceType {
             return .empty()
         }
         let input = BO.BaseTokenRequest(loginSession: loginSession)
-        let api = BO.EndPoint.Revalidate(input: input).request()
+        let api = BO.EndPoint.Revalidate(input: input).request(provider: provider)
         return api.do(onNext: { response in
             let current = LoginSession(response: response)
             self.createLoginSession(loginSession: current, setAsCurrent: true)
@@ -92,7 +93,7 @@ class AuthService : AuthServiceType {
             return .empty()
         }
         let input = BO.BaseTokenRequest(loginSession: loginSession)
-        let api = BO.EndPoint.Logout(input: input).request()
+        let api = BO.EndPoint.Logout(input: input).request(provider: provider)
         return api.asVoid().catchError({ error -> Observable<()> in
             if catchErrorJustNext {
                 return .just(())
