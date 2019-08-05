@@ -597,38 +597,6 @@
             endingLineNumber = "92"
             landmarkName = "init(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E47013E7-F4A9-4EBF-86BB-A0C1A9945F02 - 54698b2dedf4bb47"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MVVM2019June20.OMDb.Movie.init(from: Swift.Decoder) throws -&gt; MVVM2019June20.OMDb.Movie"
-                  moduleName = "MVVM2019June20"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Network/OMDb/Model/OMDbMovie.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "3509">
-               </Location>
-               <Location
-                  uuid = "E47013E7-F4A9-4EBF-86BB-A0C1A9945F02 - 6b5070096527d8b7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ModuleTests.OMDb.Movie.init(from: Swift.Decoder) throws -&gt; ModuleTests.OMDb.Movie"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Network/OMDb/Model/OMDbMovie.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "3509">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -646,38 +614,6 @@
             endingLineNumber = "67"
             landmarkName = "init(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "224BED03-2CD3-4B40-9330-D9A1EFA84312 - 54698b2dedf4bb47"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MVVM2019June20.OMDb.Movie.init(from: Swift.Decoder) throws -&gt; MVVM2019June20.OMDb.Movie"
-                  moduleName = "MVVM2019June20"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Network/OMDb/Model/OMDbMovie.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "178">
-               </Location>
-               <Location
-                  uuid = "224BED03-2CD3-4B40-9330-D9A1EFA84312 - 6b5070096527d8b7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ModuleTests.OMDb.Movie.init(from: Swift.Decoder) throws -&gt; ModuleTests.OMDb.Movie"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Network/OMDb/Model/OMDbMovie.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "178">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -695,38 +631,6 @@
             endingLineNumber = "80"
             landmarkName = "init(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BCF3261C-9A92-44BB-9729-245414DE105C - 54698b2dedf4bb47"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MVVM2019June20.OMDb.Movie.init(from: Swift.Decoder) throws -&gt; MVVM2019June20.OMDb.Movie"
-                  moduleName = "MVVM2019June20"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Network/OMDb/Model/OMDbMovie.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "1934">
-               </Location>
-               <Location
-                  uuid = "BCF3261C-9A92-44BB-9729-245414DE105C - 6b5070096527d8b7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ModuleTests.OMDb.Movie.init(from: Swift.Decoder) throws -&gt; ModuleTests.OMDb.Movie"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Network/OMDb/Model/OMDbMovie.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "1934">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1306,38 +1210,6 @@
             endingLineNumber = "144"
             landmarkName = "createRequestActivationTimerData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "24E39691-8E5D-4902-A406-520C31DDC086 - e431b76f991a5728"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MVVM2019June20.ActivationViewModel.(createRequestActivationTimerData in _AC9C5781FAC9C5B2F9672D3DDF209D9C)() -&gt; (text: Swift.String, isEnabled: Swift.Bool)"
-                  moduleName = "MVVM2019June20"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Module/Login/Activation/ActivationViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "2123">
-               </Location>
-               <Location
-                  uuid = "24E39691-8E5D-4902-A406-520C31DDC086 - 925ac5b6bb5c4da5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ModuleTests.ActivationViewModel.(createRequestActivationTimerData in _439F89318FC354FD8B0DF283D13DE6BC)() -&gt; (text: Swift.String, isEnabled: Swift.Bool)"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Module/Login/Activation/ActivationViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "2123">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1450,38 +1322,6 @@
             endingLineNumber = "15"
             landmarkName = "validate(username:password:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "124D8087-B852-4DEA-B4FE-0142C8D3D11E - 87187b1794ecea5a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MVVM2019June20.LoginFormValidationService.validate(username: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;MVVM2019June20.LoginFormValidationError&gt;"
-                  moduleName = "MVVM2019June20"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Validation/LoginFormValidationService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "141">
-               </Location>
-               <Location
-                  uuid = "124D8087-B852-4DEA-B4FE-0142C8D3D11E - c2f3b35aa649c3ed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ModuleTests.LoginFormValidationService.validate(username: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;ModuleTests.LoginFormValidationError&gt;"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/MVVM2019June20/Model/Validation/LoginFormValidationService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "141">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1610,6 +1450,54 @@
                   offsetFromSymbolStart = "104">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84815B96-15DF-4B0B-BA06-13D0B9313B83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOMockPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "endpointMapping(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "720832F2-F6FC-43C0-86D3-FC7AA670A5B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOMockPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "endpointMapping(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF7419D9-0302-4FC8-BDD3-ACBDFC1AF0B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOMockPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "endpointMapping(for:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

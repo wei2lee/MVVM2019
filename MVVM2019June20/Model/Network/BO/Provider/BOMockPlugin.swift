@@ -65,8 +65,8 @@ extension BO {
             //Setting
             if let target = target as? EndPoint.AppInfo {
                 let input = target.i!
-                let targetVersion = Version("0.1")
-                if let appVersion = try? Version(input.version.orEmpty) {
+                let targetVersion = try! Version("0.1", strict: false)
+                if let appVersion = try? Version(input.version.orEmpty, strict: false) {
                     if appVersion < targetVersion {
                         return createEndPoint(target: target, dataPath: "Setting/appinfoforceupdate_response.json")
                     } else {
