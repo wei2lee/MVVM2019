@@ -14,7 +14,7 @@ import RxSwift
 import RxCocoa
 @testable import MVVM2019June20
 
-fileprivate class MockSplashView: NSObject, SplashViewType {
+fileprivate class MockSplashView: MockBaseView, SplashViewType {
     
     
     override init() {
@@ -34,85 +34,28 @@ fileprivate class MockSplashView: NSObject, SplashViewType {
     }
     var isPromptNoInternetConnectionRetryDialog = false
     func promptNoInternetConnectionRetryDialog() -> Driver<Void> {
-        return Driver.just(()).do(onSubscribed: {
+        return Driver.just(()).delay(.milliseconds(100)) .do(onSubscribed: {
             self.isPromptNoInternetConnectionRetryDialog = true
         })
     }
     var isPromptRetryDialog = false
     func promptRetryDialog() -> Driver<Void> {
-        return Driver.just(()).do(onSubscribed: {
+        return Driver.just(()).delay(.milliseconds(100)) .do(onSubscribed: {
                     self.isPromptForceUpdateDialog = true
                 })
     }
     var isPromptForceUpdateDialog = false
     func promptForceUpdateDialog() -> Driver<Void> {
-        return Driver.just(()).do(onSubscribed: {
+        return Driver.just(()).delay(.milliseconds(100)) .do(onSubscribed: {
                     self.isPromptForceUpdateDialog = true
                 })
     }
     var isPromptJailBrokenDetectedDialog = false
     func promptJailBrokenDetectedDialog() -> Driver<Void> {
-        return Driver.just(()).do(onSubscribed: {
+        return Driver.just(()).delay(.milliseconds(100)) .do(onSubscribed: {
                     self.isPromptJailBrokenDetectedDialog = true
                 })
     }
-    
-    func dismissView() {
-        
-    }
-    
-    func showProgressHUD() {
-        
-    }
-    
-    func showProgressHUD(label: String) {
-        
-    }
-    
-    func hideProgressHUD() {
-        
-    }
-    
-    func exitToLogin() {
-        
-    }
-    
-    func presentDialog(title: String?, message: String?, actions: [String]) -> Driver<Int> {
-        return .just(0)
-    }
-    
-    func presentDialog(title: String?, message: String?, actions: [DialogAction]) -> Driver<DialogAction> {
-        return .just(actions.first!)
-    }
-    
-    func presentDialog(title: String?, message: String?, action: DialogAction) -> Driver<DialogAction> {
-        return .just(action)
-    }
-    
-    var disposeOnWillRemoveFromParent: Bool = false
-    
-    func showLoginSessionExpire(error: NSError) -> Driver<Void> {
-        return .just(())
-    }
-    
-    var isPresentedError: Bool = false
-    func present(error: Error, completion: @escaping () -> ()) {
-        isPresentedError = true
-    }
-    
-    func exitWithResult(animated: Bool, result: DismissResult, completion: (() -> ())?) {
-        
-    }
-    
-    func closeWithResult(animated: Bool, result: DismissResult, completion: (() -> ())?) {
-        
-    }
-    
-    func popWithResult(animated: Bool, result: DismissResult, completion: (() -> ())?) {
-        
-    }
-    
-    
 }
 
 extension SplashViewModel {
@@ -128,7 +71,7 @@ extension SplashViewModel {
         }).inObjectScope(.container)
         
         DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
-            let ret = MockNewUserSessionLoginSessionRepository()
+            let ret = MockNewUserLoginSessionRepository()
             return ret
         }).inObjectScope(.container)
     }
@@ -179,7 +122,7 @@ class SplashViewModelSpec: QuickSpec {
             context("for new user") {
                 beforeEach {
                     DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
-                        let ret = MockNewUserSessionLoginSessionRepository()
+                        let ret = MockNewUserLoginSessionRepository()
                         return ret
                     }).inObjectScope(.container)
                 }
@@ -191,7 +134,7 @@ class SplashViewModelSpec: QuickSpec {
             context("for logon user") {
                 beforeEach {
                     DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
-                        let ret = MockLogonSessionLoginSessionRepository()
+                        let ret = MockLogonLoginSessionRepository()
                         return ret
                     }).inObjectScope(.container)
                 }

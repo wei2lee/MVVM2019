@@ -14,7 +14,7 @@ import RxSwift
 import RxCocoa
 @testable import MVVM2019June20
 
-fileprivate class MockLoginView: NSObject, LoginViewType {
+fileprivate class MockLoginView: MockBaseView, LoginViewType {
     var intent: LoginIntent!
     
     override init() {
@@ -34,58 +34,6 @@ fileprivate class MockLoginView: NSObject, LoginViewType {
     func dismissView() {
         
     }
-    
-    func showProgressHUD() {
-        
-    }
-    
-    func showProgressHUD(label: String) {
-        
-    }
-    
-    func hideProgressHUD() {
-        
-    }
-    
-    func exitToLogin() {
-        
-    }
-    
-    func presentDialog(title: String?, message: String?, actions: [String]) -> Driver<Int> {
-        return .just(0)
-    }
-    
-    func presentDialog(title: String?, message: String?, actions: [DialogAction]) -> Driver<DialogAction> {
-        return .just(actions.first!)
-    }
-    
-    func presentDialog(title: String?, message: String?, action: DialogAction) -> Driver<DialogAction> {
-        return .just(action)
-    }
-    
-    var disposeOnWillRemoveFromParent: Bool = false
-    
-    func showLoginSessionExpire(error: NSError) -> Driver<Void> {
-        return .just(())
-    }
-    
-    var isPresentedError: Bool = false
-    func present(error: Error, completion: @escaping () -> ()) {
-        isPresentedError = true
-    }
-    
-    func exitWithResult(animated: Bool, result: DismissResult, completion: (() -> ())?) {
-        
-    }
-    
-    func closeWithResult(animated: Bool, result: DismissResult, completion: (() -> ())?) {
-        
-    }
-    
-    func popWithResult(animated: Bool, result: DismissResult, completion: (() -> ())?) {
-        
-    }
-    
     
 }
 

@@ -1327,134 +1327,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D743DB2F-F2E7-491F-BA98-220A76AFE0AD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "spec()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3BB61E7E-44E9-4EE8-BB2D-1F4F97E6595D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "spec()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "700A2F34-59C9-49FD-A0AB-7B5F9E4BE05E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "spec()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "700A2F34-59C9-49FD-A0AB-7B5F9E4BE05E - 6b0f3f1110ead007"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; () in ModuleTests.LoginViewModelSpec.spec() -&gt; ()"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Login/LoginViewModelSpec.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  uuid = "700A2F34-59C9-49FD-A0AB-7B5F9E4BE05E - 20bd8aaac8870ca0"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; () in ModuleTests.LoginViewModelSpec.spec() -&gt; ()"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Login/LoginViewModelSpec.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "57">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "536534FC-8B06-4BA0-A25A-A5495980C666"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleTests/Module/Login/LoginViewModelSpec.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "spec()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "536534FC-8B06-4BA0-A25A-A5495980C666 - ffeb95fa05f06104"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; () in ModuleTests.LoginViewModelSpec.spec() -&gt; ()"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Login/LoginViewModelSpec.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "49">
-               </Location>
-               <Location
-                  uuid = "536534FC-8B06-4BA0-A25A-A5495980C666 - 20bd8aaac8870ca0"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; () in closure #1 () -&gt; () in ModuleTests.LoginViewModelSpec.spec() -&gt; ()"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Login/LoginViewModelSpec.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "84815B96-15DF-4B0B-BA06-13D0B9313B83"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1487,70 +1359,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A37B98AA-EE83-4E88-ADBB-9B6646FEB09C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleTests/Module/Splash/SplashViewModelSpec.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "spec()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7EA52952-1AB3-4389-B4D6-6EE33B97752D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleTests/Module/Splash/SplashViewModelSpec.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "spec()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7EA52952-1AB3-4389-B4D6-6EE33B97752D - f0bc46e990e19fae"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; () in ModuleTests.SplashViewModelSpec.spec() -&gt; ()"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Splash/SplashViewModelSpec.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "102">
-               </Location>
-               <Location
-                  uuid = "7EA52952-1AB3-4389-B4D6-6EE33B97752D - 1d524b59085b64d4"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swinject.Resolver) -&gt; MVVM2019June20.BO.Provider in closure #2 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; () in ModuleTests.SplashViewModelSpec.spec() -&gt; ()"
-                  moduleName = "ModuleTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Splash/SplashViewModelSpec.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "161"
-                  endingLineNumber = "161"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "60D42FB6-1277-4FFE-8083-6D13B0F8D983"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1576,6 +1384,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF2D0BB7-4425-41AA-BBD8-C76D9A7CE09D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Starter/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -9,7 +9,7 @@
 import Foundation
 @testable import MVVM2019June20
 
-class MockNewUserSessionLoginSessionRepository : LoginSessionRepositoryType {
+class MockNewUserLoginSessionRepository : LoginSessionRepositoryType {
     var previousLoginSession: LoginSession? = nil
     var currentLoginSession: LoginSession? = nil
     var lastLoginSession: LoginSession? = nil
@@ -17,7 +17,7 @@ class MockNewUserSessionLoginSessionRepository : LoginSessionRepositoryType {
     func delete(_ value: LoginSession) { }
 }
 
-class MockLogoutSessionLoginSessionRepository : LoginSessionRepositoryType {
+class MockLogoutLoginSessionRepository : LoginSessionRepositoryType {
     var previousLoginSession: LoginSession? = nil
     var currentLoginSession: LoginSession? = nil
     var lastLoginSession: LoginSession? = nil
@@ -25,7 +25,7 @@ class MockLogoutSessionLoginSessionRepository : LoginSessionRepositoryType {
     func delete(_ value: LoginSession) { }
 }
 
-class MockLogonSessionLoginSessionRepository : LoginSessionRepositoryType {
+class MockLogonLoginSessionRepository : LoginSessionRepositoryType {
     var previousLoginSession: LoginSession? = nil
     var currentLoginSession: LoginSession? = LoginSession()
     var lastLoginSession: LoginSession? = nil
