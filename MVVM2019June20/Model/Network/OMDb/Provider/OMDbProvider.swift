@@ -63,7 +63,7 @@ extension OMDb {
                             return NetworkError.generic.error.with(underlyingError: urlError as NSError)
                         }
                     }
-                    return BO.Error.generic.error.with(underlyingError: error as NSError)
+                    return error
                 case .requestMapping(_):
                     return BO.Error.generic.error.with(underlyingError: moyaError)
                 case .parameterEncoding(_):

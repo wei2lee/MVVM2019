@@ -52,6 +52,8 @@ extension BO {
                 let input = target.i!
                 if input.username == "A" && input.password == "a" {
                     return createEndPoint(target: target, dataPath: "Session/login_response.json")
+                } else if input.username == "B" && input.password == "b" {
+                    return createEndPoint(target: target, dataPath: "Session/login_response.json")
                 } else {
                     return createEndPoint(target: target, dataPath: "Session/loginfail_response.json")
                 }
