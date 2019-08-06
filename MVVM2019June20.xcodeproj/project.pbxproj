@@ -423,7 +423,6 @@
 		227C9DB322F19E7E00C5A968 /* DashboardNavigationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavigationTypes.swift; sourceTree = "<group>"; };
 		227C9DB522F19E8E00C5A968 /* DashboardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavigationController.swift; sourceTree = "<group>"; };
 		227C9DBB22F2926200C5A968 /* ModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		227C9DBD22F2926200C5A968 /* ModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTests.swift; sourceTree = "<group>"; };
 		227C9DBF22F2926200C5A968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227C9DC822F2963500C5A968 /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
 		227C9E8C22F29AD500C5A968 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
@@ -1404,7 +1403,6 @@
 				225C4BD822F80C8000604FA0 /* Model */,
 				227C9DC622F2946500C5A968 /* Module */,
 				227C9DC522F2945700C5A968 /* Starter */,
-				227C9DBD22F2926200C5A968 /* ModuleTests.swift */,
 				227C9DBF22F2926200C5A968 /* Info.plist */,
 			);
 			path = ModuleTests;
