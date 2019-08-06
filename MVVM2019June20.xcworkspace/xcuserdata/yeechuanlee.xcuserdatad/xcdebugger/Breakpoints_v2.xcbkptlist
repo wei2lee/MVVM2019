@@ -1487,16 +1487,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CF7419D9-0302-4FC8-BDD3-ACBDFC1AF0B2"
+            uuid = "A37B98AA-EE83-4E88-ADBB-9B6646FEB09C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOMockPlugin.swift"
+            filePath = "ModuleTests/Module/Splash/SplashViewModelSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "endpointMapping(for:)"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "spec()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EA52952-1AB3-4389-B4D6-6EE33B97752D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ModuleTests/Module/Splash/SplashViewModelSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7EA52952-1AB3-4389-B4D6-6EE33B97752D - f0bc46e990e19fae"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; () in ModuleTests.SplashViewModelSpec.spec() -&gt; ()"
+                  moduleName = "ModuleTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Splash/SplashViewModelSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "7EA52952-1AB3-4389-B4D6-6EE33B97752D - 1d524b59085b64d4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swinject.Resolver) -&gt; MVVM2019June20.BO.Provider in closure #2 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; () in ModuleTests.SplashViewModelSpec.spec() -&gt; ()"
+                  moduleName = "ModuleTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeechuanlee/Desktop/dev/ios/test/MVVM2019June20-swift5.1/ModuleTests/Module/Splash/SplashViewModelSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60D42FB6-1277-4FFE-8083-6D13B0F8D983"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Starter/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1CF4A74-93F4-446B-8002-3E708689F4F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Starter/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -8,8 +8,8 @@
 
 import FLEX
 
-extension App {
-    static func setupFlex() {
+extension AppDelegate {
+    func setupFlex() {
         FLEXManager.shared().isNetworkDebuggingEnabled = true
         FLEXManager.shared()?.showExplorer()
     }

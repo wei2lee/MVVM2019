@@ -10,8 +10,8 @@ import Foundation
 import SwiftyUserDefaults
 import SwifterSwift
 
-extension App {
-    static func onApplicationFinishDidLaunchCompleted() {
+extension AppDelegate {
+    func onApplicationFinishDidLaunchCompleted() {
         let Defaults = DI.container.resolve(UserDefaults.self)!
         Defaults[.lastLaunchAppVersion] = SwifterSwift.appVersion ?? ""
         Defaults[.lastLaunchAppBuild] = SwifterSwift.appBuild ?? ""

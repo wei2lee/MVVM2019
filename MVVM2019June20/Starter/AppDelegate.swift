@@ -18,12 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if ProcessInfo.processInfo.environment["XCInjectBundleInto"] != nil {
+            //Stop executing code in Unit test environment
+            return false
+        }
         DI.register()
-        App.setupLogger()
-        App.setupSwizzle()
-        App.setupKeyboardManager()
-        App.setupFlex()
-        App.onApplicationFinishDidLaunchCompleted()
+        setupLogger()
+        setupSwizzle()
+        setupKeyboardManager()
+        setupFlex()
+        setupScene()
+        onApplicationFinishDidLaunchCompleted()
         return true
     }
 

@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension App {
-    static func setupSwizzle() {
+extension AppDelegate {
+    func setupSwizzle() {
         UIViewController.vcci_swizzle()
     }
 }

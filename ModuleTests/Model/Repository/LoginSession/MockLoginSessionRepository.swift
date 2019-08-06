@@ -9,9 +9,25 @@
 import Foundation
 @testable import MVVM2019June20
 
-class MockLoginSessionRepository : LoginSessionRepositoryType {
+class MockNewUserSessionLoginSessionRepository : LoginSessionRepositoryType {
     var previousLoginSession: LoginSession? = nil
     var currentLoginSession: LoginSession? = nil
+    var lastLoginSession: LoginSession? = nil
+    func add(_ value: LoginSession) { }
+    func delete(_ value: LoginSession) { }
+}
+
+class MockLogoutSessionLoginSessionRepository : LoginSessionRepositoryType {
+    var previousLoginSession: LoginSession? = nil
+    var currentLoginSession: LoginSession? = nil
+    var lastLoginSession: LoginSession? = nil
+    func add(_ value: LoginSession) { }
+    func delete(_ value: LoginSession) { }
+}
+
+class MockLogonSessionLoginSessionRepository : LoginSessionRepositoryType {
+    var previousLoginSession: LoginSession? = nil
+    var currentLoginSession: LoginSession? = LoginSession()
     var lastLoginSession: LoginSession? = nil
     func add(_ value: LoginSession) { }
     func delete(_ value: LoginSession) { }

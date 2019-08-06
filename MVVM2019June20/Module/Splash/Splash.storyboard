@@ -15,7 +15,19 @@
                     <view key="view" contentMode="scaleToFill" id="OUY-OK-1ul">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="splash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7q-Vb-yF6">
+                                <rect key="frame" x="182" y="442.5" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Z7q-Vb-yF6" firstAttribute="centerX" secondItem="K98-b5-5Bk" secondAttribute="centerX" id="CCs-6A-Rao"/>
+                            <constraint firstItem="Z7q-Vb-yF6" firstAttribute="centerY" secondItem="K98-b5-5Bk" secondAttribute="centerY" id="ENw-0l-fkP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K98-b5-5Bk"/>
                     </view>
                 </viewController>

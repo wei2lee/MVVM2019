@@ -8,8 +8,8 @@
 
 import IQKeyboardManagerSwift
 
-extension App {
-    static func setupKeyboardManager() {
+extension AppDelegate {
+    func setupKeyboardManager() {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
     }

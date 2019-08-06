@@ -31,8 +31,8 @@ extension LogTag {
 
 let Log = XCGLogger.default
 
-extension App {
-    static func setupLogger() {
+extension AppDelegate {
+    func setupLogger() {
         Log.setup(level: .debug,
                   showThreadName: true,
                   showLevel: true,

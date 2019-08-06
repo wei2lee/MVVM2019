@@ -104,6 +104,7 @@ extension LoginViewModel {
 
 
 class LoginViewModelSpec: QuickSpec {
+    var retains: [Any] = []
     override func spec() {
         let intent = LoginIntent(isModal: false,
                                  initialView: .login,
@@ -116,17 +117,18 @@ class LoginViewModelSpec: QuickSpec {
                 LoginViewModel.setupLoginViewModelDI()
                 object = LoginViewModel(intent: intent)
                 view = MockLoginView()
+                self.retains.append(view!)
                 object.view = view
                 object.startLoad = .just(())
             }
-            context("when inputting form") {
+            context("inputting form") {
                 it("username entered will converted to uppercase") {
                     object.transform()
                     object.username.accept("abc")
                     expect( object.username.value ).toEventually(equal( "ABC" ))
                 }
             }
-            context("when submitting form") {
+            context("submitting form") {
                 it("prompt error dialog for empty username") {
                     let startSubmit = PublishRelay<Void>()
                     object.startSubmit = startSubmit.asDriverOnErrorJustComplete()

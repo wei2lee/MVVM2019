@@ -8,8 +8,8 @@
 
 import SwiftDate
 
-extension App {
-    static func setupSwiftDate() {
+extension AppDelegate {
+    func setupSwiftDate() {
         SwiftDate.defaultRegion = EnumRegion.local.region
     }
 }

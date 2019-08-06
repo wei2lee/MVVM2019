@@ -250,6 +250,7 @@
 		22C8520922F3E23D00632FC7 /* SplashTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520822F3E23D00632FC7 /* SplashTypes.swift */; };
 		22C8520E22F3E77000632FC7 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520D22F3E77000632FC7 /* AppInfo.swift */; };
 		22C8521022F3E91600632FC7 /* BOConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8520F22F3E91600632FC7 /* BOConstant.swift */; };
+		22F1754E22F8485B00DDC8A9 /* App+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1754D22F8485B00DDC8A9 /* App+Scene.swift */; };
 		22F28AF422C6081A0009BE71 /* OMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F28AF322C6081A0009BE71 /* OMDb.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
@@ -515,6 +516,7 @@
 		22C8520822F3E23D00632FC7 /* SplashTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTypes.swift; sourceTree = "<group>"; };
 		22C8520D22F3E77000632FC7 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		22C8520F22F3E91600632FC7 /* BOConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOConstant.swift; sourceTree = "<group>"; };
+		22F1754D22F8485B00DDC8A9 /* App+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Scene.swift"; sourceTree = "<group>"; };
 		22F28AF322C6081A0009BE71 /* OMDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDb.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
 		7A820A35ED016807E34AEB94 /* Pods-MVVM2019June20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.debug.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1648,6 +1650,7 @@
 				229D7C9F22CCA54A00D04836 /* App+Flex.swift */,
 				223C15C422E1CF5400365121 /* App+SwiftDate.swift */,
 				22ABDCD822E59CDB0051B2F4 /* App+Finish.swift */,
+				22F1754D22F8485B00DDC8A9 /* App+Scene.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -2212,6 +2215,7 @@
 				223C15C022E1CAC100365121 /* DI+ViewModel.swift in Sources */,
 				2228793022BB82E200C6B842 /* LoginViewController.swift in Sources */,
 				229D7C3C22C9E41300D04836 /* AuthConstant.swift in Sources */,
+				22F1754E22F8485B00DDC8A9 /* App+Scene.swift in Sources */,
 				22287AD422BB8EDF00C6B842 /* BaseViewTypeExtensions.swift in Sources */,
 				22287A4822BB8BEE00C6B842 /* Observable+Ext.swift in Sources */,
 				22C8520722F3E22E00632FC7 /* SplashViewController.swift in Sources */,

@@ -20,5 +20,9 @@ struct LoginSession {
         username = response.username
         token = response.token
     }
+    
+    init() {
+        id = UUID().uuidString
+    }
 }
 
