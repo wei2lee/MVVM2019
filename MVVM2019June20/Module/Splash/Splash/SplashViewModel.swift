@@ -90,10 +90,14 @@ final class SplashViewModel: BaseViewModel {
     fileprivate func loginRoute(revalidateResult: Event<()>) {
         switch revalidateResult {
         case .next:
-            if self.Defaults[.isActivated] == false {
-                view?.routeToActivation()
+            if LoginSession.current != nil {
+                if self.Defaults[.isActivated] == false {
+                    view?.routeToActivation()
+                } else {
+                    view?.routeToDashboard()
+                }
             } else {
-                view?.routeToDashboard()
+                view?.routeToLogin()
             }
         case .error(_):
             view?.routeToLogin()

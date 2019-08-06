@@ -46,16 +46,16 @@ class MockNoInternetAuthService : AuthServiceType {
     }
 }
 
-class MockRevalidationFailAuthService : AuthServiceType {
+class MockFailAuthService : AuthServiceType {
     func login(username: String, password: String) -> Observable<LoginSession> {
-        return .error(NetworkError.noInternetConnection.error)
+        return .error(BO.Error.generic.error)
     }
     
     func revalidate(loginSession: LoginSession?, catchErrorJustNext: Bool) -> Observable<Void> {
-        return .error(NetworkError.noInternetConnection.error)
+        return .error(BO.Error.generic.error)
     }
     
     func logout(loginSession: LoginSession?, catchErrorJustNext: Bool) -> Observable<Void> {
-        return .error(NetworkError.noInternetConnection.error)
+        return .error(BO.Error.generic.error)
     }
 }
