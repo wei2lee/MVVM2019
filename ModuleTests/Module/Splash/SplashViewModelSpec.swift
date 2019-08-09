@@ -82,86 +82,88 @@ class SplashViewModelSpec: QuickSpec {
     override func spec() {
         var object: SplashViewModel!
         var view: MockSplashView!
-        beforeEach {
-            DI.container.removeAll()
-            SplashViewModel.setupSplashViewModelDI()
-            object = SplashViewModel()
-            view = MockSplashView()
-            self.retains.append(view!)
-            object.view = view
-            object.startLoad = .just(())
-        }
-        context("force updpate") {
-            it("prompt retry dialog if no internet connection") {
-                DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
-                    return MockNoInternetAuthService()
-                }).inObjectScope(.container)
-                
-                object.transform()
-                
-                expect( view.isPromptNoInternetConnectionRetryDialog ).toEventually(equal( false ))
+        describe("SplashViewModel") {
+            beforeEach {
+                DI.container.removeAll()
+                SplashViewModel.setupSplashViewModelDI()
+                object = SplashViewModel()
+                view = MockSplashView()
+                self.retains.append(view!)
+                object.view = view
+                object.startLoad = .just(())
             }
-            it("prompt retry dialog if other error") {
-                DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
-                    return MockFailAuthService()
-                }).inObjectScope(.container)
-                
-                object.transform()
-                
-                expect( view.isPromptRetryDialog ).toEventually(equal( false ))
-            }
-            it("prompt force update dialog if require force update") {
-                DI.container.register(BO.Provider.self, factory: { r -> BO.Provider in
-                    return BO.MockProvider.MockAppInfoForceUpdate
-                }).inObjectScope(.container)
-                object.transform()
-                expect( view.isPromptForceUpdateDialog ).toEventually(equal( true ))
-            }
-        }
-        context("routing") {
-            context("for new user") {
-                beforeEach {
-                    DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
-                        let ret = MockNewUserLoginSessionRepository()
-                        return ret
+            context("force updpate") {
+                it("prompt retry dialog if no internet connection") {
+                    DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
+                        return MockNoInternetAuthService()
                     }).inObjectScope(.container)
-                }
-                it("direct to login") {
+                    
                     object.transform()
-                    expect( view.isRouteToLogin ).toEventually(equal( true ))
+                    
+                    expect( view.isPromptNoInternetConnectionRetryDialog ).toEventually(equal( false ))
                 }
-            }
-            context("for logon user") {
-                beforeEach {
-                    DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
-                        let ret = MockLogonLoginSessionRepository()
-                        return ret
-                    }).inObjectScope(.container)
-                }
-                it("direct to login if revalidation fail") {
+                it("prompt retry dialog if other error") {
                     DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
                         return MockFailAuthService()
                     }).inObjectScope(.container)
                     
                     object.transform()
-                    expect( view.isRouteToLogin ).toEventually(equal( true ))
+                    
+                    expect( view.isPromptRetryDialog ).toEventually(equal( false ))
                 }
-                it("direct to activation if revalidation success and not activated") {
-                    DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
-                        return UserDefaults.NotActivated
+                it("prompt force update dialog if require force update") {
+                    DI.container.register(BO.Provider.self, factory: { r -> BO.Provider in
+                        return BO.MockProvider.MockAppInfoForceUpdate
                     }).inObjectScope(.container)
-                    
                     object.transform()
-                    
-                    expect( view.isRouteToActivation ).toEventually(equal( false ))
+                    expect( view.isPromptForceUpdateDialog ).toEventually(equal( true ))
                 }
-                it("direct to dashboard if revalidation success and activated") {
-                    DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
-                        return UserDefaults.Activated
-                    }).inObjectScope(.container)
-                    
-                    object.transform()
-                    expect( view.isRouteToDashboard ).toEventually(equal( true ))
+            }
+            context("routing") {
+                context("for new user") {
+                    beforeEach {
+                        DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
+                            let ret = MockNewUserLoginSessionRepository()
+                            return ret
+                        }).inObjectScope(.container)
+                    }
+                    it("direct to login") {
+                        object.transform()
+                        expect( view.isRouteToLogin ).toEventually(equal( true ))
+                    }
+                }
+                context("for logon user") {
+                    beforeEach {
+                        DI.container.register(LoginSessionRepositoryType.self, factory: { r -> LoginSessionRepositoryType in
+                            let ret = MockLogonLoginSessionRepository()
+                            return ret
+                        }).inObjectScope(.container)
+                    }
+                    it("direct to login if revalidation fail") {
+                        DI.container.register(AuthServiceType.self, factory: { r -> AuthServiceType in
+                            return MockFailAuthService()
+                        }).inObjectScope(.container)
+                        
+                        object.transform()
+                        expect( view.isRouteToLogin ).toEventually(equal( true ))
+                    }
+                    it("direct to activation if revalidation success and not activated") {
+                        DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
+                            return UserDefaults.NotActivated
+                        }).inObjectScope(.container)
+                        
+                        object.transform()
+                        
+                        expect( view.isRouteToActivation ).toEventually(equal( false ))
+                    }
+                    it("direct to dashboard if revalidation success and activated") {
+                        DI.container.register(UserDefaults.self, factory: { r -> UserDefaults in
+                            return UserDefaults.Activated
+                        }).inObjectScope(.container)
+                        
+                        object.transform()
+                        expect( view.isRouteToDashboard ).toEventually(equal( true ))
+                    }
                 }
             }
         }

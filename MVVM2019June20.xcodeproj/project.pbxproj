@@ -14,7 +14,6 @@
 		2228793022BB82E200C6B842 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228792F22BB82E200C6B842 /* LoginViewController.swift */; };
 		2228793222BB831200C6B842 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228793122BB831200C6B842 /* LoginViewModel.swift */; };
 		222879C022BB887500C6B842 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222879BF22BB887500C6B842 /* DefaultKeys.swift */; };
-		22287A4322BB8BEE00C6B842 /* RxOperatorBind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222879C322BB8BED00C6B842 /* RxOperatorBind.swift */; };
 		22287A4422BB8BEE00C6B842 /* RxOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222879C422BB8BED00C6B842 /* RxOperator.swift */; };
 		22287A4522BB8BEE00C6B842 /* UIView+RxIsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222879C722BB8BED00C6B842 /* UIView+RxIsShow.swift */; };
 		22287A4622BB8BEE00C6B842 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222879C822BB8BED00C6B842 /* ErrorTracker.swift */; };
@@ -278,7 +277,6 @@
 		2228792F22BB82E200C6B842 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2228793122BB831200C6B842 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		222879BF22BB887500C6B842 /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
-		222879C322BB8BED00C6B842 /* RxOperatorBind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOperatorBind.swift; sourceTree = "<group>"; };
 		222879C422BB8BED00C6B842 /* RxOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOperator.swift; sourceTree = "<group>"; };
 		222879C722BB8BED00C6B842 /* UIView+RxIsShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RxIsShow.swift"; sourceTree = "<group>"; };
 		222879C822BB8BED00C6B842 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
@@ -712,7 +710,6 @@
 		222879C222BB8BED00C6B842 /* RxHelper */ = {
 			isa = PBXGroup;
 			children = (
-				222879C322BB8BED00C6B842 /* RxOperatorBind.swift */,
 				222879C422BB8BED00C6B842 /* RxOperator.swift */,
 				222879C522BB8BED00C6B842 /* Extension */,
 				222879C822BB8BED00C6B842 /* ErrorTracker.swift */,
@@ -729,17 +726,17 @@
 		222879C522BB8BED00C6B842 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				222879C622BB8BED00C6B842 /* UIKIT */,
+				222879C622BB8BED00C6B842 /* UIKit */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		222879C622BB8BED00C6B842 /* UIKIT */ = {
+		222879C622BB8BED00C6B842 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				222879C722BB8BED00C6B842 /* UIView+RxIsShow.swift */,
 			);
-			path = UIKIT;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		222879CC22BB8BED00C6B842 /* DelegateProxy */ = {
@@ -2161,7 +2158,6 @@
 				22287A8722BB8BEE00C6B842 /* Data+PrettyPrint.swift in Sources */,
 				22287A8122BB8BEE00C6B842 /* OptionalString+IsNilOrEmpty.swift in Sources */,
 				229D7C9E22CCA50500D04836 /* App+KeyboardManager.swift in Sources */,
-				22287A4322BB8BEE00C6B842 /* RxOperatorBind.swift in Sources */,
 				227C9DA422F149A300C5A968 /* RequestActivationFormValidationError.swift in Sources */,
 				22ABDCE122E5A37C0051B2F4 /* LoginSessionRepositoryType.swift in Sources */,
 				22287AC322BB8EDF00C6B842 /* SaveBarItem.swift in Sources */,

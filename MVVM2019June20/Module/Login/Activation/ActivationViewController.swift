@@ -44,7 +44,7 @@ class ActivationViewController: BaseViewController<ActivationViewModel> {
         super.setupTransformInput()
         viewModel.view = self
         viewModel.startLoad = rx.viewWillAppearForFirstTime
-        viewModel.startExit = rx.leftBarButtonItem(.back()).debug("startExit")
+        viewModel.startExit = rx.leftBarButtonItem(.back())
         viewModel.startRequestActivationCode = formView.requestActivationButton.rx.tap.asDriver()
         viewModel.startSubmit = rx.startSubmit
     }

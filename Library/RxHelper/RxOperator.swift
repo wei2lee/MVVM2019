@@ -10,18 +10,6 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-//extension Observable {
-//    public func withEitherLatestFrom<SecondO: ObservableConvertibleType, ResultType>(_ second: SecondO, resultSelector: @escaping (E, SecondO.E) throws -> ResultType) -> Observable<ResultType> {
-//        
-//        let obA: Observable<ResultType> = Observable.zip(self, second.asObservable(), resultSelector: { resultSelector($0, $1) }).take(1)
-//        let obB: Observable<ResultType> = self.withLatestFrom(second.asObservable(), resultSelector: { resultSelector($0, $1) })
-//        let ret = Observable.merge(obA, obB)
-//        
-//        return ret
-//    }
-//}
-
-
 extension SharedSequenceConvertibleType {
     public func unwrapNext<O>() -> RxCocoa.SharedSequence<Self.SharingStrategy, O>  where Element == Event<O> {
         return self.flatMap { (o:Element) -> RxCocoa.SharedSequence<Self.SharingStrategy, O> in
@@ -233,13 +221,3 @@ public enum AIAResult<Value> {
         }
     }
 }
-
-extension Observable {
-    public func asResult() -> Observable<AIAResult<Element>> {
-        return self
-            .map { AIAResult.success($0) }
-            .catchError({ error in return Observable<AIAResult<Element>>.just(AIAResult<Element>.failure(error)) })
-    }
-}
-
-
