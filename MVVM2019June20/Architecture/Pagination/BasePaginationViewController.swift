@@ -13,12 +13,12 @@ import RxCocoa
 import RxDataSources
 import SwifterSwift
 
-class BasePaginationViewController<VM, Res, Item, SM, FM>: BaseViewController<VM>, BasePaginationViewType where VM: BasePaginationViewModel<Res, Item, SM, FM>, SM: SectionModelType, SM.Item == Item {
+class BasePaginationViewController<VM>: BaseViewController<VM>, BasePaginationViewType where VM: (BaseViewModel&BasePaginationViewModelType) {
     //MARK: Outlets
     @IBOutlet weak var listView: UITableView!
     
     //State
-    var dataSource: RxTableViewSectionedReloadDataSource<SM>!
+    var dataSource: RxTableViewSectionedReloadDataSource<VM.SM>!
     
     //MARK: View Cycle
     override func loadView() {
@@ -36,7 +36,7 @@ class BasePaginationViewController<VM, Res, Item, SM, FM>: BaseViewController<VM
     
     func setupListView() {
         //tableView.register(nibWithCellClass: ViewFormListTableViewCell.self)
-        dataSource = RxTableViewSectionedReloadDataSource<SM>(configureCell: self.configureCell)
+        dataSource = RxTableViewSectionedReloadDataSource<VM.SM>(configureCell: self.configureCell)
     }
     
     func removePullToReload() {
@@ -62,14 +62,14 @@ class BasePaginationViewController<VM, Res, Item, SM, FM>: BaseViewController<VM
         subscribeListView(sections: viewModel.sections)
     }
     
-    func subscribeListView(sections: Driver<[SM]>) {
+    func subscribeListView(sections: Driver<[VM.SM]>) {
         sections
             .asObservable()
             .bind(to: self.listView.rx.items(dataSource: self.dataSource))
             .disposed(by: disposeBag)
     }
 
-    func configureCell(ds: TableViewSectionedDataSource<SM>, tv: UITableView, ip: IndexPath, item: Item) -> UITableViewCell {
+    func configureCell(ds: TableViewSectionedDataSource<VM.SM>, tv: UITableView, ip: IndexPath, item: VM.SM.Item) -> UITableViewCell {
         
         return UITableViewCell()
     }

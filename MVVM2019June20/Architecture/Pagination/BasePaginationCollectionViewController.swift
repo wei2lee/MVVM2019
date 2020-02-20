@@ -13,18 +13,19 @@ import RxCocoa
 import RxDataSources
 import SwifterSwift
 
-class BasePaginationCollectionViewController<VM, Res, IM, SM, FM>: BaseViewController<VM>, BasePaginationViewType where VM: BasePaginationViewModel<Res, IM, SM, FM>, SM: SectionModelType, SM.Item == IM {
+class BasePaginationCollectionViewController<VM>: BaseViewController<VM>, BasePaginationViewType where VM: (BaseViewModel&BasePaginationViewModelType) {
     //MARK: Outlets
     @IBOutlet weak var listView: UICollectionView!
     
     //State
-    var dataSource: RxCollectionViewSectionedReloadDataSource<SM>!
+    var dataSource: RxCollectionViewSectionedReloadDataSource<VM.SM>!
     
     //MARK: View Cycle
     override func loadView() {
         super.loadView()
-        viewModel ??= VM()
-        viewModel.disposed(by: disposeBag)
+//initializing viewModel in subclass
+//        viewModel ??= VM()
+//        viewModel.disposed(by: disposeBag)
     }
     override func dispose() {
         super.dispose()
@@ -45,7 +46,7 @@ class BasePaginationCollectionViewController<VM, Res, IM, SM, FM>: BaseViewContr
     }
     
     func setupListView() {
-        dataSource = RxCollectionViewSectionedReloadDataSource<SM>(configureCell: self.configureCell)
+        dataSource = RxCollectionViewSectionedReloadDataSource<VM.SM>(configureCell: self.configureCell)
     }
     
     //MARK: setupTransformInput
@@ -64,14 +65,14 @@ class BasePaginationCollectionViewController<VM, Res, IM, SM, FM>: BaseViewContr
         subscribeListView(sections: viewModel.sections)
     }
     
-    func subscribeListView(sections: Driver<[SM]>) {
+    func subscribeListView(sections: Driver<[VM.SM]>) {
         sections
             .asObservable()
             .bind(to: self.listView.rx.items(dataSource: self.dataSource))
             .disposed(by: disposeBag)
     }
     
-    func configureCell(ds: CollectionViewSectionedDataSource<SM>, tv: UICollectionView, ip: IndexPath, item: IM) -> UICollectionViewCell {
+    func configureCell(ds: CollectionViewSectionedDataSource<VM.SM>, tv: UICollectionView, ip: IndexPath, item: VM.SM.Item) -> UICollectionViewCell {
         
         return UICollectionViewCell()
     }

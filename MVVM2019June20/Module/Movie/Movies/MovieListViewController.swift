@@ -13,12 +13,18 @@ import RxDataSources
 import SwifterSwift
 import RxBiBinding
 
-class MovieListViewController: BasePaginationCollectionViewController<MovieListViewModel, OMDb.ResponseSearchMovie, MovieItem, MovieSection, ()>, MovieListViewType, PinterestFlowLayoutDelegate {
+class MovieListViewController: BasePaginationCollectionViewController<MovieListViewModel>, MovieListViewType, PinterestFlowLayoutDelegate {
     //IBOutlet
     @IBOutlet var searchResultView: SearchResultView!
     //state
     
     //view life cycle
+    //MARK: View Cycle
+    override func loadView() {
+        super.loadView()
+        viewModel ??= MovieListViewModel()
+        viewModel.disposed(by: disposeBag)
+    }
     //setupView
     override func setupListView() {
         super.setupListView()
@@ -35,7 +41,7 @@ class MovieListViewController: BasePaginationCollectionViewController<MovieListV
     override func setupTransformInput() {
         super.setupTransformInput()
         viewModel.startLoad = rx.viewWillAppearForFirstTime
-        viewModel.searchTextDidEndEditing = searchResultView.rx.searchTextDidEndEditing.asVoid()
+        viewModel.searchTextDidEndEditing = searchResultView.rx.searchTextDidEndEditing.asVoid().debug("load api")
         disposeBag.insert(
             searchResultView.rx.searchText <-> viewModel.searchText
         )

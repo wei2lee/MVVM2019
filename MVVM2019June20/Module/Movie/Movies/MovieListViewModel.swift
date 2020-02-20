@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-final class MovieListViewModel: BasePaginationViewModel<OMDb.ResponseSearchMovie, MovieItem, MovieSection, ()> {
+final class MovieListViewModel: BasePaginationViewModel<OMDb.ResponseSearchMovie, MovieSection, ()> {
     //Input
     let rateDidTap = PublishRelay<MovieItem>()
     let shareDidTap = PublishRelay<MovieItem>()

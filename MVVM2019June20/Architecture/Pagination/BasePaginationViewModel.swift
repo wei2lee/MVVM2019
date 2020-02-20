@@ -26,7 +26,7 @@ protocol BasePaginationViewModelType {
     var view:(BasePaginationViewType)? { set get }
 }
 
-class BasePaginationViewModel<Res, IM, SM, FM> : BaseViewModel, BasePaginationViewModelType where SM: SectionModelType, SM.Item == IM {
+class BasePaginationViewModel<Res, SM, FM> : BaseViewModel, BasePaginationViewModelType where SM: SectionModelType {
     //MARK: Input
     var filterDidBeginEditing: Driver<Void> = .never()
     var filterDidEndEditing: Driver<Void> = .never()
@@ -41,7 +41,7 @@ class BasePaginationViewModel<Res, IM, SM, FM> : BaseViewModel, BasePaginationVi
 
     weak var view:(BasePaginationViewType)? = nil
     //MARK: State - Pagingation
-    var listItemsRelay: BehaviorRelay<[IM]> = BehaviorRelay<[IM]>(value: [])
+    var listItemsRelay: BehaviorRelay<[SM.Item]> = BehaviorRelay<[SM.Item]>(value: [])
     var sectionsRelay: BehaviorRelay<[SM]> = BehaviorRelay<[SM]>(value: [])
     var pageIndex: Int = 0
     var pageSize:Int = 10
@@ -67,21 +67,21 @@ class BasePaginationViewModel<Res, IM, SM, FM> : BaseViewModel, BasePaginationVi
                 return self.getStartLoadData()
             })
             .do(onNext: self.resetAsFirstPage)
-        
+
         let modelOnReload = startReload
             .flatMap({
                 return self.getReloadData()
             })
             .do(onNext: self.resetAsFirstPage)
-        
+
         let modelOnLoadMore = startLoadMore.flatMap(getLoadMoreData)
             .do(onNext: self.appendPage)
-        
+
         self.didReload = reloadTracker.asDriver()
         self.didLoadMore = self.canLoadMore.asDriver()
         let createSections = self.createSections()
         self.sections = sectionsRelay.asDriver()
-        
+
         showError = transformErrorHandling(input: ErrorHandlingInput(view: view, errorTracker: errorTracker))
 
         //MARK: subscribe
@@ -136,12 +136,12 @@ class BasePaginationViewModel<Res, IM, SM, FM> : BaseViewModel, BasePaginationVi
         return self.listItemsRelay.asDriver().map(self.createSections)
     }
     //WARNING: Abstract function, subclass should implement it
-    func mapResponseToItems(output: Res) -> [IM] {
+    func mapResponseToItems(output: Res) -> [SM.Item] {
         return []
     }
     
     //WARNING: Abstract function, subclass should implement it
-    func createSections(list: [IM]) -> [SM] {
+    func createSections(list: [SM.Item]) -> [SM] {
         return []
     }
     
