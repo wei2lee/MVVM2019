@@ -9670,6 +9670,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = F329FD17C0746A31533172BE1BB975DF /* Products */;
@@ -13477,6 +13478,23 @@
 			};
 			name = Debug;
 		};
+		0CC4C4F9410AB5E4BB5FF24A863A0562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC86E8A3BED49E1E8B7DBF2B61F5131 /* ESPullToRefresh-iOS11.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS11.0";
+				IBSC_MODULE = ESPullToRefresh;
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS11.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS11.0-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		0D1BDC597F8FCDF964AD6BA9F174210D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5639DC824B8840C473FDA338D9CD9546 /* XCGLogger-iOS11.0.xcconfig */;
@@ -14187,13 +14205,14 @@
 			};
 			name = Debug;
 		};
-		223A7E07234845D460D5E442A1DA3D4A /* Release */ = {
+		21D22C61DC854B11BE6A3E135EFD7180 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CC86E8A3BED49E1E8B7DBF2B61F5131 /* ESPullToRefresh-iOS11.0.xcconfig */;
+			baseConfigurationReference = 346BE0ED8DBC25C484AF3CA6E9AF6D09 /* ESPullToRefresh-iOS13.0.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS11.0";
-				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS11.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS11.0-Info.plist";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS13.0";
+				IBSC_MODULE = ESPullToRefresh;
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS13.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS13.0-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = ESPullToRefresh;
 				SDKROOT = iphoneos;
@@ -14201,7 +14220,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 		255DE4F55B55C4556856E22247A5E28A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -14369,22 +14388,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		298B9D0D5D7A547E65A67E32788A5B65 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 346BE0ED8DBC25C484AF3CA6E9AF6D09 /* ESPullToRefresh-iOS13.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS13.0";
-				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS13.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS13.0-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = ESPullToRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		2BE48F36763F96CDB902C1FF2414D862 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -14565,22 +14568,6 @@
 			};
 			name = Debug;
 		};
-		3C0547ECC006671BD689863D4B9783E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 346BE0ED8DBC25C484AF3CA6E9AF6D09 /* ESPullToRefresh-iOS13.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS13.0";
-				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS13.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS13.0-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = ESPullToRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		3D4229A82E2C15D012701D6691CBCD11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE13A65FB4E13B813A8E4DC4F137847B /* RxGesture-iOS11.0.xcconfig */;
@@ -14755,6 +14742,23 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43D2F839B9EC6ED7AF29C735F84FF68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346BE0ED8DBC25C484AF3CA6E9AF6D09 /* ESPullToRefresh-iOS13.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS13.0";
+				IBSC_MODULE = ESPullToRefresh;
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS13.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS13.0-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -16825,22 +16829,6 @@
 			};
 			name = Release;
 		};
-		B6D3B5A496ABF0BB9DD44376EA73A4FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CC86E8A3BED49E1E8B7DBF2B61F5131 /* ESPullToRefresh-iOS11.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS11.0";
-				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS11.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS11.0-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = ESPullToRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		B79B083AE2A4F9E43F0893B606C7ED3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE7A9F6F3517C5A840055BE6EF4DE3B6 /* SwiftyUserDefaults-iOS13.0.xcconfig */;
@@ -17051,6 +17039,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C78E4C9F27EF50D4920052910ECA2F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC86E8A3BED49E1E8B7DBF2B61F5131 /* ESPullToRefresh-iOS11.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh-iOS11.0";
+				IBSC_MODULE = ESPullToRefresh;
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh-iOS11.0/ResourceBundle-ESPullToRefresh-ESPullToRefresh-iOS11.0-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -18275,8 +18280,8 @@
 		4AC46291E68A328059FA4AC0C08BEBDB /* Build configuration list for PBXNativeTarget "ESPullToRefresh-iOS11.0-ESPullToRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6D3B5A496ABF0BB9DD44376EA73A4FA /* Debug */,
-				223A7E07234845D460D5E442A1DA3D4A /* Release */,
+				C78E4C9F27EF50D4920052910ECA2F46 /* Debug */,
+				0CC4C4F9410AB5E4BB5FF24A863A0562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -18365,8 +18370,8 @@
 		638DC7A88483B365F8801B0270EC6E0E /* Build configuration list for PBXNativeTarget "ESPullToRefresh-iOS13.0-ESPullToRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				298B9D0D5D7A547E65A67E32788A5B65 /* Debug */,
-				3C0547ECC006671BD689863D4B9783E6 /* Release */,
+				21D22C61DC854B11BE6A3E135EFD7180 /* Debug */,
+				43D2F839B9EC6ED7AF29C735F84FF68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

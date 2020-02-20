@@ -120,7 +120,7 @@ DEPENDENCIES:
   - XCGLogger/UserInfoHelpers
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - CodableExtensions
     - DeviceKit
@@ -206,4 +206,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0a0d5db74f1d47b3fc0a0cc789e39b256284b0db
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
