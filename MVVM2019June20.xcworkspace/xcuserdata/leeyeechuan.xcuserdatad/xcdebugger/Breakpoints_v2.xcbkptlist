@@ -20,5 +20,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "050538BF-25FB-4ED8-90C7-5A890CA3DA91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOHTTPRequestPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "050538BF-25FB-4ED8-90C7-5A890CA3DA91 - 837c8af05a181da8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM2019June20.BO.HTTPRequestPlugin.init() -&gt; MVVM2019June20.BO.HTTPRequestPlugin"
+                  moduleName = "MVVM2019June20"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leeyeechuan/Desktop/dev/ios/test/MVVMBase2019/MVVM2019June20/Model/Network/BO/Provider/BOHTTPRequestPlugin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "050538BF-25FB-4ED8-90C7-5A890CA3DA91 - 312411112cda6878"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.String in MVVM2019June20.BO.HTTPRequestPlugin.init() -&gt; MVVM2019June20.BO.HTTPRequestPlugin"
+                  moduleName = "MVVM2019June20"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leeyeechuan/Desktop/dev/ios/test/MVVMBase2019/MVVM2019June20/Model/Network/BO/Provider/BOHTTPRequestPlugin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3500C824-85BC-4A2C-9F3B-E022EF14F303"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOHTTPRequestPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "prepare(_:target:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09EF331B-3CE9-437C-9A30-C229E3A4AB31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOMockPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "endpointMapping(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E564D8F-B9FA-4034-9627-2ECB7C5A409F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/Moya/MoyaLoggerPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "willSend(_:target:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

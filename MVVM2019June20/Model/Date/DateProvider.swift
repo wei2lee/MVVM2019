@@ -17,4 +17,8 @@ class DateProvider : DateProviderType {
     var now: DateInRegion {
         return DateInRegion(date, region: EnumRegion.local.region)
     }
+    
+    var yesterday: DateInRegion {
+        return now
+    }
 }

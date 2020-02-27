@@ -26,6 +26,9 @@ extension BO {
         
         var headers: [String : String]? { return nil }
         
+        var createSignatureForRequest: Bool { return true }
+        
+        var validateSignatureForResponse: Bool { return true }
     }
     
     class BaseTarget<I, O>: UntypedBaseTarget {
