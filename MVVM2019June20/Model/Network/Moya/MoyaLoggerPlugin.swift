@@ -97,16 +97,25 @@ public final class MoyaLoggerPlugin: PluginType {
         }
         let statusCode:Int? = dataResponse.response?.statusCode
         let statusCodeString = (statusCode.flatMap { "\($0)" }) ?? "XXX"
+        
+        let headerDebugString : String
+        if dataResponse.response?.allHeaderFields == nil || (dataResponse.response?.allHeaderFields)!.isEmpty {
+            headerDebugString = "\n[Missing http response header]"
+        } else {
+            let headerJSONString = dataResponse.response?.allHeaderFields.jsonString(prettify: true) ?? ""
+            headerDebugString = "\nHttp request header : \(headerJSONString)"
+        }
+        
         if let data = dataResponse.data {
             
             if withBody {
                 do {
                     let body = try data.prettyPrintedJSONString()
                     
-                    Log.info("[id:\(idstr)] \(statusCodeString) \(path): \nHttp response body[\(data.count) bytes] :\n\(body)\n", userInfo: Tag.network.dictionary)
+                    Log.info("[id:\(idstr)] \(statusCodeString) \(path): \(headerDebugString)\nHttp response body[\(data.count) bytes] :\n\(body)\n", userInfo: Tag.network.dictionary)
                 } catch {
                     let body = data.string(encoding: .utf8) ?? ""
-                    Log.info("[id:\(idstr)] \(statusCodeString) \(path): \nHttp response body[\(data.count) bytes] :\n\(body)\n", userInfo: Tag.network.dictionary)
+                    Log.info("[id:\(idstr)] \(statusCodeString) \(path): \(headerDebugString)\nHttp response body[\(data.count) bytes] :\n\(body)\n", userInfo: Tag.network.dictionary)
                 }
                 
             } else {
@@ -114,7 +123,7 @@ public final class MoyaLoggerPlugin: PluginType {
             }
             
         } else {
-            Log.info("[id:\(idstr)] \(statusCodeString) \(path): \n[Missing http response body]", userInfo: Tag.network.dictionary)
+            Log.info("[id:\(idstr)] \(statusCodeString) \(path): \(headerDebugString)\n[Missing http response body]", userInfo: Tag.network.dictionary)
         }
     }
 }
