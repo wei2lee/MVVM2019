@@ -45,6 +45,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
         showClose = intent.enableDismiss
         super.init()
     }
+    func dosom2ething() { }
     //MARK: transform
     override func transform() {
         super.transform()

@@ -31,6 +31,7 @@ final class ActivationViewModel: BaseViewModel {
     fileprivate var requestActivationCodeOnStartCompleted: Bool = false
     fileprivate var lastRequestActivationDate: Date?
     //MARK: transform
+    func dosomething() { }
     override func transform() {
         super.transform()
         

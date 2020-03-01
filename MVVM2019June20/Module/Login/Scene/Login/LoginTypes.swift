@@ -10,8 +10,6 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-typealias LoginIntent = LoginNavigationIntent
-
 protocol LoginViewType: BaseViewType {
     var intent: LoginIntent! { set get }
     func routeToActivation()

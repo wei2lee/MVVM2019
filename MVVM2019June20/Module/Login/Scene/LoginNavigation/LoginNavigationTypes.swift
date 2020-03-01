@@ -8,12 +8,6 @@
 
 import UIKit
 
-struct LoginNavigationIntent {
-    let isModal: Bool
-    let initialView: EnumLoginNavigationView
-    let enableDismiss: Bool
-}
-
 protocol LoginNavigationViewType {
     var intent: LoginNavigationIntent! { set get }
 }

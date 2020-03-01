@@ -252,6 +252,19 @@
 		22EF1D0622F9500500932FE3 /* MockBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF1D0522F9500500932FE3 /* MockBaseView.swift */; };
 		22F1754E22F8485B00DDC8A9 /* App+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1754D22F8485B00DDC8A9 /* App+Scene.swift */; };
 		22F28AF422C6081A0009BE71 /* OMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F28AF322C6081A0009BE71 /* OMDb.swift */; };
+		475289FF240B93560034F462 /* RegisterNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475289FE240B93560034F462 /* RegisterNavViewController.swift */; };
+		47528A01240B93660034F462 /* RegisterBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A00240B93660034F462 /* RegisterBasicInfoViewController.swift */; };
+		47528A05240B939F0034F462 /* RegisterMigrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A04240B939F0034F462 /* RegisterMigrationViewController.swift */; };
+		47528A07240B93EA0034F462 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47528A06240B93EA0034F462 /* Register.storyboard */; };
+		47528A0F240B946F0034F462 /* RegisterNavViewTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A0E240B946F0034F462 /* RegisterNavViewTypes.swift */; };
+		47528A11240B947C0034F462 /* RegisterBasicInfoViewTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A10240B947C0034F462 /* RegisterBasicInfoViewTypes.swift */; };
+		47528A13240B94860034F462 /* RegisterMigrationViewTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A12240B94860034F462 /* RegisterMigrationViewTypes.swift */; };
+		47528A15240B952B0034F462 /* RegisterNavigationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A14240B952B0034F462 /* RegisterNavigationIntent.swift */; };
+		47528A17240B95360034F462 /* RegisterBasicInfoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A16240B95360034F462 /* RegisterBasicInfoIntent.swift */; };
+		47528A19240B955F0034F462 /* RegisterMigrationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A18240B955F0034F462 /* RegisterMigrationIntent.swift */; };
+		47528A22240B98290034F462 /* LoginNavigationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A20240B98290034F462 /* LoginNavigationIntent.swift */; };
+		47528A23240B98290034F462 /* LoginIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A21240B98290034F462 /* LoginIntent.swift */; };
+		47528A2A240B990B0034F462 /* MovieIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A29240B990B0034F462 /* MovieIntent.swift */; };
 		47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */; };
 		47543C9B2408B3D0008E6950 /* BOResponsePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
@@ -519,6 +532,19 @@
 		22EF1D0522F9500500932FE3 /* MockBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseView.swift; sourceTree = "<group>"; };
 		22F1754D22F8485B00DDC8A9 /* App+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Scene.swift"; sourceTree = "<group>"; };
 		22F28AF322C6081A0009BE71 /* OMDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDb.swift; sourceTree = "<group>"; };
+		475289FE240B93560034F462 /* RegisterNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNavViewController.swift; sourceTree = "<group>"; };
+		47528A00240B93660034F462 /* RegisterBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoViewController.swift; sourceTree = "<group>"; };
+		47528A04240B939F0034F462 /* RegisterMigrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMigrationViewController.swift; sourceTree = "<group>"; };
+		47528A06240B93EA0034F462 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		47528A0E240B946F0034F462 /* RegisterNavViewTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNavViewTypes.swift; sourceTree = "<group>"; };
+		47528A10240B947C0034F462 /* RegisterBasicInfoViewTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoViewTypes.swift; sourceTree = "<group>"; };
+		47528A12240B94860034F462 /* RegisterMigrationViewTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMigrationViewTypes.swift; sourceTree = "<group>"; };
+		47528A14240B952B0034F462 /* RegisterNavigationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNavigationIntent.swift; sourceTree = "<group>"; };
+		47528A16240B95360034F462 /* RegisterBasicInfoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoIntent.swift; sourceTree = "<group>"; };
+		47528A18240B955F0034F462 /* RegisterMigrationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMigrationIntent.swift; sourceTree = "<group>"; };
+		47528A20240B98290034F462 /* LoginNavigationIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationIntent.swift; sourceTree = "<group>"; };
+		47528A21240B98290034F462 /* LoginIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginIntent.swift; sourceTree = "<group>"; };
+		47528A29240B990B0034F462 /* MovieIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieIntent.swift; sourceTree = "<group>"; };
 		47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BORequestPlugin.swift; sourceTree = "<group>"; };
 		47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOResponsePlugin.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
@@ -595,6 +621,7 @@
 		2228792222BB756100C6B842 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				47528A08240B93F60034F462 /* Register */,
 				22C8520022F3E1F800632FC7 /* Splash */,
 				229D7C6E22CAF69A00D04836 /* Base */,
 				229D7C4B22CA082B00D04836 /* Movie */,
@@ -607,12 +634,9 @@
 		2228792322BB7E3200C6B842 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				47528A1A240B97CC0034F462 /* Scene */,
+				47528A1F240B98070034F462 /* Model */,
 				227C9DAF22F19B7800C5A968 /* Constant */,
-				227C9DAE22F19B6B00C5A968 /* Model */,
-				227C9DA922F1904C00C5A968 /* LoginNavigation */,
-				2228792D22BB7EDE00C6B842 /* Login.storyboard */,
-				2228792C22BB7EBA00C6B842 /* Activation */,
-				2228792B22BB7EAC00C6B842 /* Login */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -620,9 +644,7 @@
 		2228792422BB7E3700C6B842 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				227C9DB222F19E6B00C5A968 /* DashboardNavigation */,
-				223C15B622E1C9ED00365121 /* Dashboard */,
-				223C15B422E1C9E300365121 /* Dashboard.storyboard */,
+				47528A25240B98C50034F462 /* Scene */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -1373,13 +1395,6 @@
 			path = LoginNavigation;
 			sourceTree = "<group>";
 		};
-		227C9DAE22F19B6B00C5A968 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		227C9DAF22F19B7800C5A968 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
@@ -1524,9 +1539,8 @@
 		229D7C4B22CA082B00D04836 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				229D7C4F22CA09A000D04836 /* Movie */,
-				229D7C4E22CA099B00D04836 /* Movies */,
-				229D7C4C22CA099300D04836 /* Movie.storyboard */,
+				47528A28240B99020034F462 /* Model */,
+				47528A26240B98CF0034F462 /* Scene */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -1768,8 +1782,7 @@
 		22C8520022F3E1F800632FC7 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				22C8520322F3E21200632FC7 /* Splash */,
-				22C8520122F3E20C00632FC7 /* Splash.storyboard */,
+				47528A27240B98DA0034F462 /* Scene */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -1822,6 +1835,120 @@
 				229D7C8822CB49E600D04836 /* OMDBError.swift */,
 			);
 			path = OMDb;
+			sourceTree = "<group>";
+		};
+		475289FD240B93440034F462 /* RegisterNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				475289FE240B93560034F462 /* RegisterNavViewController.swift */,
+				47528A0E240B946F0034F462 /* RegisterNavViewTypes.swift */,
+			);
+			path = RegisterNavigation;
+			sourceTree = "<group>";
+		};
+		47528A08240B93F60034F462 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				47528A24240B984C0034F462 /* Scene */,
+				47528A0A240B94210034F462 /* Model */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		47528A0A240B94210034F462 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47528A14240B952B0034F462 /* RegisterNavigationIntent.swift */,
+				47528A16240B95360034F462 /* RegisterBasicInfoIntent.swift */,
+				47528A18240B955F0034F462 /* RegisterMigrationIntent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47528A0C240B943E0034F462 /* RegisterBasicInfo */ = {
+			isa = PBXGroup;
+			children = (
+				47528A00240B93660034F462 /* RegisterBasicInfoViewController.swift */,
+				47528A10240B947C0034F462 /* RegisterBasicInfoViewTypes.swift */,
+			);
+			path = RegisterBasicInfo;
+			sourceTree = "<group>";
+		};
+		47528A0D240B94460034F462 /* RegisterMigration */ = {
+			isa = PBXGroup;
+			children = (
+				47528A04240B939F0034F462 /* RegisterMigrationViewController.swift */,
+				47528A12240B94860034F462 /* RegisterMigrationViewTypes.swift */,
+			);
+			path = RegisterMigration;
+			sourceTree = "<group>";
+		};
+		47528A1A240B97CC0034F462 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				227C9DA922F1904C00C5A968 /* LoginNavigation */,
+				2228792D22BB7EDE00C6B842 /* Login.storyboard */,
+				2228792C22BB7EBA00C6B842 /* Activation */,
+				2228792B22BB7EAC00C6B842 /* Login */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		47528A1F240B98070034F462 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47528A21240B98290034F462 /* LoginIntent.swift */,
+				47528A20240B98290034F462 /* LoginNavigationIntent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47528A24240B984C0034F462 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				47528A06240B93EA0034F462 /* Register.storyboard */,
+				47528A0D240B94460034F462 /* RegisterMigration */,
+				47528A0C240B943E0034F462 /* RegisterBasicInfo */,
+				475289FD240B93440034F462 /* RegisterNavigation */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		47528A25240B98C50034F462 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				227C9DB222F19E6B00C5A968 /* DashboardNavigation */,
+				223C15B622E1C9ED00365121 /* Dashboard */,
+				223C15B422E1C9E300365121 /* Dashboard.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		47528A26240B98CF0034F462 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				229D7C4F22CA09A000D04836 /* Movie */,
+				229D7C4E22CA099B00D04836 /* Movies */,
+				229D7C4C22CA099300D04836 /* Movie.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		47528A27240B98DA0034F462 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				22C8520322F3E21200632FC7 /* Splash */,
+				22C8520122F3E20C00632FC7 /* Splash.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		47528A28240B99020034F462 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47528A29240B990B0034F462 /* MovieIntent.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EDF628B20AF612E0EE7AF585 /* Pods */ = {
@@ -1930,6 +2057,7 @@
 				223C15B522E1C9E300365121 /* Dashboard.storyboard in Resources */,
 				22ABDD0D22E6DB8B0051B2F4 /* mock in Resources */,
 				229D7C8022CB2D8A00D04836 /* SearchResultView.xib in Resources */,
+				47528A07240B93EA0034F462 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2043,6 +2171,7 @@
 				22287A9522BB8BEE00C6B842 /* URLHelper.swift in Sources */,
 				22287A7A22BB8BEE00C6B842 /* NSErrorUserInfoKey.swift in Sources */,
 				229D7C3722C9E3BC00D04836 /* NotificationPayLoad.swift in Sources */,
+				47528A0F240B946F0034F462 /* RegisterNavViewTypes.swift in Sources */,
 				228D9D3022E6F8BF00E40407 /* VerifyActivation.swift in Sources */,
 				22287A8422BB8BEE00C6B842 /* NSObject+ExtraProperty.swift in Sources */,
 				229D7C5E22CA0C8C00D04836 /* BasePaginationViewType.swift in Sources */,
@@ -2064,6 +2193,7 @@
 				22ABDD0A22E6D3D90051B2F4 /* BOMockPlugin.swift in Sources */,
 				229D7C6B22CA13A100D04836 /* OMDbResponseList.swift in Sources */,
 				22ABDCCB22E557CB0051B2F4 /* DateProvider.swift in Sources */,
+				47528A22240B98290034F462 /* LoginNavigationIntent.swift in Sources */,
 				223C15BE22E1CAB100365121 /* DI+View.swift in Sources */,
 				227C9DB422F19E7E00C5A968 /* DashboardNavigationTypes.swift in Sources */,
 				22287A4422BB8BEE00C6B842 /* RxOperator.swift in Sources */,
@@ -2088,10 +2218,13 @@
 				22ABDCFB22E6BD360051B2F4 /* Login.swift in Sources */,
 				22287A5222BB8BEE00C6B842 /* CustomBarItem.swift in Sources */,
 				22F28AF422C6081A0009BE71 /* OMDb.swift in Sources */,
+				47528A2A240B990B0034F462 /* MovieIntent.swift in Sources */,
 				22287A8E22BB8BEE00C6B842 /* CaseInsenstiveAlphaNumericsStringEnum.swift in Sources */,
+				47528A05240B939F0034F462 /* RegisterMigrationViewController.swift in Sources */,
 				229D7C0922C9B11000D04836 /* DevelopmentBuildConfig.swift in Sources */,
 				22ABDCEC22E6B30E0051B2F4 /* BOError.swift in Sources */,
 				22287A8D22BB8BEE00C6B842 /* WeakAssociateObjectUtility.swift in Sources */,
+				47528A19240B955F0034F462 /* RegisterMigrationIntent.swift in Sources */,
 				22287A7222BB8BEE00C6B842 /* UIAlertControllerExtensions.swift in Sources */,
 				47543C9B2408B3D0008E6950 /* BOResponsePlugin.swift in Sources */,
 				223C15C522E1CF5400365121 /* App+SwiftDate.swift in Sources */,
@@ -2122,6 +2255,7 @@
 				22287A6422BB8BEE00C6B842 /* UIView+DisposeBagHolderType.swift in Sources */,
 				22287A7822BB8BEE00C6B842 /* OptionalCollection+IsNilOrEmpty.swift in Sources */,
 				229D7C6622CA0CD400D04836 /* LoadMoreItemsViewControllerTypeExtensions.swift in Sources */,
+				47528A01240B93660034F462 /* RegisterBasicInfoViewController.swift in Sources */,
 				22287A5422BB8BEE00C6B842 /* BarItemsViewType.swift in Sources */,
 				22287A5F22BB8BEE00C6B842 /* DismissWithResultProtocol.swift in Sources */,
 				22287ACA22BB8EDF00C6B842 /* PresentErrorProtocolImpl.swift in Sources */,
@@ -2131,6 +2265,7 @@
 				229D7C0B22C9B11C00D04836 /* StagingBuildConfig.swift in Sources */,
 				229D7C0222C9A98B00D04836 /* OMDbBaseTarget.swift in Sources */,
 				229D7C8F22CC4C8900D04836 /* LoginFormValidationError.swift in Sources */,
+				47528A13240B94860034F462 /* RegisterMigrationViewTypes.swift in Sources */,
 				22287ADC22BB8EDF00C6B842 /* BaseViewType.swift in Sources */,
 				22287A5E22BB8BEE00C6B842 /* UIViewController+DismissWithResultProtocol.swift in Sources */,
 				22287A8222BB8BEE00C6B842 /* String+EmptyReplacement.swift in Sources */,
@@ -2164,6 +2299,7 @@
 				22ABDCCD22E55D340051B2F4 /* EnumRegionExtensions.swift in Sources */,
 				22287A8722BB8BEE00C6B842 /* Data+PrettyPrint.swift in Sources */,
 				22287A8122BB8BEE00C6B842 /* OptionalString+IsNilOrEmpty.swift in Sources */,
+				47528A15240B952B0034F462 /* RegisterNavigationIntent.swift in Sources */,
 				229D7C9E22CCA50500D04836 /* App+KeyboardManager.swift in Sources */,
 				227C9DA422F149A300C5A968 /* RequestActivationFormValidationError.swift in Sources */,
 				22ABDCE122E5A37C0051B2F4 /* LoginSessionRepositoryType.swift in Sources */,
@@ -2184,6 +2320,7 @@
 				22287A8B22BB8BEE00C6B842 /* Math.swift in Sources */,
 				22287ADB22BB8EDF00C6B842 /* ErrorHandlingViewModelType+Extension.swift in Sources */,
 				227C9DB122F19CC200C5A968 /* LoginEnums.swift in Sources */,
+				475289FF240B93560034F462 /* RegisterNavViewController.swift in Sources */,
 				22287AC622BB8EDF00C6B842 /* DoneBarItem.swift in Sources */,
 				22287A6922BB8BEE00C6B842 /* UIViewController+RxViewControllerCycle.swift in Sources */,
 				227C9DA822F18FDE00C5A968 /* LoginNavigationController.swift in Sources */,
@@ -2195,6 +2332,7 @@
 				22287A4E22BB8BEE00C6B842 /* DisposeBagHolderType+Extension.swift in Sources */,
 				229D7C9222CC4DAF00D04836 /* LoginFormValidationService.swift in Sources */,
 				22287A6622BB8BEE00C6B842 /* ViewControllerCycleImplType.swift in Sources */,
+				47528A23240B98290034F462 /* LoginIntent.swift in Sources */,
 				22C8520522F3E22300632FC7 /* SplashViewModel.swift in Sources */,
 				229D7C1022C9B30700D04836 /* AuthService.swift in Sources */,
 				229D7C9C22CCA4B400D04836 /* App+Logger.swift in Sources */,
@@ -2203,6 +2341,7 @@
 				229D7C6422CA0CD400D04836 /* ReloadItemsViewControllerTypeExtensions.swift in Sources */,
 				22287A5722BB8BEE00C6B842 /* ErrorHandlingViewModelType.swift in Sources */,
 				22ABDCC922E5563A0051B2F4 /* BuildConfigConstants.swift in Sources */,
+				47528A17240B95360034F462 /* RegisterBasicInfoIntent.swift in Sources */,
 				22287A8522BB8BEE00C6B842 /* NSObject+TypeName.swift in Sources */,
 				229D7C0D22C9B12B00D04836 /* ProductionBuildConfig.swift in Sources */,
 				22287A8A22BB8BEE00C6B842 /* SMSImageResource.swift in Sources */,
@@ -2252,6 +2391,7 @@
 				229D7C3522C9E3A200D04836 /* NotificationService.swift in Sources */,
 				22287A5922BB8BEE00C6B842 /* ShowProgressHUDProtocol+Rx.swift in Sources */,
 				22287A6122BB8BEE00C6B842 /* UIViewController+Disposable.swift in Sources */,
+				47528A11240B947C0034F462 /* RegisterBasicInfoViewTypes.swift in Sources */,
 				47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */,
 				229D7C0622C9B02C00D04836 /* BuildConfig+Base.swift in Sources */,
 				22287A8922BB8BEE00C6B842 /* Error+Helper.swift in Sources */,

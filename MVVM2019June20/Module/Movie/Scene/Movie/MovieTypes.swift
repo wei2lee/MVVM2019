@@ -8,10 +8,6 @@
 
 import UIKit
 
-struct MovieIntent {
-    var id: String
-}
-
 protocol MovieViewType: BaseViewType {
     var intent: MovieIntent! { set get }
 }
