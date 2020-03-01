@@ -10,7 +10,7 @@ import Foundation
 
 protocol BuildConfigType {
     //MARK: BO
-    var boSignatureRequestPrivateKey: String { get }
+    var boRequestSignaturePrivateKey: String { get }
     //MARK: OMDB
     var OMDbBaseURL: URL { get }
     var OMDbApiKey: String { get }

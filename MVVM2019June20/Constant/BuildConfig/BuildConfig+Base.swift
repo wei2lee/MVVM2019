@@ -10,7 +10,7 @@ import Foundation
 
 class BaseBuildConfig : BuildConfigType {
     //MARK: BO
-    var boSignatureRequestPrivateKey: String { return "123" }
+    var boRequestSignaturePrivateKey: String { return "123" }
     //MARK: OMDb
     var OMDbBaseURL: URL { return URL(string: "http://www.omdbapi.com/?i=\(OMDbApiKeyI)&apikey=\(OMDbApiKey)")! }
     var OMDbApiKey: String { return "cfea5f08" }

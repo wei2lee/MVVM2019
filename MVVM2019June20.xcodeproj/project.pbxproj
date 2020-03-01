@@ -252,7 +252,8 @@
 		22EF1D0622F9500500932FE3 /* MockBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF1D0522F9500500932FE3 /* MockBaseView.swift */; };
 		22F1754E22F8485B00DDC8A9 /* App+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1754D22F8485B00DDC8A9 /* App+Scene.swift */; };
 		22F28AF422C6081A0009BE71 /* OMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F28AF322C6081A0009BE71 /* OMDb.swift */; };
-		47543C6B2407B6CA008E6950 /* BOHTTPRequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C6A2407B6CA008E6950 /* BOHTTPRequestPlugin.swift */; };
+		47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */; };
+		47543C9B2408B3D0008E6950 /* BOResponsePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
 /* End PBXBuildFile section */
@@ -518,7 +519,8 @@
 		22EF1D0522F9500500932FE3 /* MockBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseView.swift; sourceTree = "<group>"; };
 		22F1754D22F8485B00DDC8A9 /* App+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Scene.swift"; sourceTree = "<group>"; };
 		22F28AF322C6081A0009BE71 /* OMDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDb.swift; sourceTree = "<group>"; };
-		47543C6A2407B6CA008E6950 /* BOHTTPRequestPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOHTTPRequestPlugin.swift; sourceTree = "<group>"; };
+		47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BORequestPlugin.swift; sourceTree = "<group>"; };
+		47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOResponsePlugin.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
 		7A820A35ED016807E34AEB94 /* Pods-MVVM2019June20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.debug.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.debug.xcconfig"; sourceTree = "<group>"; };
 		9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM2019June20.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1725,7 +1727,8 @@
 			children = (
 				22ABDCF722E6BBDF0051B2F4 /* BOProvider.swift */,
 				22ABDD0922E6D3D90051B2F4 /* BOMockPlugin.swift */,
-				47543C6A2407B6CA008E6950 /* BOHTTPRequestPlugin.swift */,
+				47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */,
+				47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -2090,6 +2093,7 @@
 				22ABDCEC22E6B30E0051B2F4 /* BOError.swift in Sources */,
 				22287A8D22BB8BEE00C6B842 /* WeakAssociateObjectUtility.swift in Sources */,
 				22287A7222BB8BEE00C6B842 /* UIAlertControllerExtensions.swift in Sources */,
+				47543C9B2408B3D0008E6950 /* BOResponsePlugin.swift in Sources */,
 				223C15C522E1CF5400365121 /* App+SwiftDate.swift in Sources */,
 				22287A7522BB8BEE00C6B842 /* UIViewController+TopMost.swift in Sources */,
 				229D7C0022C9A8FD00D04836 /* OMDbSearchMovie.swift in Sources */,
@@ -2248,7 +2252,7 @@
 				229D7C3522C9E3A200D04836 /* NotificationService.swift in Sources */,
 				22287A5922BB8BEE00C6B842 /* ShowProgressHUDProtocol+Rx.swift in Sources */,
 				22287A6122BB8BEE00C6B842 /* UIViewController+Disposable.swift in Sources */,
-				47543C6B2407B6CA008E6950 /* BOHTTPRequestPlugin.swift in Sources */,
+				47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */,
 				229D7C0622C9B02C00D04836 /* BuildConfig+Base.swift in Sources */,
 				22287A8922BB8BEE00C6B842 /* Error+Helper.swift in Sources */,
 				2228791122BB755100C6B842 /* AppDelegate.swift in Sources */,

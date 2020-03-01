@@ -116,5 +116,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3874521-B4D7-4B2C-8014-BDA189113047"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOResponsePlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "process(_:target:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D6730F8-7C0C-439A-8F38-708189A0895D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM2019June20/Model/Network/BO/Provider/BOResponsePlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "process(_:target:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D6730F8-7C0C-439A-8F38-708189A0895D - a5a5cdf7ae6639d9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM2019June20.BO.ResponsePlugin.process(_: Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;, target: Moya.TargetType) -&gt; Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;"
+                  moduleName = "MVVM2019June20"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leeyeechuan/Desktop/dev/ios/test/MVVMBase2019/MVVM2019June20/Model/Network/BO/Provider/BOResponsePlugin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "3D6730F8-7C0C-439A-8F38-708189A0895D - a5a5cdf7ae6639d9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM2019June20.BO.ResponsePlugin.process(_: Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;, target: Moya.TargetType) -&gt; Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;"
+                  moduleName = "MVVM2019June20"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leeyeechuan/Desktop/dev/ios/test/MVVMBase2019/MVVM2019June20/Model/Network/BO/Provider/BOResponsePlugin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "595">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

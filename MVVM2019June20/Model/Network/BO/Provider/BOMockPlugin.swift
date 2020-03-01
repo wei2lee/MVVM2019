@@ -18,7 +18,7 @@ extension BO {
                              stubClosure: @escaping MoyaProvider<Target>.StubClosure = MockProvider.stubBehavior,
                              callbackQueue: DispatchQueue? = nil,
                              manager: Manager = MoyaProvider<Target>.defaultAlamofireManager(),
-                             plugins: [PluginType] = [HTTPRequestPlugin(), MoyaLoggerPlugin()],
+                             plugins: [PluginType] = [RequestPlugin(), ResponsePlugin(), MoyaLoggerPlugin()],
                              trackInflights: Bool = false) {
             super.init(endpointClosure: endpointClosure,
                        requestClosure: requestClosure,

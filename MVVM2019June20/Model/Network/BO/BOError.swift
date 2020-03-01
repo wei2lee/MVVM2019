@@ -11,6 +11,7 @@ import Foundation
 extension BO {
     enum Error: Swift.Error, CustomNSError {
         case response(response: BO.BaseResponse)
+        case invalidSignature
         case generic
         
         static var errorDomain: String {
@@ -22,6 +23,8 @@ extension BO {
             switch self {
             case .response(_):
                 return 100
+            case .invalidSignature:
+                return 8000
             case .generic:
                 return 9999
             }
@@ -33,6 +36,9 @@ extension BO {
             case .response(let response):
                 return [NSErrorUserInfoKey.LocalizedTitle: response.errorHeader ?? "Server Error",
                         NSErrorUserInfoKey.LocalizedDescription: response.errorDescription ?? "Server Error"]
+            case .invalidSignature:
+                return [NSErrorUserInfoKey.LocalizedTitle: "Server Error",
+                        NSErrorUserInfoKey.LocalizedDescription: "Invalid Response Signature"]
             case .generic:
                 return [NSErrorUserInfoKey.LocalizedTitle: "Server Error",
                         NSErrorUserInfoKey.LocalizedDescription: "Server Error"]

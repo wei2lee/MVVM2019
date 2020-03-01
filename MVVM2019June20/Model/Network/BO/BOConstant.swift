@@ -9,6 +9,14 @@
 import Foundation
 
 extension BO {
+    enum HTTPRequestHeaderKey: String {
+        case sig
+        case timestamp
+    }
+    enum HTTPResponseHeaderKey: String {
+        case sig
+        case timestamp
+    }
     enum EnumEnvironment: String, Encodable {
         case staging
         case production
