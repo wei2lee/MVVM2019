@@ -13,6 +13,8 @@ import RxCocoa
 
 protocol RegisterBasicInfoViewType: BaseViewType {
     var intent: RegisterBasicInfoIntent! { set get }
+    
+    func routeToNext()
 }
 
 typealias RegisterBasicInfoViewControllerType = UIViewController & RegisterBasicInfoViewType

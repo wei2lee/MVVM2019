@@ -265,8 +265,24 @@
 		47528A22240B98290034F462 /* LoginNavigationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A20240B98290034F462 /* LoginNavigationIntent.swift */; };
 		47528A23240B98290034F462 /* LoginIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A21240B98290034F462 /* LoginIntent.swift */; };
 		47528A2A240B990B0034F462 /* MovieIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A29240B990B0034F462 /* MovieIntent.swift */; };
+		47528A2C240B9D530034F462 /* RegisterBasicInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A2B240B9D530034F462 /* RegisterBasicInfoViewModel.swift */; };
+		47528A2E240CE31A0034F462 /* RegisterMigrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A2D240CE31A0034F462 /* RegisterMigrationViewModel.swift */; };
+		47528A32240CE3B80034F462 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A31240CE3B80034F462 /* RowType.swift */; };
+		47528A35240CE4FE0034F462 /* ValidationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A34240CE4FE0034F462 /* ValidationState.swift */; };
+		47528A37240CE5080034F462 /* UntypedRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A36240CE5080034F462 /* UntypedRowType.swift */; };
+		47528A3B240CE5700034F462 /* TextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A3A240CE5700034F462 /* TextRow.swift */; };
+		47528A3D240CE71E0034F462 /* SegmentedControlRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A3C240CE71E0034F462 /* SegmentedControlRow.swift */; };
+		47528A3F240CE7270034F462 /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47528A3E240CE7270034F462 /* SwitchRow.swift */; };
+		47528A41240CE7370034F462 /* TextRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47528A40240CE7370034F462 /* TextRow.xib */; };
+		47528A43240CE7420034F462 /* SegmentedControlRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47528A42240CE7420034F462 /* SegmentedControlRow.xib */; };
+		47528A45240CE7620034F462 /* SwitchRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47528A44240CE7620034F462 /* SwitchRow.xib */; };
 		47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */; };
 		47543C9B2408B3D0008E6950 /* BOResponsePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */; };
+		47F59098240D053A00038F4E /* RegisterBasicInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59097240D053A00038F4E /* RegisterBasicInfoFormView.swift */; };
+		47F5909A240D084800038F4E /* FormValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59099240D084800038F4E /* FormValidationHelper.swift */; };
+		47F5909D240D090300038F4E /* RegisterBasicInfoFormValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */; };
+		47F5909F240D0B3200038F4E /* RegisterBasicInfoValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */; };
+		47F590A1240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
 /* End PBXBuildFile section */
@@ -545,8 +561,24 @@
 		47528A20240B98290034F462 /* LoginNavigationIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationIntent.swift; sourceTree = "<group>"; };
 		47528A21240B98290034F462 /* LoginIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginIntent.swift; sourceTree = "<group>"; };
 		47528A29240B990B0034F462 /* MovieIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieIntent.swift; sourceTree = "<group>"; };
+		47528A2B240B9D530034F462 /* RegisterBasicInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoViewModel.swift; sourceTree = "<group>"; };
+		47528A2D240CE31A0034F462 /* RegisterMigrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMigrationViewModel.swift; sourceTree = "<group>"; };
+		47528A31240CE3B80034F462 /* RowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowType.swift; sourceTree = "<group>"; };
+		47528A34240CE4FE0034F462 /* ValidationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationState.swift; sourceTree = "<group>"; };
+		47528A36240CE5080034F462 /* UntypedRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntypedRowType.swift; sourceTree = "<group>"; };
+		47528A3A240CE5700034F462 /* TextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRow.swift; sourceTree = "<group>"; };
+		47528A3C240CE71E0034F462 /* SegmentedControlRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlRow.swift; sourceTree = "<group>"; };
+		47528A3E240CE7270034F462 /* SwitchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRow.swift; sourceTree = "<group>"; };
+		47528A40240CE7370034F462 /* TextRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextRow.xib; sourceTree = "<group>"; };
+		47528A42240CE7420034F462 /* SegmentedControlRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlRow.xib; sourceTree = "<group>"; };
+		47528A44240CE7620034F462 /* SwitchRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchRow.xib; sourceTree = "<group>"; };
 		47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BORequestPlugin.swift; sourceTree = "<group>"; };
 		47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOResponsePlugin.swift; sourceTree = "<group>"; };
+		47F59097240D053A00038F4E /* RegisterBasicInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoFormView.swift; sourceTree = "<group>"; };
+		47F59099240D084800038F4E /* FormValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationHelper.swift; sourceTree = "<group>"; };
+		47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoFormValidationError.swift; sourceTree = "<group>"; };
+		47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationService.swift; sourceTree = "<group>"; };
+		47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationServiceType.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
 		7A820A35ED016807E34AEB94 /* Pods-MVVM2019June20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.debug.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.debug.xcconfig"; sourceTree = "<group>"; };
 		9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM2019June20.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -621,6 +653,7 @@
 		2228792222BB756100C6B842 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				47528A2F240CE38A0034F462 /* Form */,
 				47528A08240B93F60034F462 /* Register */,
 				22C8520022F3E1F800632FC7 /* Splash */,
 				229D7C6E22CAF69A00D04836 /* Base */,
@@ -1630,6 +1663,7 @@
 		229D7C8D22CC4C7600D04836 /* Error */ = {
 			isa = PBXGroup;
 			children = (
+				47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */,
 				229D7C8E22CC4C8900D04836 /* LoginFormValidationError.swift */,
 				22ABDCE222E5B6370051B2F4 /* ActivationFormValidationError.swift */,
 				227C9DA322F149A300C5A968 /* RequestActivationFormValidationError.swift */,
@@ -1643,6 +1677,8 @@
 			children = (
 				229D7C9122CC4DAF00D04836 /* LoginFormValidationService.swift */,
 				22ABDCDC22E5A1C80051B2F4 /* LoginFormValdiationServiceType.swift */,
+				47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */,
+				47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -1870,6 +1906,8 @@
 			children = (
 				47528A00240B93660034F462 /* RegisterBasicInfoViewController.swift */,
 				47528A10240B947C0034F462 /* RegisterBasicInfoViewTypes.swift */,
+				47528A2B240B9D530034F462 /* RegisterBasicInfoViewModel.swift */,
+				47F59097240D053A00038F4E /* RegisterBasicInfoFormView.swift */,
 			);
 			path = RegisterBasicInfo;
 			sourceTree = "<group>";
@@ -1879,6 +1917,7 @@
 			children = (
 				47528A04240B939F0034F462 /* RegisterMigrationViewController.swift */,
 				47528A12240B94860034F462 /* RegisterMigrationViewTypes.swift */,
+				47528A2D240CE31A0034F462 /* RegisterMigrationViewModel.swift */,
 			);
 			path = RegisterMigration;
 			sourceTree = "<group>";
@@ -1949,6 +1988,79 @@
 				47528A29240B990B0034F462 /* MovieIntent.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		47528A2F240CE38A0034F462 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				47F5909B240D08F800038F4E /* Constant */,
+				47528A39240CE55D0034F462 /* View */,
+				47528A38240CE54D0034F462 /* Protocol */,
+				47528A33240CE4EE0034F462 /* Model */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		47528A33240CE4EE0034F462 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47F59099240D084800038F4E /* FormValidationHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47528A38240CE54D0034F462 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				47528A31240CE3B80034F462 /* RowType.swift */,
+				47528A34240CE4FE0034F462 /* ValidationState.swift */,
+				47528A36240CE5080034F462 /* UntypedRowType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		47528A39240CE55D0034F462 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47528A48240CE7760034F462 /* TextRow */,
+				47528A47240CE7700034F462 /* SwitchRow */,
+				47528A46240CE7690034F462 /* SegmentedControlRow */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47528A46240CE7690034F462 /* SegmentedControlRow */ = {
+			isa = PBXGroup;
+			children = (
+				47528A3C240CE71E0034F462 /* SegmentedControlRow.swift */,
+				47528A42240CE7420034F462 /* SegmentedControlRow.xib */,
+			);
+			path = SegmentedControlRow;
+			sourceTree = "<group>";
+		};
+		47528A47240CE7700034F462 /* SwitchRow */ = {
+			isa = PBXGroup;
+			children = (
+				47528A3E240CE7270034F462 /* SwitchRow.swift */,
+				47528A44240CE7620034F462 /* SwitchRow.xib */,
+			);
+			path = SwitchRow;
+			sourceTree = "<group>";
+		};
+		47528A48240CE7760034F462 /* TextRow */ = {
+			isa = PBXGroup;
+			children = (
+				47528A3A240CE5700034F462 /* TextRow.swift */,
+				47528A40240CE7370034F462 /* TextRow.xib */,
+			);
+			path = TextRow;
+			sourceTree = "<group>";
+		};
+		47F5909B240D08F800038F4E /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		EDF628B20AF612E0EE7AF585 /* Pods */ = {
@@ -2049,10 +2161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2228792E22BB7EDE00C6B842 /* Login.storyboard in Resources */,
+				47528A43240CE7420034F462 /* SegmentedControlRow.xib in Resources */,
 				229D7C7622CAFA0B00D04836 /* MovieCardCollectionViewCell.xib in Resources */,
 				2228791B22BB755300C6B842 /* LaunchScreen.storyboard in Resources */,
 				2228791822BB755300C6B842 /* Assets.xcassets in Resources */,
+				47528A41240CE7370034F462 /* TextRow.xib in Resources */,
 				229D7C4D22CA099400D04836 /* Movie.storyboard in Resources */,
+				47528A45240CE7620034F462 /* SwitchRow.xib in Resources */,
 				22C8520222F3E20C00632FC7 /* Splash.storyboard in Resources */,
 				223C15B522E1C9E300365121 /* Dashboard.storyboard in Resources */,
 				22ABDD0D22E6DB8B0051B2F4 /* mock in Resources */,
@@ -2175,6 +2290,7 @@
 				228D9D3022E6F8BF00E40407 /* VerifyActivation.swift in Sources */,
 				22287A8422BB8BEE00C6B842 /* NSObject+ExtraProperty.swift in Sources */,
 				229D7C5E22CA0C8C00D04836 /* BasePaginationViewType.swift in Sources */,
+				47F5909D240D090300038F4E /* RegisterBasicInfoFormValidationError.swift in Sources */,
 				22287A7D22BB8BEE00C6B842 /* String+IsNilOrEmpty.swift in Sources */,
 				22287A7722BB8BEE00C6B842 /* Collection+IsNilOrEmpty.swift in Sources */,
 				22C8520922F3E23D00632FC7 /* SplashTypes.swift in Sources */,
@@ -2184,11 +2300,13 @@
 				22287A7622BB8BEE00C6B842 /* UIControl+SetSelectedOnTouchUpInside.swift in Sources */,
 				22287AD022BB8EDF00C6B842 /* PresentDialogProtocolIPadImpl.swift in Sources */,
 				229D7C8922CB49E600D04836 /* OMDBError.swift in Sources */,
+				47528A3F240CE7270034F462 /* SwitchRow.swift in Sources */,
 				229D7C5322CA09C100D04836 /* MovieViewController.swift in Sources */,
 				22287A9122BB8BEE00C6B842 /* CaseInsensitiveWithoutSpaceStringEnum.swift in Sources */,
 				222879C022BB887500C6B842 /* DefaultKeys.swift in Sources */,
 				22287A9822BB8BEE00C6B842 /* SingleSelectionViewModel.swift in Sources */,
 				22287A5A22BB8BEE00C6B842 /* DismissWithResultProtocol+Rx.swift in Sources */,
+				47528A3D240CE71E0034F462 /* SegmentedControlRow.swift in Sources */,
 				22287ACE22BB8EDF00C6B842 /* UIViewController+PresentDialogProtocol.swift in Sources */,
 				22ABDD0A22E6D3D90051B2F4 /* BOMockPlugin.swift in Sources */,
 				229D7C6B22CA13A100D04836 /* OMDbResponseList.swift in Sources */,
@@ -2201,6 +2319,7 @@
 				22287AE022BCDB3800C6B842 /* ActivationViewController.swift in Sources */,
 				22287A5B22BB8BEE00C6B842 /* DismissResult.swift in Sources */,
 				22ABDCFF22E6BD4E0051B2F4 /* Revalidate.swift in Sources */,
+				47528A37240CE5080034F462 /* UntypedRowType.swift in Sources */,
 				229D7C9722CCA22D00D04836 /* FlowLayout.swift in Sources */,
 				22ABDCF622E6B6E00051B2F4 /* StringDateInRegionTransformer+Cases.swift in Sources */,
 				22287A5822BB8BEE00C6B842 /* ShowProgressHUDProtocol.swift in Sources */,
@@ -2212,6 +2331,7 @@
 				229D7C8622CB434200D04836 /* EncodableExtensions.swift in Sources */,
 				22287A6C22BB8BEE00C6B842 /* PresentWithIntentProtocol+Extension.swift in Sources */,
 				223C15CC22E1D26B00365121 /* DI+Constant.swift in Sources */,
+				47528A35240CE4FE0034F462 /* ValidationState.swift in Sources */,
 				2228793222BB831200C6B842 /* LoginViewModel.swift in Sources */,
 				22ABDCF422E6B4FC0051B2F4 /* DateTimeFormats.swift in Sources */,
 				22ABDCD122E564620051B2F4 /* DI+Model.swift in Sources */,
@@ -2241,6 +2361,7 @@
 				22287A7B22BB8BEE00C6B842 /* NSErrorUserInfoKey+Helper.swift in Sources */,
 				229D7C8C22CB544A00D04836 /* StringBoolTransformer.swift in Sources */,
 				224EE7D922E19D4B008AD449 /* DI.swift in Sources */,
+				47F59098240D053A00038F4E /* RegisterBasicInfoFormView.swift in Sources */,
 				22ABDCF222E6B42A0051B2F4 /* StringDateInRegionTransformer.swift in Sources */,
 				22287A4522BB8BEE00C6B842 /* UIView+RxIsShow.swift in Sources */,
 				22287A4A22BB8BEE00C6B842 /* UITextField+Rx.swift in Sources */,
@@ -2269,6 +2390,7 @@
 				22287ADC22BB8EDF00C6B842 /* BaseViewType.swift in Sources */,
 				22287A5E22BB8BEE00C6B842 /* UIViewController+DismissWithResultProtocol.swift in Sources */,
 				22287A8222BB8BEE00C6B842 /* String+EmptyReplacement.swift in Sources */,
+				47528A32240CE3B80034F462 /* RowType.swift in Sources */,
 				22287A5022BB8BEE00C6B842 /* UIViewController+RxBarItemsViewType.swift in Sources */,
 				22287A9622BB8BEE00C6B842 /* SwizzlingUtility.swift in Sources */,
 				22287A4622BB8BEE00C6B842 /* ErrorTracker.swift in Sources */,
@@ -2304,6 +2426,7 @@
 				227C9DA422F149A300C5A968 /* RequestActivationFormValidationError.swift in Sources */,
 				22ABDCE122E5A37C0051B2F4 /* LoginSessionRepositoryType.swift in Sources */,
 				22287AC322BB8EDF00C6B842 /* SaveBarItem.swift in Sources */,
+				47528A2E240CE31A0034F462 /* RegisterMigrationViewModel.swift in Sources */,
 				22ABDCDF22E5A2910051B2F4 /* AuthServiceType.swift in Sources */,
 				22287AC222BB8EDF00C6B842 /* BaseNavigationController.swift in Sources */,
 				224EE7D522E1946A008AD449 /* LoginTypes.swift in Sources */,
@@ -2326,6 +2449,7 @@
 				227C9DA822F18FDE00C5A968 /* LoginNavigationController.swift in Sources */,
 				22ABDCEE22E6B3A10051B2F4 /* BOBaseTarget.swift in Sources */,
 				22287A5D22BB8BEE00C6B842 /* DismissWithResultProtocol+Extension.swift in Sources */,
+				47F5909F240D0B3200038F4E /* RegisterBasicInfoValidationService.swift in Sources */,
 				22287ACD22BB8EDF00C6B842 /* PresentDialogProtocolImpl.swift in Sources */,
 				229D7C7022CAF6A200D04836 /* App.swift in Sources */,
 				228D9D2C22E6F8A200E40407 /* Setting.swift in Sources */,
@@ -2338,6 +2462,7 @@
 				229D7C9C22CCA4B400D04836 /* App+Logger.swift in Sources */,
 				229D7BFD22C9A8CC00D04836 /* OMDbRating.swift in Sources */,
 				22ABDCDD22E5A1C80051B2F4 /* LoginFormValdiationServiceType.swift in Sources */,
+				47528A3B240CE5700034F462 /* TextRow.swift in Sources */,
 				229D7C6422CA0CD400D04836 /* ReloadItemsViewControllerTypeExtensions.swift in Sources */,
 				22287A5722BB8BEE00C6B842 /* ErrorHandlingViewModelType.swift in Sources */,
 				22ABDCC922E5563A0051B2F4 /* BuildConfigConstants.swift in Sources */,
@@ -2380,6 +2505,7 @@
 				22287AC422BB8EDF00C6B842 /* CloseBarItem.swift in Sources */,
 				229D7BF822C9A8A700D04836 /* OMDbConstant.swift in Sources */,
 				22287AD922BB8EDF00C6B842 /* UIView+ErrorHandlingViewType.swift in Sources */,
+				47F590A1240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift in Sources */,
 				22ABDCD922E59CDB0051B2F4 /* App+Finish.swift in Sources */,
 				22287A9922BB8BEE00C6B842 /* SelectionOptionConvertible.swift in Sources */,
 				229D7C4822CA052800D04836 /* OMDbGetMovie.swift in Sources */,
@@ -2396,6 +2522,8 @@
 				229D7C0622C9B02C00D04836 /* BuildConfig+Base.swift in Sources */,
 				22287A8922BB8BEE00C6B842 /* Error+Helper.swift in Sources */,
 				2228791122BB755100C6B842 /* AppDelegate.swift in Sources */,
+				47F5909A240D084800038F4E /* FormValidationHelper.swift in Sources */,
+				47528A2C240B9D530034F462 /* RegisterBasicInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

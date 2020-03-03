@@ -100,7 +100,6 @@ extension Reactive where Base : LoginViewController {
         triggers += [base.formView.submitButton.rx.tap.asDriver().asVoid()]
         triggers += [base.formView.passwordTextField.rx.shouldReturn.asDriver()]
         return Driver.merge(triggers)
-        
     }
 }
 //MARK: View
