@@ -12,5 +12,7 @@ extension AppDelegate {
     func setupKeyboardManager() {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.toolbarPreviousNextAllowedClasses = [IQKeyboardToolBarPreviousNextAllowedView.self,
+                                                                      IQKeyboardToolBarPreviousNextAllowedStackView.self]
     }
 }

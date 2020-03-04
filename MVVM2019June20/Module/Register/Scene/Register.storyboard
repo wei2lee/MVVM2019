@@ -36,38 +36,50 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-k6-9R3" userLabel="ScrollContent">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="520"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SEI-1h-bvr" customClass="RegisterBasicInfoFormView" customModule="MVVM2019June20" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="16" width="382" height="464"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="504"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xzm-L6-EDY" userLabel="Body">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="414"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obS-Za-xjy" customClass="IQKeyboardToolBarPreviousNextAllowedView" customModule="MVVM2019June20" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="454"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-Pk-mnM" userLabel="First Name" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-rn-mWO" userLabel="Last Name" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="86" width="382" height="70"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="4q9-f2-AnE" userLabel="Email" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="172" width="382" height="70"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="m6H-yd-oc6" userLabel="Password" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="258" width="382" height="70"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="ouj-9B-dw2" userLabel="Confirm Password" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="344" width="382" height="70"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xzm-L6-EDY" userLabel="Body">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="454"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-Pk-mnM" userLabel="First Name" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-rn-mWO" userLabel="Last Name" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="126" width="382" height="70"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="4q9-f2-AnE" userLabel="Email" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="212" width="382" height="70"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="m6H-yd-oc6" userLabel="Password" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="298" width="382" height="70"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="ouj-9B-dw2" userLabel="Confirm Password" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="384" width="382" height="70"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
-                                                    </stackView>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="xzm-L6-EDY" secondAttribute="bottom" id="8jx-nG-O97"/>
+                                                            <constraint firstItem="xzm-L6-EDY" firstAttribute="leading" secondItem="obS-Za-xjy" secondAttribute="leading" id="RCK-en-JJ5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="xzm-L6-EDY" secondAttribute="trailing" id="dUs-Fv-nvv"/>
+                                                            <constraint firstItem="xzm-L6-EDY" firstAttribute="top" secondItem="obS-Za-xjy" secondAttribute="top" id="hcx-ru-8pF"/>
+                                                        </constraints>
+                                                    </view>
                                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="wAj-Yt-X0h" userLabel="Footer">
-                                                        <rect key="frame" x="0.0" y="414" width="382" height="50"/>
+                                                        <rect key="frame" x="0.0" y="454" width="382" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uru-jU-Rrj">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>

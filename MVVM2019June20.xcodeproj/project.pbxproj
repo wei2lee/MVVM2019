@@ -278,6 +278,7 @@
 		47528A45240CE7620034F462 /* SwitchRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47528A44240CE7620034F462 /* SwitchRow.xib */; };
 		47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */; };
 		47543C9B2408B3D0008E6950 /* BOResponsePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */; };
+		47DF3B03240FE36E00A88474 /* IQKeyboardToolBarPreviousNextAllowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3B02240FE36E00A88474 /* IQKeyboardToolBarPreviousNextAllowedView.swift */; };
 		47F59098240D053A00038F4E /* RegisterBasicInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59097240D053A00038F4E /* RegisterBasicInfoFormView.swift */; };
 		47F5909A240D084800038F4E /* FormValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59099240D084800038F4E /* FormValidationHelper.swift */; };
 		47F5909D240D090300038F4E /* RegisterBasicInfoFormValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */; };
@@ -577,6 +578,7 @@
 		47528A44240CE7620034F462 /* SwitchRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchRow.xib; sourceTree = "<group>"; };
 		47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BORequestPlugin.swift; sourceTree = "<group>"; };
 		47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOResponsePlugin.swift; sourceTree = "<group>"; };
+		47DF3B02240FE36E00A88474 /* IQKeyboardToolBarPreviousNextAllowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyboardToolBarPreviousNextAllowedView.swift; sourceTree = "<group>"; };
 		47F59097240D053A00038F4E /* RegisterBasicInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoFormView.swift; sourceTree = "<group>"; };
 		47F59099240D084800038F4E /* FormValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationHelper.swift; sourceTree = "<group>"; };
 		47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoFormValidationError.swift; sourceTree = "<group>"; };
@@ -2034,6 +2036,7 @@
 		47528A39240CE55D0034F462 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47DF3B01240FE36200A88474 /* IQKeyboardToolBarPreviousNextAllowedView */,
 				47528A48240CE7760034F462 /* TextRow */,
 				47528A47240CE7700034F462 /* SwitchRow */,
 				47528A46240CE7690034F462 /* SegmentedControlRow */,
@@ -2066,6 +2069,14 @@
 				47528A40240CE7370034F462 /* TextRow.xib */,
 			);
 			path = TextRow;
+			sourceTree = "<group>";
+		};
+		47DF3B01240FE36200A88474 /* IQKeyboardToolBarPreviousNextAllowedView */ = {
+			isa = PBXGroup;
+			children = (
+				47DF3B02240FE36E00A88474 /* IQKeyboardToolBarPreviousNextAllowedView.swift */,
+			);
+			path = IQKeyboardToolBarPreviousNextAllowedView;
 			sourceTree = "<group>";
 		};
 		47F5909B240D08F800038F4E /* Constant */ = {
@@ -2465,6 +2476,7 @@
 				229D7C5B22CA0C6400D04836 /* BasePaginationViewController.swift in Sources */,
 				227C9DA622F165C400C5A968 /* TimeIntervalFormats.swift in Sources */,
 				22287A8B22BB8BEE00C6B842 /* Math.swift in Sources */,
+				47DF3B03240FE36E00A88474 /* IQKeyboardToolBarPreviousNextAllowedView.swift in Sources */,
 				22287ADB22BB8EDF00C6B842 /* ErrorHandlingViewModelType+Extension.swift in Sources */,
 				227C9DB122F19CC200C5A968 /* LoginEnums.swift in Sources */,
 				475289FF240B93560034F462 /* RegisterNavViewController.swift in Sources */,

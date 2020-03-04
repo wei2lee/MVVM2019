@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxBiBinding
+import IQKeyboardManagerSwift
 
 class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewModel>, RegisterBasicInfoViewType {
     //Dependency
@@ -19,6 +20,11 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     @IBOutlet var formView: RegisterBasicInfoFormView!
     //State
     var intent: RegisterBasicInfoIntent!
+    fileprivate lazy var returnKeyHandler: IQKeyboardReturnKeyHandler = {
+        let ret = IQKeyboardReturnKeyHandler(controller: self)
+        ret.lastTextFieldReturnKeyType = .done
+        return ret
+    }()
     //View Cycle
     override func loadView() {
         super.loadView()
@@ -27,6 +33,8 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     }
     override func setupView() {
         super.setupView()
+        //NavigationBar
+        navigationItem.title = "REGISTER"
         //Form
         formView.firstNameRow.titleText = "First Name"
         formView.firstNameRow.textField.keyboardType = .namePhonePad
@@ -55,6 +63,7 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
             let confirmPassword = self.formView.confirmPasswordRow.value
             return self.validationService.validatePasswordAndConfirmPassword(password,  confirmPassword)?.error
         }
+        _ = returnKeyHandler
     }
     override func setupTransformInput() {
         super.setupTransformInput()
