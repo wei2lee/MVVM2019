@@ -17,6 +17,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     public let username = BehaviorRelay<String?>(value: nil)
     public let password = BehaviorRelay<String?>(value: nil)
     public var startSubmit: Driver<Void> = .never()
+    public var startRegister: Driver<Void> = .never()
     //MARK: Output
     public weak var view: LoginViewType? = nil
     public let footerText = BehaviorRelay<String?>(value: nil)
@@ -59,13 +60,15 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
             .flatMapLatest(self.login)
             .do(onNext: self.loginRoute)
         let doDismissView = startExit.do(onNext: { self.view?.dismissView() })
+        let routeToRegister = startRegister.do(onNext: { self.view?.routeToRegister() })
         _ = self.transformErrorHandling(input: ErrorHandlingInput(view: view, errorTracker: errorTracker))
         //subscribe
         disposeBag.insert(
             footerText.drive(self.footerText),
             convertForm.drive(),
             doSubmit.drive(),
-            doDismissView.drive()
+            doDismissView.drive(),
+            routeToRegister.drive()
         )
     }
     override func dispose() {

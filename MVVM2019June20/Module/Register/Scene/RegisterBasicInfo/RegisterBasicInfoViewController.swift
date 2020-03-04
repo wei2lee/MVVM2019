@@ -22,6 +22,7 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     //View Cycle
     override func loadView() {
         super.loadView()
+        intent = RegisterBasicInfoIntent()
         viewModel = DI.container.resolve(RegisterBasicInfoViewModel.self, argument: intent)!
     }
     override func setupView() {

@@ -57,6 +57,7 @@ class LoginViewController: BaseViewController<LoginViewModel>
         viewModel.startExit = rx.leftBarButtonItem(.close())
         viewModel.startLoad = rx.viewWillAppearForFirstTime
         viewModel.startSubmit = rx.startSubmit
+        viewModel.startRegister = formView.registerButton.rx.tap.asDriver()
     }
     override func subscribe() {
         super.subscribe()
@@ -92,6 +93,11 @@ extension LoginViewController: LoginViewType {
     func dismissView() {
         dismiss(animated: true, completion: nil)
     }
+    
+    func routeToRegister() {
+        let screen = DI.container.resolve(DashboardNavigationControllerType.self)!
+        SwifterSwift.sharedApplication.keyWindow?.rootViewController = screen
+    }
 }
 //MARK: rx
 extension Reactive where Base : LoginViewController {
@@ -107,6 +113,7 @@ class LoginFormView: UIView {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var submitButton: UIButton!
+    @IBOutlet var registerButton: UIButton!
 }
 class LoginFooterView: UIView {
     @IBOutlet var label: UILabel!

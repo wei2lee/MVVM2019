@@ -34,7 +34,12 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
 
     //MARK: transform
     override func transform() {
-
+        let routeToNext = startNext.do(onNext: { self.view?.routeToNext() })
+        
+        //subscribe
+        disposeBag.insert(
+            routeToNext.drive()
+        )
     }
     override func dispose() {
         super.dispose()

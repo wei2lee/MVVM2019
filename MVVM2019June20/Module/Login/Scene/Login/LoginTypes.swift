@@ -14,6 +14,7 @@ protocol LoginViewType: BaseViewType {
     var intent: LoginIntent! { set get }
     func routeToActivation()
     func routeToDashboard()
+    func routeToRegister()
     func dismissView()
 }
 
