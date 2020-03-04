@@ -2961,7 +2961,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D PRODUCTION";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_PRODUCTION";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -3064,7 +3064,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D -D ENV_DEV_STAGING";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_DEV_STAGING";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -3167,7 +3167,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_PRODUCTION";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_DEV_PRODUCTION";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -50,7 +50,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "DEV_STAGING"
+      buildConfiguration = "DEV_PRODUCTION"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
