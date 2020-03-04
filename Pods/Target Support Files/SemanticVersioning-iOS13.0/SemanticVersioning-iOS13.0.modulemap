@@ -1,6 +1,0 @@
-framework module SemanticVersioning {
-  umbrella header "SemanticVersioning-iOS13.0-umbrella.h"
-
-  export *
-  module * { export * }
-}

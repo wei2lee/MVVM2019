@@ -4,132 +4,67 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire-iOS11.0.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-iOS13.0.xcscheme</key>
+		<key>CodableExtensions.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CodableExtensions-iOS11.0.xcscheme</key>
+		<key>DeviceKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CodableExtensions-iOS13.0.xcscheme</key>
+		<key>Differentiator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>DeviceKit-iOS11.0.xcscheme</key>
+		<key>ESPullToRefresh-ESPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>DeviceKit-iOS13.0.xcscheme</key>
+		<key>ESPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Differentiator-iOS11.0.xcscheme</key>
+		<key>FCUUID.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Differentiator-iOS13.0.xcscheme</key>
+		<key>FLEX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ESPullToRefresh-iOS11.0-ESPullToRefresh.xcscheme</key>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ESPullToRefresh-iOS11.0.xcscheme</key>
+		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ESPullToRefresh-iOS13.0-ESPullToRefresh.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ESPullToRefresh-iOS13.0.xcscheme</key>
+		<key>Moya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FCUUID-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FCUUID-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FLEX-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FLEX-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>IQKeyboardManagerSwift-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>IQKeyboardManagerSwift-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Kingfisher-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Kingfisher-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MBProgressHUD-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MBProgressHUD-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Moya-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Moya-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>NibDesignable-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>NibDesignable-iOS13.0.xcscheme</key>
+		<key>NibDesignable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -139,22 +74,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ObjcExceptionBridging-iOS11.0.xcscheme</key>
+		<key>ObjcExceptionBridging.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ObjcExceptionBridging-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Permission-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Permission-iOS13.0.xcscheme</key>
+		<key>Permission.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -174,22 +99,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Result-iOS11.0.xcscheme</key>
+		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Result-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxBiBinding-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxBiBinding-iOS13.0.xcscheme</key>
+		<key>RxBiBinding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -199,62 +114,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxCocoa-iOS11.0.xcscheme</key>
+		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxCocoa-iOS13.0.xcscheme</key>
+		<key>RxDataSources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxDataSources-iOS11.0.xcscheme</key>
+		<key>RxGesture.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxDataSources-iOS13.0.xcscheme</key>
+		<key>RxPermission.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxGesture-iOS11.0.xcscheme</key>
+		<key>RxRelay.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxGesture-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxPermission-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxPermission-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxRelay-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxRelay-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxSwift-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxSwift-iOS13.0.xcscheme</key>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -264,82 +149,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SemanticVersioning-iOS11.0.xcscheme</key>
+		<key>SemanticVersioning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SemanticVersioning-iOS13.0.xcscheme</key>
+		<key>SwiftDate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftDate-iOS11.0.xcscheme</key>
+		<key>SwifterSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftDate-iOS13.0.xcscheme</key>
+		<key>SwiftyUserDefaults.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwifterSwift-iOS11.0.xcscheme</key>
+		<key>Swinject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwifterSwift-iOS13.0.xcscheme</key>
+		<key>TagListView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyUserDefaults-iOS11.0.xcscheme</key>
+		<key>UICKeyChainStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyUserDefaults-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Swinject-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Swinject-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TagListView-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TagListView-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UICKeyChainStore-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UICKeyChainStore-iOS13.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>XCGLogger-iOS11.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>XCGLogger-iOS13.0.xcscheme</key>
+		<key>XCGLogger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

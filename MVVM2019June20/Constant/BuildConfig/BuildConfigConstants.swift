@@ -8,16 +8,16 @@
 
 import Foundation
 
-#if ENV_DEVELOPMENT
+#if ENV_DEV_LOCAL
 var BuildConfiguration:EnumBuildConfiguration = .development
-#elseif ENV_DEVELOPMENT_STAGING
+#elseif ENV_DEV_STAGING
 var BuildConfiguration:EnumBuildConfiguration = .developmentStaging
-#elseif ENV_DEVELOPMENT_PRODUCTION
+#elseif ENV_DEV_PRODUCTION
 var BuildConfiguration:EnumBuildConfiguration = .developmentProduction
 #elseif ENV_STAGING
 var BuildConfiguration:EnumBuildConfiguration = .staging
-#elseif ENV_STAGING_STAGING_PENTEST
-var BuildConfiguration:EnumBuildConfiguration = .stagingStagingPentest
+#elseif ENV_STAGING_PENTEST
+var BuildConfiguration:EnumBuildConfiguration = .stagingPentest
 #elseif ENV_PRODUCTION
 var BuildConfiguration:EnumBuildConfiguration = .production
 #else

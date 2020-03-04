@@ -1,6 +1,0 @@
-framework module ESPullToRefresh {
-  umbrella header "ESPullToRefresh-iOS13.0-umbrella.h"
-
-  export *
-  module * { export * }
-}

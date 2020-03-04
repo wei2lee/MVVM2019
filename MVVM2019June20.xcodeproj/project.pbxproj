@@ -299,6 +299,7 @@
 
 /* Begin PBXFileReference section */
 		0CB9AC452311320932514756 /* Pods-ModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		168771A85482F76DE8154664 /* Pods-ModuleTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.production.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.production.xcconfig"; sourceTree = "<group>"; };
 		2228790D22BB755100C6B842 /* MVVM2019June20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM2019June20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2228791022BB755100C6B842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2228791722BB755300C6B842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -548,6 +549,8 @@
 		22EF1D0522F9500500932FE3 /* MockBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseView.swift; sourceTree = "<group>"; };
 		22F1754D22F8485B00DDC8A9 /* App+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Scene.swift"; sourceTree = "<group>"; };
 		22F28AF322C6081A0009BE71 /* OMDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDb.swift; sourceTree = "<group>"; };
+		2909E6B3ACCF7B9858DC1FEA /* Pods-MVVM2019June20.dev_local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_local.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_local.xcconfig"; sourceTree = "<group>"; };
+		329F0292F79F5408E97B788A /* Pods-ModuleTests.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.dev_staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.dev_staging.xcconfig"; sourceTree = "<group>"; };
 		475289FE240B93560034F462 /* RegisterNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNavViewController.swift; sourceTree = "<group>"; };
 		47528A00240B93660034F462 /* RegisterBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoViewController.swift; sourceTree = "<group>"; };
 		47528A04240B939F0034F462 /* RegisterMigrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMigrationViewController.swift; sourceTree = "<group>"; };
@@ -580,10 +583,19 @@
 		47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationService.swift; sourceTree = "<group>"; };
 		47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationServiceType.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
+		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
+		79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_staging.xcconfig"; sourceTree = "<group>"; };
 		7A820A35ED016807E34AEB94 /* Pods-MVVM2019June20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.debug.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.debug.xcconfig"; sourceTree = "<group>"; };
+		88F6B34BA35D82909D2A04FA /* Pods-ModuleTests.dev_local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.dev_local.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.dev_local.xcconfig"; sourceTree = "<group>"; };
+		90FFB5A23A7CB9FE238D4FBA /* Pods-MVVM2019June20.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.production.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.production.xcconfig"; sourceTree = "<group>"; };
+		91F7525144A5799B6F6C027F /* Pods-MVVM2019June20.staging_pentest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.staging_pentest.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.staging_pentest.xcconfig"; sourceTree = "<group>"; };
 		9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM2019June20.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E0C68846272EDBEA7B3001 /* Pods-ModuleTests.dev_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.dev_production.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.dev_production.xcconfig"; sourceTree = "<group>"; };
+		AE87246013712FEF5B1CAEAE /* Pods-ModuleTests.staging_pentest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging_pentest.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging_pentest.xcconfig"; sourceTree = "<group>"; };
 		B0B27C35659E27BED2AD1E0F /* Pods-ModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.release.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFD2DB68DC00B83CA7450731 /* Pods-MVVM2019June20.dev_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_production.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_production.xcconfig"; sourceTree = "<group>"; };
+		C609D714590AF8AB689CC54B /* Pods-MVVM2019June20.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2070,6 +2082,18 @@
 				4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */,
 				0CB9AC452311320932514756 /* Pods-ModuleTests.debug.xcconfig */,
 				B0B27C35659E27BED2AD1E0F /* Pods-ModuleTests.release.xcconfig */,
+				2909E6B3ACCF7B9858DC1FEA /* Pods-MVVM2019June20.dev_local.xcconfig */,
+				90FFB5A23A7CB9FE238D4FBA /* Pods-MVVM2019June20.production.xcconfig */,
+				88F6B34BA35D82909D2A04FA /* Pods-ModuleTests.dev_local.xcconfig */,
+				168771A85482F76DE8154664 /* Pods-ModuleTests.production.xcconfig */,
+				79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */,
+				BFD2DB68DC00B83CA7450731 /* Pods-MVVM2019June20.dev_production.xcconfig */,
+				C609D714590AF8AB689CC54B /* Pods-MVVM2019June20.staging.xcconfig */,
+				91F7525144A5799B6F6C027F /* Pods-MVVM2019June20.staging_pentest.xcconfig */,
+				329F0292F79F5408E97B788A /* Pods-ModuleTests.dev_staging.xcconfig */,
+				A3E0C68846272EDBEA7B3001 /* Pods-ModuleTests.dev_production.xcconfig */,
+				68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */,
+				AE87246013712FEF5B1CAEAE /* Pods-ModuleTests.staging_pentest.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2765,6 +2789,609 @@
 			};
 			name = Release;
 		};
+		47DF3AEF240FBFE000A88474 /* DEV_LOCAL */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DEV_LOCAL;
+		};
+		47DF3AF0240FBFE000A88474 /* DEV_LOCAL */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2909E6B3ACCF7B9858DC1FEA /* Pods-MVVM2019June20.dev_local.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5J7BB7M8F;
+				INFOPLIST_FILE = MVVM2019June20/Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_DEV_LOCAL";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DEV_LOCAL;
+		};
+		47DF3AF1240FBFE000A88474 /* DEV_LOCAL */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F6B34BA35D82909D2A04FA /* Pods-ModuleTests.dev_local.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ModuleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.test.ModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM2019June20.app/MVVM2019June20";
+			};
+			name = DEV_LOCAL;
+		};
+		47DF3AF2240FBFEE00A88474 /* PRODUCTION */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = PRODUCTION;
+		};
+		47DF3AF3240FBFEE00A88474 /* PRODUCTION */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90FFB5A23A7CB9FE238D4FBA /* Pods-MVVM2019June20.production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5J7BB7M8F;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MVVM2019June20/Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D PRODUCTION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PRODUCTION;
+		};
+		47DF3AF4240FBFEE00A88474 /* PRODUCTION */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168771A85482F76DE8154664 /* Pods-ModuleTests.production.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ModuleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.test.ModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM2019June20.app/MVVM2019June20";
+			};
+			name = PRODUCTION;
+		};
+		47DF3AF5240FC7B000A88474 /* DEV_STAGING */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DEV_STAGING;
+		};
+		47DF3AF6240FC7B000A88474 /* DEV_STAGING */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5J7BB7M8F;
+				INFOPLIST_FILE = MVVM2019June20/Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D -D ENV_DEV_STAGING";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DEV_STAGING;
+		};
+		47DF3AF7240FC7B000A88474 /* DEV_STAGING */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 329F0292F79F5408E97B788A /* Pods-ModuleTests.dev_staging.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ModuleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.test.ModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM2019June20.app/MVVM2019June20";
+			};
+			name = DEV_STAGING;
+		};
+		47DF3AF8240FC7B900A88474 /* DEV_PRODUCTION */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DEV_PRODUCTION;
+		};
+		47DF3AF9240FC7B900A88474 /* DEV_PRODUCTION */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD2DB68DC00B83CA7450731 /* Pods-MVVM2019June20.dev_production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5J7BB7M8F;
+				INFOPLIST_FILE = MVVM2019June20/Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_PRODUCTION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DEV_PRODUCTION;
+		};
+		47DF3AFA240FC7B900A88474 /* DEV_PRODUCTION */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E0C68846272EDBEA7B3001 /* Pods-ModuleTests.dev_production.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ModuleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.test.ModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM2019June20.app/MVVM2019June20";
+			};
+			name = DEV_PRODUCTION;
+		};
+		47DF3AFB240FC7CC00A88474 /* STAGING */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = STAGING;
+		};
+		47DF3AFC240FC7CC00A88474 /* STAGING */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C609D714590AF8AB689CC54B /* Pods-MVVM2019June20.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5J7BB7M8F;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MVVM2019June20/Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_STAGING";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = STAGING;
+		};
+		47DF3AFD240FC7CC00A88474 /* STAGING */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ModuleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.test.ModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM2019June20.app/MVVM2019June20";
+			};
+			name = STAGING;
+		};
+		47DF3AFE240FC7D100A88474 /* STAGING_PENTEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = STAGING_PENTEST;
+		};
+		47DF3AFF240FC7D100A88474 /* STAGING_PENTEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F7525144A5799B6F6C027F /* Pods-MVVM2019June20.staging_pentest.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5J7BB7M8F;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MVVM2019June20/Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENV_STAGING_PENTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.MVVM2019June20;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = STAGING_PENTEST;
+		};
+		47DF3B00240FC7D100A88474 /* STAGING_PENTEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE87246013712FEF5B1CAEAE /* Pods-ModuleTests.staging_pentest.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ModuleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberfusion.test.ModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM2019June20.app/MVVM2019June20";
+			};
+			name = STAGING_PENTEST;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2772,7 +3399,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2228791D22BB755300C6B842 /* Debug */,
+				47DF3AEF240FBFE000A88474 /* DEV_LOCAL */,
+				47DF3AF5240FC7B000A88474 /* DEV_STAGING */,
+				47DF3AF8240FC7B900A88474 /* DEV_PRODUCTION */,
 				2228791E22BB755300C6B842 /* Release */,
+				47DF3AF2240FBFEE00A88474 /* PRODUCTION */,
+				47DF3AFB240FC7CC00A88474 /* STAGING */,
+				47DF3AFE240FC7D100A88474 /* STAGING_PENTEST */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2781,7 +3414,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2228792022BB755300C6B842 /* Debug */,
+				47DF3AF0240FBFE000A88474 /* DEV_LOCAL */,
+				47DF3AF6240FC7B000A88474 /* DEV_STAGING */,
+				47DF3AF9240FC7B900A88474 /* DEV_PRODUCTION */,
 				2228792122BB755300C6B842 /* Release */,
+				47DF3AF3240FBFEE00A88474 /* PRODUCTION */,
+				47DF3AFC240FC7CC00A88474 /* STAGING */,
+				47DF3AFF240FC7D100A88474 /* STAGING_PENTEST */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2790,7 +3429,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				227C9DC222F2926200C5A968 /* Debug */,
+				47DF3AF1240FBFE000A88474 /* DEV_LOCAL */,
+				47DF3AF7240FC7B000A88474 /* DEV_STAGING */,
+				47DF3AFA240FC7B900A88474 /* DEV_PRODUCTION */,
 				227C9DC322F2926200C5A968 /* Release */,
+				47DF3AF4240FBFEE00A88474 /* PRODUCTION */,
+				47DF3AFD240FC7CC00A88474 /* STAGING */,
+				47DF3B00240FC7D100A88474 /* STAGING_PENTEST */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
