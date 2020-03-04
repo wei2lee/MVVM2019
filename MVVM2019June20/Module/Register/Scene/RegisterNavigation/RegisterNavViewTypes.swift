@@ -13,4 +13,4 @@ protocol RegisterNavigationViewType {
     var intent: RegisterNavigationIntent! { set get }
 }
 
-typealias RegisterNavigationControllerType = UINavigationController & RegisterNavigationViewType
+typealias RegisterNavigationControllerType = BaseNavigationController & RegisterNavigationViewType

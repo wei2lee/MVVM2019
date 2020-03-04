@@ -65,18 +65,16 @@ class SwitchRow: NibDesignable, RowType, Validatable {
     }
     func update(animated: Bool = true) {
         switchControl.setOn(self.value, animated: animated)
-        UIView.animate(withDuration: animated ? 0.0 : 0.3) {
-            switch self.validationState {
-            case .initial:
-                self.errorMessageLabel.text = ""
-                self.errorContainerView.isHidden = true
-            case .success:
-                self.errorMessageLabel.text = ""
-                self.errorContainerView.isHidden = true
-            case .failure(let error):
-                self.errorMessageLabel.text = error.localizedDescription
-                self.errorContainerView.isHidden = false
-            }
+        switch self.validationState {
+        case .initial:
+            self.errorMessageLabel.text = ""
+            self.errorContainerView.isHidden = true
+        case .success:
+            self.errorMessageLabel.text = ""
+            self.errorContainerView.isHidden = true
+        case .failure(let error):
+            self.errorMessageLabel.text = error.localizedDescription
+            self.errorContainerView.isHidden = false
         }
     }
 }
@@ -88,7 +86,7 @@ extension Reactive where Base : SwitchRow {
             .map({ [weak base] (_) -> Bool in
                 return base?.value ?? false
             })
-            .startWith(self.base.value ?? false)
+            .startWith(self.base.value )
         
         let valueSink = AnyObserver<Bool>.init(eventHandler: { [weak base] event in
             switch event {

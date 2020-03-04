@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-Ro-U1E">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhu-92-RoN" userLabel="Title">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -75,10 +75,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFZ-KO-kYD" userLabel="Error">
-                            <rect key="frame" x="0.0" y="102" width="414" height="50"/>
+                            <rect key="frame" x="0.0" y="102" width="414" height="67"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Error Message]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzU-JW-oJF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" text="[Error Message]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzU-JW-oJF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -99,8 +99,8 @@
             <constraints>
                 <constraint firstItem="5QC-Ro-U1E" firstAttribute="top" secondItem="Tgf-2T-RSj" secondAttribute="top" id="55d-Nf-MOZ"/>
                 <constraint firstItem="5QC-Ro-U1E" firstAttribute="leading" secondItem="Tgf-2T-RSj" secondAttribute="leading" id="OiU-gK-6XR"/>
-                <constraint firstItem="XDv-JO-21S" firstAttribute="trailing" secondItem="5QC-Ro-U1E" secondAttribute="trailing" priority="220" id="cLh-DD-dL5"/>
-                <constraint firstAttribute="bottom" secondItem="5QC-Ro-U1E" secondAttribute="bottom" priority="220" id="gvp-j4-q1r"/>
+                <constraint firstItem="XDv-JO-21S" firstAttribute="trailing" secondItem="5QC-Ro-U1E" secondAttribute="trailing" priority="999" id="cLh-DD-dL5"/>
+                <constraint firstAttribute="bottom" secondItem="5QC-Ro-U1E" secondAttribute="bottom" priority="999" id="gvp-j4-q1r"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="XDv-JO-21S"/>

@@ -16,6 +16,7 @@ extension DI {
             Login.register()
             Dashboard.register()
             Movie.register()
+            Register.register()
             Splash.register()
         }
         struct Login : DIRegistor {
@@ -51,6 +52,17 @@ extension DI {
                 }
                 DI.container.register(MovieListViewControllerType.self) { r -> MovieListViewControllerType in
                     return storyboard.instantiateViewController(withIdentifier: "MovieListViewController")
+                }
+            }
+        }
+        struct Register : DIRegistor {
+            static func register() {
+                let storyboard = UIStoryboard(name: "Register", bundle: nil)
+                DI.container.register(RegisterNavigationControllerType.self) { r -> RegisterNavigationControllerType in
+                    return storyboard.instantiateViewController(withIdentifier: "RegisterNavViewController")
+                }
+                DI.container.register(RegisterBasicInfoViewControllerType.self) { r -> RegisterBasicInfoViewControllerType in
+                    return storyboard.instantiateViewController(withIdentifier: "RegisterBasicInfoViewController")
                 }
             }
         }

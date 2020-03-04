@@ -14,6 +14,7 @@ extension DI {
             Login.register()
             Dashboard.register()
             Movie.register()
+            Register.register()
             Splash.register()
         }
         struct Login : DIRegistor {
@@ -40,6 +41,13 @@ extension DI {
                 }
                 DI.container.register(MovieViewModel.self) { (r, intent: MovieIntent) in
                     return MovieViewModel(intent: intent)
+                }
+            }
+        }
+        struct Register : DIRegistor {
+            static func register() {
+                DI.container.register(RegisterBasicInfoViewModel.self) { (r, intent: RegisterBasicInfoIntent) in
+                    return RegisterBasicInfoViewModel(intent: intent)
                 }
             }
         }

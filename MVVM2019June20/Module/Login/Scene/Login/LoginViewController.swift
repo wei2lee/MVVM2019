@@ -95,8 +95,8 @@ extension LoginViewController: LoginViewType {
     }
     
     func routeToRegister() {
-        let screen = DI.container.resolve(DashboardNavigationControllerType.self)!
-        SwifterSwift.sharedApplication.keyWindow?.rootViewController = screen
+        let screen = DI.container.resolve(RegisterNavigationControllerType.self)!
+        self.present(screen, animated: true, completion: nil)
     }
 }
 //MARK: rx

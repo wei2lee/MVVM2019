@@ -34,7 +34,14 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
 
     //MARK: transform
     override func transform() {
-        let routeToNext = startNext.do(onNext: { self.view?.routeToNext() })
+        let routeToNext = startNext.do(onNext: {
+            _ = self.view!.presentDialog(title: "Register",
+                                     message: "Successful!",
+                                     action: .close())
+                .do(onNext: { _ in
+                    self.view!.dismissView()
+                }).drive()
+        })
         
         //subscribe
         disposeBag.insert(

@@ -35,7 +35,8 @@ class PresentDialogProtocolImpl: PresentDialogProtocol {
             //FIX: UIAlertController showing with delay
             //Reference: https://stackoverflow.com/questions/26449724/uialertcontroller-showing-with-delay
             DispatchQueue.main.async {
-                alertController.show(animated: true)
+                //alertController.show(animated: true)
+                self.base?.present(alertController, animated: true, completion: nil)
             }
             return Disposables.create()
             }

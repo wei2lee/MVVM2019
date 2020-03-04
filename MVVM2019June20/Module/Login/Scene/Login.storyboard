@@ -68,6 +68,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="passwordTextField" destination="uIr-GH-Ms8" id="paY-gg-iOU"/>
+                                    <outlet property="registerButton" destination="sgL-kT-3t9" id="OcJ-Gq-LvP"/>
                                     <outlet property="submitButton" destination="BDZ-CF-a8b" id="tb5-bM-VZq"/>
                                     <outlet property="usernameTextField" destination="7Ke-8a-ccl" id="jh0-av-dxs"/>
                                 </connections>

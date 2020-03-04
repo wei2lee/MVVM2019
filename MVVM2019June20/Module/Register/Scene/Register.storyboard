@@ -8,14 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Register Nav View Controller-->
         <scene sceneID="sM5-rk-mai">
             <objects>
-                <navigationController id="OTg-GR-a9e" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RegisterNavViewController" id="OTg-GR-a9e" customClass="RegisterNavViewController" customModule="MVVM2019June20" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="juk-uI-vcW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Z1f-9F-ZM7" kind="relationship" relationship="rootViewController" id="oE5-uz-nbP"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Atk-fJ-mJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -24,50 +27,50 @@
         <!--Register Basic Info View Controller-->
         <scene sceneID="DUc-is-0Da">
             <objects>
-                <viewController id="Z1f-9F-ZM7" customClass="RegisterBasicInfoViewController" customModule="MVVM2019June20" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterBasicInfoViewController" id="Z1f-9F-ZM7" customClass="RegisterBasicInfoViewController" customModule="MVVM2019June20" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LMw-oM-ngd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Red-NC-anc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-k6-9R3" userLabel="ScrollContent">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SEI-1h-bvr" customClass="RegisterBasicInfoFormView" customModule="MVVM2019June20" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="464"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xzm-L6-EDY" userLabel="Body">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xzm-L6-EDY" userLabel="Body">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="414"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-Pk-mnM" userLabel="First Name" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-rn-mWO" userLabel="Last Name" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="70" width="414" height="70"/>
+                                                                <rect key="frame" x="0.0" y="86" width="382" height="70"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="4q9-f2-AnE" userLabel="Email" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="140" width="414" height="70"/>
+                                                                <rect key="frame" x="0.0" y="172" width="382" height="70"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="m6H-yd-oc6" userLabel="Password" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="210" width="414" height="70"/>
+                                                                <rect key="frame" x="0.0" y="258" width="382" height="70"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="ouj-9B-dw2" userLabel="Confirm Password" customClass="TextRow" customModule="MVVM2019June20" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="280" width="414" height="70"/>
+                                                                <rect key="frame" x="0.0" y="344" width="382" height="70"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="wAj-Yt-X0h" userLabel="Footer">
-                                                        <rect key="frame" x="0.0" y="350" width="414" height="50"/>
+                                                        <rect key="frame" x="0.0" y="414" width="382" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uru-jU-Rrj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
                                                                 <state key="normal" title="Next"/>
                                                             </button>
                                                         </subviews>
@@ -92,10 +95,10 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="SEI-1h-bvr" secondAttribute="trailing" constant="0.01" id="DbO-KA-G7h"/>
+                                            <constraint firstAttribute="trailing" secondItem="SEI-1h-bvr" secondAttribute="trailing" constant="16" id="DbO-KA-G7h"/>
                                             <constraint firstAttribute="bottom" secondItem="SEI-1h-bvr" secondAttribute="bottom" constant="0.01" id="DxO-Du-Pxr"/>
-                                            <constraint firstItem="SEI-1h-bvr" firstAttribute="top" secondItem="s5b-k6-9R3" secondAttribute="top" constant="0.01" id="UNB-T4-4cv"/>
-                                            <constraint firstItem="SEI-1h-bvr" firstAttribute="leading" secondItem="s5b-k6-9R3" secondAttribute="leading" constant="0.01" id="xnc-Ag-LhR"/>
+                                            <constraint firstItem="SEI-1h-bvr" firstAttribute="top" secondItem="s5b-k6-9R3" secondAttribute="top" constant="16" id="UNB-T4-4cv"/>
+                                            <constraint firstItem="SEI-1h-bvr" firstAttribute="leading" secondItem="s5b-k6-9R3" secondAttribute="leading" constant="16" id="xnc-Ag-LhR"/>
                                         </constraints>
                                     </view>
                                 </subviews>

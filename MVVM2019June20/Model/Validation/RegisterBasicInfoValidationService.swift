@@ -43,6 +43,9 @@ class RegisterBasicInfoValidationService : RegisterBasicInfoValidationServiceTyp
         return nil
     }
     func validatePasswordAndConfirmPassword(_ password: String?, _ confirmPassword: String?) -> RegisterBasicInfoFormValidationError? {
+        if confirmPassword == nil || confirmPassword!.isEmpty {
+            return RegisterBasicInfoFormValidationError.isEmpty
+        }
         let a1 = password ?? ""
         let a2 = confirmPassword ?? ""
         if a1 != a2 {

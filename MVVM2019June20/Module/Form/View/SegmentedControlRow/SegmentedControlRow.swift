@@ -65,18 +65,16 @@ class SegmentedControlRow: NibDesignable, RowType, Validatable {
     }
     func update(animated: Bool = true) {
         segmentedControl.selectedSegmentIndex = value ?? UISegmentedControl.noSegment
-        UIView.animate(withDuration: animated ? 0.0 : 0.3) {
-            switch self.validationState {
-            case .initial:
-                self.errorMessageLabel.text = ""
-                self.errorContainerView.isHidden = true
-            case .success:
-                self.errorMessageLabel.text = ""
-                self.errorContainerView.isHidden = true
-            case .failure(let error):
-                self.errorMessageLabel.text = error.localizedDescription
-                self.errorContainerView.isHidden = false
-            }
+        switch self.validationState {
+        case .initial:
+            self.errorMessageLabel.text = ""
+            self.errorContainerView.isHidden = true
+        case .success:
+            self.errorMessageLabel.text = ""
+            self.errorContainerView.isHidden = true
+        case .failure(let error):
+            self.errorMessageLabel.text = error.localizedDescription
+            self.errorContainerView.isHidden = false
         }
     }
 }

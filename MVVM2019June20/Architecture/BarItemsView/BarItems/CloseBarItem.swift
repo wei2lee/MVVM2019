@@ -9,7 +9,7 @@
 import UIKit
 
 extension BarItem {
-    static func close(closure: ((UIViewController)->())? = BackBarItem.defaultClosure) -> BarItem {
+    static func close(closure: ((UIViewController)->())? = CloseBarItem.defaultClosure) -> BarItem {
         let ret = CloseBarItem()
         ret.closure = closure
         return ret
@@ -19,7 +19,7 @@ extension BarItem {
 class CloseBarItem: BarItem {
     static let defaultId = "close"
     class func defaultClosure(_ vc:UIViewController) {
-        vc.popWithResult()
+        vc.closeWithResult()
     }
     init() {
         super.init(id: CloseBarItem.defaultId)

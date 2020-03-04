@@ -23,32 +23,37 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     override func loadView() {
         super.loadView()
         intent = RegisterBasicInfoIntent()
-        viewModel = DI.container.resolve(RegisterBasicInfoViewModel.self, argument: intent)!
+        viewModel = DI.container.resolve(RegisterBasicInfoViewModel.self, argument: intent!)!
     }
     override func setupView() {
         super.setupView()
         //Form
+        formView.firstNameRow.titleText = "First Name"
         formView.firstNameRow.textField.keyboardType = .namePhonePad
         formView.firstNameRow.validateClosure = { [unowned self] in
-            ValidationState(error: self.validationService.validateFirstname($0)?.error)
+            self.validationService.validateFirstname($0)?.error
         }
+        formView.lastNameRow.titleText = "Last Name"
         formView.lastNameRow.textField.keyboardType = .namePhonePad
         formView.lastNameRow.validateClosure = { [unowned self] in
-            ValidationState(error: self.validationService.validateLastname($0)?.error)
+            self.validationService.validateLastname($0)?.error
         }
+        formView.emailRow.titleText = "Email Address"
         formView.emailRow.textField.keyboardType = .emailAddress
         formView.emailRow.validateClosure = { [unowned self] in
-            ValidationState(error: self.validationService.validateEmail($0)?.error)
+            self.validationService.validateEmail($0)?.error
         }
+        formView.passwordRow.titleText = "Password"
         formView.passwordRow.textField.isSecureTextEntry = true
         formView.passwordRow.validateClosure = { [unowned self] in
-            ValidationState(error: self.validationService.validatePassword($0)?.error)
+            self.validationService.validatePassword($0)?.error
         }
+        formView.confirmPasswordRow.titleText = "Confirm Password"
         formView.confirmPasswordRow.textField.isSecureTextEntry = true
         formView.confirmPasswordRow.validateClosure = { [unowned self] _ in
             let password = self.formView.passwordRow.value
             let confirmPassword = self.formView.confirmPasswordRow.value
-            return ValidationState(error: self.validationService.validatePasswordAndConfirmPassword(password,  confirmPassword)?.error)
+            return self.validationService.validatePasswordAndConfirmPassword(password,  confirmPassword)?.error
         }
     }
     override func setupTransformInput() {
@@ -67,6 +72,10 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     func routeToNext() {
         let screen = DI.container.resolve(RegisterMigrationViewControllerType.self)!
         navigationController?.pushViewController(screen)
+    }
+    
+    func dismissView() {
+        self.exitWithResult()
     }
 }
 

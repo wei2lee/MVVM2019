@@ -15,6 +15,8 @@ protocol RegisterBasicInfoViewType: BaseViewType {
     var intent: RegisterBasicInfoIntent! { set get }
     
     func routeToNext()
+    
+    func dismissView()
 }
 
 typealias RegisterBasicInfoViewControllerType = UIViewController & RegisterBasicInfoViewType

@@ -132,6 +132,8 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
                 break
             case .none:
                 break
+            @unknown default:
+                break
             }
         }
         
@@ -154,8 +156,8 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
         }
         
         var visibleLayoutAttributes = [UICollectionViewLayoutAttributes]()
-        sectionAttributesCache.values.map { items in
-            items.values.filter{ $0.frame.intersects(rect) }.map {
+        sectionAttributesCache.values.forEach { items in
+            items.values.filter{ $0.frame.intersects(rect) }.forEach {
                 visibleLayoutAttributes.append($0)
             }
         }
@@ -200,7 +202,7 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
         guard section > 0 else { return result }
         
         var maxSectionHeight: CGFloat = 0
-        sectionAttributesCache[section - 1]?.values.map {
+        sectionAttributesCache[section - 1]?.values.forEach {
             maxSectionHeight = max(maxSectionHeight, $0.frame.maxY)
         }
         return maxSectionHeight + cellTopBottomPadding
@@ -251,7 +253,7 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
         for attributesInBound in attributesInBounds {
             let estimatedAttributes = attributesInBound.filter {$0.isEstimatedItemSize}
             if estimatedAttributes.count > 0 {
-                let indexPaths = estimatedAttributes.map { $0.indexPath }
+                _ = estimatedAttributes.map { $0.indexPath }
                 for attributes in estimatedAttributes {
                     let indexPath = attributes.indexPath
                     let newAttributes = createAttribute(isEstimateItemHeight: isEstimateItemHeight,
@@ -450,8 +452,8 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
     
     func invalidateAllCachedIndexPaths(context: PinterestLayoutInvalidationContext) {
         var indexPaths: [IndexPath] = []
-        sectionAttributesCache.values.map {
-            $0.keys.sorted(by: { $0.item < $1.item }).map {
+        sectionAttributesCache.values.forEach {
+            $0.keys.sorted(by: { $0.item < $1.item }).forEach {
                 indexPaths.append($0)
             }
         }

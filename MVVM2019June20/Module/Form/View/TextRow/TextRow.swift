@@ -34,8 +34,8 @@ class TextRow: NibDesignable, RowType, Validatable {
     
     let onValidationStateChanged: PublishRelay<ValidationState> = .init()
 
-    var validateClosure: ((String?) -> ValidationState) = {_ in
-        return .initial
+    var validateClosure: ((String?) -> NSError?) = {_ in
+        return nil
     }
     
     var titleText: String? {
@@ -57,37 +57,38 @@ class TextRow: NibDesignable, RowType, Validatable {
     func commonInit() {
         _ = self.rx.value.asDriver().drive(onNext: { [weak self]v in
             guard let self = self else { return }
-            self.validationState = self.validateClosure(v)
+            self.validationState = ValidationState(error: self.validateClosure(v) )
             self.onValidationStateChanged.accept(self.validationState)
         })
     }
     //helper
     func validate() {
-        self.validationState = self.validateClosure(value)
+        self.validationState = ValidationState(error: self.validateClosure( value ) )
         self.onValidationStateChanged.accept(self.validationState)
     }
     
     func update(animated: Bool = true) {
         textField.text = value
-        UIView.animate(withDuration: animated ? 0.0 : 0.3) {
-            switch self.validationState {
-            case .initial:
-                self.errorMessageLabel.text = ""
-                self.errorContainerView.isHidden = true
-            case .success:
-                self.errorMessageLabel.text = ""
-                self.errorContainerView.isHidden = true
-            case .failure(let error):
-                self.errorMessageLabel.text = error.localizedDescription
-                self.errorContainerView.isHidden = false
-            }
+        switch self.validationState {
+        case .initial:
+            self.errorMessageLabel.text = ""
+            self.errorContainerView.isHidden = true
+            self.setNeedsLayout()
+        case .success:
+            self.errorMessageLabel.text = ""
+            self.errorContainerView.isHidden = true
+            self.setNeedsLayout()
+        case .failure(let error):
+            self.errorMessageLabel.text = error.localizedDescription
+            self.errorContainerView.isHidden = false
+            self.setNeedsLayout()
         }
     }
 }
 
 extension Reactive where Base : TextRow {
     var value: ControlProperty<String?> {
-        let values = self.base.textField.rx.value
+        let values = self.base.textField.rx.controlEvent(.editingChanged)
             .asObservable()
             .map({ [weak base] (_) -> String? in
                 return base?.value

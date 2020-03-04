@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="af2-vS-0sd">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-gl-um4" userLabel="Input">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -59,10 +59,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0B-Xa-soR" userLabel="Error">
-                            <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                            <rect key="frame" x="0.0" y="48" width="414" height="60"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Error Message]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-OH-1Fi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -81,10 +81,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="cqc-6X-3DQ" firstAttribute="trailing" secondItem="af2-vS-0sd" secondAttribute="trailing" priority="220" id="Cf5-pK-STT"/>
+                <constraint firstItem="cqc-6X-3DQ" firstAttribute="trailing" secondItem="af2-vS-0sd" secondAttribute="trailing" priority="999" id="Cf5-pK-STT"/>
                 <constraint firstItem="af2-vS-0sd" firstAttribute="top" secondItem="MDt-PN-aE7" secondAttribute="top" id="Wyd-K9-fqq"/>
                 <constraint firstItem="af2-vS-0sd" firstAttribute="leading" secondItem="MDt-PN-aE7" secondAttribute="leading" id="dja-TN-U7t"/>
-                <constraint firstAttribute="bottom" secondItem="af2-vS-0sd" secondAttribute="bottom" priority="220" id="ivl-KS-tri"/>
+                <constraint firstAttribute="bottom" secondItem="af2-vS-0sd" secondAttribute="bottom" priority="999" id="ivl-KS-tri"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="cqc-6X-3DQ"/>
