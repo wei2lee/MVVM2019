@@ -284,6 +284,7 @@
 		47F5909D240D090300038F4E /* RegisterBasicInfoFormValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */; };
 		47F5909F240D0B3200038F4E /* RegisterBasicInfoValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */; };
 		47F590A1240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */; };
+		66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE365C241B7B43007F1319 /* CodableExtensions.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
 /* End PBXBuildFile section */
@@ -585,6 +586,7 @@
 		47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationService.swift; sourceTree = "<group>"; };
 		47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationServiceType.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
+		66BE365C241B7B43007F1319 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
 		79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_staging.xcconfig"; sourceTree = "<group>"; };
 		7A820A35ED016807E34AEB94 /* Pods-MVVM2019June20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.debug.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1670,6 +1672,7 @@
 				229D7C9322CC890B00D04836 /* StringIntTransformer.swift */,
 				22ABDCF122E6B42A0051B2F4 /* StringDateInRegionTransformer.swift */,
 				22ABDCF522E6B6E00051B2F4 /* StringDateInRegionTransformer+Cases.swift */,
+				66BE365C241B7B43007F1319 /* CodableExtensions.swift */,
 			);
 			path = Transformer;
 			sourceTree = "<group>";
@@ -2518,6 +2521,7 @@
 				22287A5522BB8BEE00C6B842 /* ErrorHandlingViewType.swift in Sources */,
 				223C15C022E1CAC100365121 /* DI+ViewModel.swift in Sources */,
 				2228793022BB82E200C6B842 /* LoginViewController.swift in Sources */,
+				66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */,
 				229D7C3C22C9E41300D04836 /* AuthConstant.swift in Sources */,
 				22F1754E22F8485B00DDC8A9 /* App+Scene.swift in Sources */,
 				22287AD422BB8EDF00C6B842 /* BaseViewTypeExtensions.swift in Sources */,
