@@ -12,6 +12,8 @@ import RxCocoa
 import SwifterSwift
 
 final class RegisterBasicInfoViewModel: BaseViewModel {
+    //MARK: Model
+    typealias PlaceholderForm = (firstName: String, lastName: String)
     //MARK: Input
     let firstName: BehaviorRelay<String?> = .init(value: "")
     let lastName: BehaviorRelay<String?> = .init(value: "")
@@ -36,13 +38,16 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
 
     //MARK: transform
     override func transform() {
-        let isEnabled: Driver<Bool> = Driver.combineLatest(firstNameState.asDriver(), lastNameState.asDriver()) { 
+        let isEnabled: Driver<Bool> = Driver.combineLatest(firstNameState.asDriver(), lastNameState.asDriver()) {
             return $0.isSuccess && $1.isSuccess
         }
         isEnabled.drive(onNext: {
             print("isEnabled = \($0)")
         })
         
+        let loadPlaceholderForm = startLoad
+            .flatMap(getPlaceholderRegisterForm)
+            .do(onNext: updatePlaceholderForm)
         
         let routeToNext = startNext.do(onNext: {
             _ = self.view!.presentDialog(title: "Register",
@@ -55,6 +60,7 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
         
         //subscribe
         disposeBag.insert(
+            loadPlaceholderForm.drive(),
             routeToNext.drive()
         )
     }
@@ -62,4 +68,16 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
         super.dispose()
     }
    
+    fileprivate func updatePlaceholderForm(form: PlaceholderForm) {
+        self.firstName.accept(form.firstName)
+        self.lastName.accept(form.lastName)
+    }
+    
+    fileprivate func getPlaceholderRegisterForm() -> Driver<PlaceholderForm> {
+        return Observable.just(()).delay(.milliseconds(2000), scheduler: MainScheduler.instance).map {
+            return (firstName: "Example First Name", lastName: "Example Last Name")
+        }
+        .trackActivity(activityIndicator)
+        .asDriverOnErrorJustSkip()
+    }
 }

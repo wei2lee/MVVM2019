@@ -17,12 +17,14 @@ class TextRow: NibDesignable, RowType, Validatable {
     @IBOutlet var errorContainerView: UIView!
     @IBOutlet var errorMessageLabel: UILabel!
     //State
+    fileprivate var _value: String?
     var value: String? {
         set {
+            _value = newValue
             update()
         }
         get {
-            return textField.text
+            return _value
         }
     }
     

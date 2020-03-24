@@ -68,6 +68,7 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     override func setupTransformInput() {
         super.setupTransformInput()
         viewModel.view = self
+        viewModel.startLoad = rx.viewWillAppearForFirstTime
         disposeBag.insert(
             formView.firstNameRow.rx.value <-> viewModel.firstName,
             formView.lastNameRow.rx.value <-> viewModel.lastName,
