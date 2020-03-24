@@ -73,7 +73,9 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
             formView.lastNameRow.rx.value <-> viewModel.lastName,
             formView.emailRow.rx.value <-> viewModel.email,
             formView.passwordRow.rx.value <-> viewModel.password,
-            formView.confirmPasswordRow.rx.value <-> viewModel.confirmPassword
+            formView.confirmPasswordRow.rx.value <-> viewModel.confirmPassword,
+            formView.firstNameRow.rx.validationState <-> viewModel.firstNameState,
+            formView.lastNameRow.rx.validationState <-> viewModel.lastNameState
         )
         viewModel.startNext = rx.validateFormOnNext
     }

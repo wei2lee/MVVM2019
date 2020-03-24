@@ -18,6 +18,8 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
     let email: BehaviorRelay<String?> = .init(value: "")
     let password: BehaviorRelay<String?> = .init(value: "")
     let confirmPassword: BehaviorRelay<String?> = .init(value: "")
+    let firstNameState: BehaviorRelay<ValidationState> = .init(value: .initial)
+    let lastNameState: BehaviorRelay<ValidationState> = .init(value: .initial)
     var startNext: Driver<Void> = .never()
     //MARK: Output
     public weak var view: RegisterBasicInfoViewType? = nil
@@ -34,6 +36,14 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
 
     //MARK: transform
     override func transform() {
+        let isEnabled: Driver<Bool> = Driver.combineLatest(firstNameState.asDriver(), lastNameState.asDriver()) { 
+            return $0.isSuccess && $1.isSuccess
+        }
+        isEnabled.drive(onNext: {
+            print("isEnabled = \($0)")
+        })
+        
+        
         let routeToNext = startNext.do(onNext: {
             _ = self.view!.presentDialog(title: "Register",
                                      message: "Successful!",
