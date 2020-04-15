@@ -93,9 +93,9 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
 
 extension Reactive where Base : RegisterBasicInfoViewController {
     var validateFormOnNext: Driver<Void> {
-        return base.formView.nextButton.rx.tap.asDriver().flatMap {
-            self.base.formView.validate()
-            if self.base.formView.isAllRowsValidateSuccess {
+        return base.formView.nextButton.rx.tap.asDriver().flatMap { [unowned base] in
+            base.formView.validate()
+            if base.formView.isAllRowsValidateSuccess {
                 return .just(())
             } else {
                 return .empty()

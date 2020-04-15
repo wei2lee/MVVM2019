@@ -38,13 +38,6 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
 
     //MARK: transform
     override func transform() {
-        let isEnabled: Driver<Bool> = Driver.combineLatest(firstNameState.asDriver(), lastNameState.asDriver()) {
-            return $0.isSuccess && $1.isSuccess
-        }
-        isEnabled.drive(onNext: {
-            print("isEnabled = \($0)")
-        })
-        
         let loadPlaceholderForm = startLoad
             .flatMap(getPlaceholderRegisterForm)
             .do(onNext: updatePlaceholderForm)
