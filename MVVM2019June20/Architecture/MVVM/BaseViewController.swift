@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class BaseViewController<VM> : UIViewController, BaseViewType, ViewType, DisposeOnWillRemoveFromParentType, BaseNavigationChildViewController where VM : BaseViewModelType {
+class BaseViewController<VM> : UIViewController, BaseViewType, ViewType, BaseNavigationChildViewController where VM : BaseViewModelType {
     //MARK: State
     var disposeOnWillRemoveFromParent: Bool = true
     var viewModel: VM! {
@@ -28,31 +28,9 @@ class BaseViewController<VM> : UIViewController, BaseViewType, ViewType, Dispose
         transform()
         subscribe()
     }
-    override func removeFromParent() {
-        super.removeFromParent()
-        //Log.debug("\(self)@parent = \(parent)")
-    }
-    
-    override func didMove(toParent parent: UIViewController?) {
-        super.didMove(toParent: parent)
-        //Log.debug("\(self)@parent = \(parent)")
-    }
-    
-    override func willMove(toParent parent: UIViewController?) {
-        super.willMove(toParent: parent)
-        //Log.debug("\(self)@parent = \(parent)")
-        if parent == nil {
-            if disposeOnWillRemoveFromParent {
-                dispose()
-            }
-        }
-    }
 
-    override func dispose() {
-        super.dispose()
-    }
-    
     deinit {
+        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
     }
     //MARK: setupView
     func setupView() {

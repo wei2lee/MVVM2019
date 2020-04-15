@@ -12,7 +12,7 @@ import SwifterSwift
 
 extension AppDelegate {
     func setupScene() {
-        let window = UIWindow(frame: UIScreen.main.bounds)
+        let window = AppWindow(frame: UIScreen.main.bounds)
         let splash = DI.container.resolve(SplashViewControllerType.self)!
          window.rootViewController = splash
          window.makeKeyAndVisible()

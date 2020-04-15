@@ -11,6 +11,7 @@ import UIKit
 extension AppDelegate {
     func setupSwizzle() {
         UIViewController.vcci_swizzle()
+        UIViewController.dowfrop_swizzle()
     }
 }
 

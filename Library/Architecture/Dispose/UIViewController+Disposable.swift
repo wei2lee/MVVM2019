@@ -12,7 +12,7 @@ import RxCocoa
 
 @objc extension UIViewController: Disposable {
     @objc public func dispose() {
-        //Log.debug("\(self)@UIViewController.dispose")
+        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
         for child in children {
             child.dispose()
         }

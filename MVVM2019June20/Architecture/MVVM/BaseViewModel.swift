@@ -38,7 +38,7 @@ class BaseViewModel: BaseViewModelType, ViewModelType, ErrorHandlingViewModelTyp
         
     }
     func dispose() {
-        //Log.debug("\(self)@")
+        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
         //Input
         startLoad = .never()
         startResume = .never()
@@ -53,6 +53,7 @@ class BaseViewModel: BaseViewModelType, ViewModelType, ErrorHandlingViewModelTyp
         disposeBag = DisposeBag()
     }
     deinit {
+        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
     }
     //MARK: Helper
 }

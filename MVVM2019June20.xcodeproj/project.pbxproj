@@ -284,6 +284,10 @@
 		47F5909D240D090300038F4E /* RegisterBasicInfoFormValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909C240D090300038F4E /* RegisterBasicInfoFormValidationError.swift */; };
 		47F5909F240D0B3200038F4E /* RegisterBasicInfoValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */; };
 		47F590A1240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */; };
+		667823F72446FDDE00BABB31 /* UIViewController+DisposeOnWillRemoveFromParentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823F42446FDDE00BABB31 /* UIViewController+DisposeOnWillRemoveFromParentType.swift */; };
+		667823F82446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823F52446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift */; };
+		667823F92446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823F62446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift */; };
+		667823FB2446FE5F00BABB31 /* AppWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823FA2446FE5F00BABB31 /* AppWindow.swift */; };
 		66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE365C241B7B43007F1319 /* CodableExtensions.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
@@ -586,6 +590,10 @@
 		47F5909E240D0B3200038F4E /* RegisterBasicInfoValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationService.swift; sourceTree = "<group>"; };
 		47F590A0240D0B3F00038F4E /* RegisterBasicInfoValidationServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBasicInfoValidationServiceType.swift; sourceTree = "<group>"; };
 		4C013DCC191833E97E8F2E31 /* Pods-MVVM2019June20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.release.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.release.xcconfig"; sourceTree = "<group>"; };
+		667823F42446FDDE00BABB31 /* UIViewController+DisposeOnWillRemoveFromParentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DisposeOnWillRemoveFromParentType.swift"; sourceTree = "<group>"; };
+		667823F52446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DisposeOnWillRemoveFromParentType+Extension.swift"; sourceTree = "<group>"; };
+		667823F62446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwizzleDOWRFP.swift"; sourceTree = "<group>"; };
+		667823FA2446FE5F00BABB31 /* AppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindow.swift; sourceTree = "<group>"; };
 		66BE365C241B7B43007F1319 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
 		79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_staging.xcconfig"; sourceTree = "<group>"; };
@@ -905,11 +913,15 @@
 		222879EB22BB8BED00C6B842 /* Dispose */ = {
 			isa = PBXGroup;
 			children = (
+				667823F52446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift */,
+				667823F42446FDDE00BABB31 /* UIViewController+DisposeOnWillRemoveFromParentType.swift */,
+				667823F62446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift */,
 				222879EC22BB8BED00C6B842 /* UIViewController+Disposable.swift */,
 				222879ED22BB8BED00C6B842 /* UIView+Disposable.swift */,
 				222879EE22BB8BED00C6B842 /* DisposeOnWillRemoveFromParentType.swift */,
 				222879EF22BB8BED00C6B842 /* UIView+DisposeBagHolderType.swift */,
 				222879F022BB8BED00C6B842 /* UIViewController+DisposeBagHolderType.swift */,
+				667823FA2446FE5F00BABB31 /* AppWindow.swift */,
 			);
 			path = Dispose;
 			sourceTree = "<group>";
@@ -2321,6 +2333,7 @@
 				22ABDCEA22E6B2FD0051B2F4 /* BO.swift in Sources */,
 				22287A5322BB8BEE00C6B842 /* BarItem.swift in Sources */,
 				22287AE222BCDB4300C6B842 /* ActivationViewModel.swift in Sources */,
+				667823FB2446FE5F00BABB31 /* AppWindow.swift in Sources */,
 				22287A9522BB8BEE00C6B842 /* URLHelper.swift in Sources */,
 				22287A7A22BB8BEE00C6B842 /* NSErrorUserInfoKey.swift in Sources */,
 				229D7C3722C9E3BC00D04836 /* NotificationPayLoad.swift in Sources */,
@@ -2342,6 +2355,7 @@
 				229D7C5322CA09C100D04836 /* MovieViewController.swift in Sources */,
 				22287A9122BB8BEE00C6B842 /* CaseInsensitiveWithoutSpaceStringEnum.swift in Sources */,
 				222879C022BB887500C6B842 /* DefaultKeys.swift in Sources */,
+				667823F92446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift in Sources */,
 				22287A9822BB8BEE00C6B842 /* SingleSelectionViewModel.swift in Sources */,
 				22287A5A22BB8BEE00C6B842 /* DismissWithResultProtocol+Rx.swift in Sources */,
 				47528A3D240CE71E0034F462 /* SegmentedControlRow.swift in Sources */,
@@ -2394,6 +2408,7 @@
 				227C9DB622F19E8E00C5A968 /* DashboardNavigationController.swift in Sources */,
 				229D7C4622CA049A00D04836 /* OMDbProvider.swift in Sources */,
 				229D7C0422C9AD1200D04836 /* BuildConfigType.swift in Sources */,
+				667823F72446FDDE00BABB31 /* UIViewController+DisposeOnWillRemoveFromParentType.swift in Sources */,
 				224EE7D322E17740008AD449 /* LoginHelper.swift in Sources */,
 				22287A7322BB8BEE00C6B842 /* UIView+IsShow.swift in Sources */,
 				22287A7B22BB8BEE00C6B842 /* NSErrorUserInfoKey+Helper.swift in Sources */,
@@ -2508,6 +2523,7 @@
 				47528A17240B95360034F462 /* RegisterBasicInfoIntent.swift in Sources */,
 				22287A8522BB8BEE00C6B842 /* NSObject+TypeName.swift in Sources */,
 				229D7C0D22C9B12B00D04836 /* ProductionBuildConfig.swift in Sources */,
+				667823F82446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift in Sources */,
 				22287A8A22BB8BEE00C6B842 /* SMSImageResource.swift in Sources */,
 				229D7C6922CA0F9500D04836 /* BasePaginationCollectionViewController.swift in Sources */,
 				22ABDD0422E6CB170051B2F4 /* BOBaseRequest.swift in Sources */,
