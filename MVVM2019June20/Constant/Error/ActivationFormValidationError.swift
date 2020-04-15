@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ActivationFormValidationError: Swift.Error, CustomNSError {
+enum ActivationFormValidationError: Swift.Error, CustomNSError, CaseIterable {
     case isEmpty
     case lessThan6Character
     case containNonDigit

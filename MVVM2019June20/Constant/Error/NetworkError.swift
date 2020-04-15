@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum NetworkError: Error, CustomNSError {
+enum NetworkError: Error, CustomNSError, CaseIterable {
     case generic
     case noInternetConnection
     case connectionTimeout

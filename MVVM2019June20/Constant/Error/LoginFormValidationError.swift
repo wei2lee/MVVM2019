@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LoginFormValidationError: Swift.Error, CustomNSError {
+enum LoginFormValidationError: Swift.Error, CustomNSError, CaseIterable {
     case usernameIsEmpty
     case passwordIsEmpty
     case usernameAndPasswordIsEmpty

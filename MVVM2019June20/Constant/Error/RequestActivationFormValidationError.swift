@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum RequestActivationFormValidationError: Swift.Error, CustomNSError {
+enum RequestActivationFormValidationError: Swift.Error, CustomNSError, CaseIterable {
     case requestActivationNotExpired
     
     static var errorDomain: String {

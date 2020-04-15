@@ -44,6 +44,27 @@ extension BO {
                         NSErrorUserInfoKey.LocalizedDescription: "Server Error"]
             }
         }
+        
+        init?(error: NSError) {
+            guard error.domain == type(of: self).errorDomain else {
+                return nil
+            }
+            switch error.code {
+            case 100:
+                if let apiResponseObject = error.apiResponseObject as? BO.BaseResponse {
+                    self = .response(response: apiResponseObject)
+                } else {
+                    return nil
+                }
+            case 8000:
+                self = .invalidSignature
+            case 9999:
+                self = .generic
+            default:
+                return nil
+            }
+            
+        }
     }
 }
 

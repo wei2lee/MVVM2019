@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum RegisterBasicInfoFormValidationError: Swift.Error, CustomNSError {
+enum RegisterBasicInfoFormValidationError: Swift.Error, CustomNSError, CaseIterable {
     case invalidEmailAddress
     case passwordAndConfirmPasswordMismatch
     case passwordTooShort
