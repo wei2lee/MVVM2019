@@ -61,7 +61,7 @@ extension BO {
         }
         
         init?(error: NSError) {
-            guard error.domain == type(of: self).errorDomain else {
+            guard error.domain == Self.errorDomain else {
                 return nil
             }
             switch error.code {

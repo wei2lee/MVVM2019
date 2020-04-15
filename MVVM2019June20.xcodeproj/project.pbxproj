@@ -290,6 +290,8 @@
 		667823FB2446FE5F00BABB31 /* AppWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823FA2446FE5F00BABB31 /* AppWindow.swift */; };
 		667823FD24475A5700BABB31 /* NSError+BO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823FC24475A5700BABB31 /* NSError+BO.swift */; };
 		66782401244760E100BABB31 /* Error+CustomNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66782400244760E100BABB31 /* Error+CustomNSError.swift */; };
+		6678240324476D0500BABB31 /* BOErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678240224476D0400BABB31 /* BOErrorCode.swift */; };
+		6678240524476D2500BABB31 /* BOError+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678240424476D2500BABB31 /* BOError+Response.swift */; };
 		66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE365C241B7B43007F1319 /* CodableExtensions.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
@@ -598,6 +600,8 @@
 		667823FA2446FE5F00BABB31 /* AppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindow.swift; sourceTree = "<group>"; };
 		667823FC24475A5700BABB31 /* NSError+BO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+BO.swift"; sourceTree = "<group>"; };
 		66782400244760E100BABB31 /* Error+CustomNSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+CustomNSError.swift"; sourceTree = "<group>"; };
+		6678240224476D0400BABB31 /* BOErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOErrorCode.swift; sourceTree = "<group>"; };
+		6678240424476D2500BABB31 /* BOError+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOError+Response.swift"; sourceTree = "<group>"; };
 		66BE365C241B7B43007F1319 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
 		79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_staging.xcconfig"; sourceTree = "<group>"; };
@@ -1802,6 +1806,7 @@
 				22ABDCE922E6B2FD0051B2F4 /* BO.swift */,
 				22ABDCEB22E6B30E0051B2F4 /* BOError.swift */,
 				22C8520F22F3E91600632FC7 /* BOConstant.swift */,
+				6678240224476D0400BABB31 /* BOErrorCode.swift */,
 			);
 			path = BO;
 			sourceTree = "<group>";
@@ -1814,6 +1819,7 @@
 				22ABDD0922E6D3D90051B2F4 /* BOMockPlugin.swift */,
 				47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */,
 				47543C9A2408B3D0008E6950 /* BOResponsePlugin.swift */,
+				6678240424476D2500BABB31 /* BOError+Response.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -2371,6 +2377,7 @@
 				22ABDCCB22E557CB0051B2F4 /* DateProvider.swift in Sources */,
 				47528A22240B98290034F462 /* LoginNavigationIntent.swift in Sources */,
 				223C15BE22E1CAB100365121 /* DI+View.swift in Sources */,
+				6678240324476D0500BABB31 /* BOErrorCode.swift in Sources */,
 				227C9DB422F19E7E00C5A968 /* DashboardNavigationTypes.swift in Sources */,
 				22287A4422BB8BEE00C6B842 /* RxOperator.swift in Sources */,
 				223C15B322E1BF5900365121 /* ActivationTypes.swift in Sources */,
@@ -2520,6 +2527,7 @@
 				22287A6622BB8BEE00C6B842 /* ViewControllerCycleImplType.swift in Sources */,
 				47528A23240B98290034F462 /* LoginIntent.swift in Sources */,
 				22C8520522F3E22300632FC7 /* SplashViewModel.swift in Sources */,
+				6678240524476D2500BABB31 /* BOError+Response.swift in Sources */,
 				229D7C1022C9B30700D04836 /* AuthService.swift in Sources */,
 				229D7C9C22CCA4B400D04836 /* App+Logger.swift in Sources */,
 				229D7BFD22C9A8CC00D04836 /* OMDbRating.swift in Sources */,

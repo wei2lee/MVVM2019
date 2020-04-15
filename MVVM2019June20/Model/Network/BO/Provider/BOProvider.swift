@@ -39,8 +39,8 @@ extension BO {
             func validateResponseError(_ response: Moya.Response) -> MoyaError? {
                 do {
                     let errorResponse = try response.map(BO.BaseResponse.self)
-                    if errorResponse.errorCode.isNilOrEmpty == false {
-                        let error = MoyaError.underlying(BO.Error.response(response: errorResponse), response)
+                    if let boError = BO.Error(response: errorResponse) {
+                        let error = MoyaError.underlying(boError, response)
                         return error
                     }
                     return nil
