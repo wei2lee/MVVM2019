@@ -89,7 +89,37 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     fileprivate func validate(username: String, password: String) -> Driver<Void> {
         if let error = self.validationService.validate(username: username,
                                                        password: password) {
+            
+            //example code for checking error, with switch and enumeraiton (while the typing is still available)
+            switch error {
+                case .usernameIsEmpty:
+                    break
+                case .passwordIsEmpty:
+                    break
+                case .usernameAndPasswordIsEmpty:
+                    break
+                case .generic:
+                    break
+            }
+            //example code for checking error, with switch and enumeraiton (while the typing is still available)
+            
             return Observable.error(error)
+                //example code for checking error, with switch and enumeraiton (after converting into Error)
+                .do(onError: { (error: Error) in
+                    switch LoginFormValidationError(error: error.error) {
+                    case .usernameIsEmpty?:
+                        break
+                    case .passwordIsEmpty?:
+                        break
+                    case .usernameAndPasswordIsEmpty?:
+                        break
+                    case .generic?:
+                        break
+                    default:
+                        break
+                    }
+                })
+                //example code for checking error, with switch and enumeraiton (after converting into Error) end
                 .trackError(errorTracker)
                 .asDriverOnErrorJustComplete()
         } else {
