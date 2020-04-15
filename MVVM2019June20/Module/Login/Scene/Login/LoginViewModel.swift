@@ -132,6 +132,33 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
                                       password: password).asVoid()
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
+            
+            //example code for accessing Error object, as Error Enumeration, switch statement
+            .do(onError: { (error: Error) in
+                if let error = NetworkError(error: error.error) {
+                    switch error {
+                    case .generic:
+                        break
+                    case .noInternetConnection:
+                        break
+                    case .connectionTimeout:
+                        break
+                    }
+                } else if let error = BO.Error(error: error.error) {
+                    switch error {
+                    case .response(let response):
+                        break
+                    case .invalidSignature:
+                        break
+                    case .generic:
+                        break
+                    }
+                } else {
+                    
+                }
+            })
+            //example code for accessing Error object
+            
             .trackActivity(self.activityIndicator)
             .trackError(self.errorTracker)
             .asDriverOnErrorJustComplete()
