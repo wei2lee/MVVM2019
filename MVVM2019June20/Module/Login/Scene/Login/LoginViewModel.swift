@@ -152,6 +152,8 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
                         break
                     case .generic:
                         break
+                    default:
+                        break
                     }
                 } else {
                     

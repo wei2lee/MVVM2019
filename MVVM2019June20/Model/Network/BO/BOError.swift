@@ -12,6 +12,8 @@ extension BO {
     enum Error: Swift.Error, CustomNSError {
         case response(response: BO.BaseResponse)
         case invalidSignature
+        case invalidToken(response: BO.BaseResponse)
+        case serverDown(response: BO.BaseResponse)
         case generic
         
         static var errorDomain: String {
@@ -25,6 +27,10 @@ extension BO {
                 return 100
             case .invalidSignature:
                 return 8000
+            case .invalidToken(_):
+                return 8010
+            case .serverDown:
+                return 9900
             case .generic:
                 return 9999
             }
@@ -40,6 +46,14 @@ extension BO {
             case .invalidSignature:
                 return [NSErrorUserInfoKey.LocalizedTitle: "Server Error",
                         NSErrorUserInfoKey.LocalizedDescription: "Invalid Response Signature"]
+            case .invalidToken(let response):
+                return [NSErrorUserInfoKey.LocalizedTitle: response.errorHeader ?? "Server Error",
+                        NSErrorUserInfoKey.LocalizedDescription: response.errorDescription ?? "Server Error",
+                        NSErrorUserInfoKey.ApiResponseObject: response]
+            case .serverDown(let response):
+                return [NSErrorUserInfoKey.LocalizedTitle: response.errorHeader ?? "Server Error",
+                        NSErrorUserInfoKey.LocalizedDescription: response.errorDescription ?? "Server Error",
+                        NSErrorUserInfoKey.ApiResponseObject: response]
             case .generic:
                 return [NSErrorUserInfoKey.LocalizedTitle: "Server Error",
                         NSErrorUserInfoKey.LocalizedDescription: "Server Error"]
@@ -59,6 +73,18 @@ extension BO {
                 }
             case 8000:
                 self = .invalidSignature
+            case 8010:
+                if let apiResponseObject = error.apiResponseObject as? BO.BaseResponse {
+                    self = .invalidToken(response: apiResponseObject)
+                } else {
+                    return nil
+                }
+            case 9900:
+                if let apiResponseObject = error.apiResponseObject as? BO.BaseResponse {
+                    self = .serverDown(response: apiResponseObject)
+                } else {
+                    return nil
+                }
             case 9999:
                 self = .generic
             default:
