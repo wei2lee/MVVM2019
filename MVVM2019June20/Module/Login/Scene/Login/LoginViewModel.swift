@@ -156,6 +156,9 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
                 } else {
                     
                 }
+                
+                //example code for accessing BO response in Error object:
+                let response: BO.BaseResponse? = error.error.boResponse
             })
             //example code for accessing Error object
             
