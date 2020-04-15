@@ -288,6 +288,7 @@
 		667823F82446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823F52446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift */; };
 		667823F92446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823F62446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift */; };
 		667823FB2446FE5F00BABB31 /* AppWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823FA2446FE5F00BABB31 /* AppWindow.swift */; };
+		667823FD24475A5700BABB31 /* NSError+BO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667823FC24475A5700BABB31 /* NSError+BO.swift */; };
 		66782401244760E100BABB31 /* Error+CustomNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66782400244760E100BABB31 /* Error+CustomNSError.swift */; };
 		66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE365C241B7B43007F1319 /* CodableExtensions.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
@@ -595,6 +596,7 @@
 		667823F52446FDDE00BABB31 /* DisposeOnWillRemoveFromParentType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DisposeOnWillRemoveFromParentType+Extension.swift"; sourceTree = "<group>"; };
 		667823F62446FDDE00BABB31 /* UIViewController+SwizzleDOWRFP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwizzleDOWRFP.swift"; sourceTree = "<group>"; };
 		667823FA2446FE5F00BABB31 /* AppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindow.swift; sourceTree = "<group>"; };
+		667823FC24475A5700BABB31 /* NSError+BO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+BO.swift"; sourceTree = "<group>"; };
 		66782400244760E100BABB31 /* Error+CustomNSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+CustomNSError.swift"; sourceTree = "<group>"; };
 		66BE365C241B7B43007F1319 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
@@ -1807,6 +1809,7 @@
 		22ABDCE622E6B2DE0051B2F4 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				667823FC24475A5700BABB31 /* NSError+BO.swift */,
 				22ABDCF722E6BBDF0051B2F4 /* BOProvider.swift */,
 				22ABDD0922E6D3D90051B2F4 /* BOMockPlugin.swift */,
 				47543C6A2407B6CA008E6950 /* BORequestPlugin.swift */,
@@ -2510,6 +2513,7 @@
 				47F5909F240D0B3200038F4E /* RegisterBasicInfoValidationService.swift in Sources */,
 				22287ACD22BB8EDF00C6B842 /* PresentDialogProtocolImpl.swift in Sources */,
 				229D7C7022CAF6A200D04836 /* App.swift in Sources */,
+				667823FD24475A5700BABB31 /* NSError+BO.swift in Sources */,
 				228D9D2C22E6F8A200E40407 /* Setting.swift in Sources */,
 				22287A4E22BB8BEE00C6B842 /* DisposeBagHolderType+Extension.swift in Sources */,
 				229D7C9222CC4DAF00D04836 /* LoginFormValidationService.swift in Sources */,

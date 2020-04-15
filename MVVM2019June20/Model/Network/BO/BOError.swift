@@ -35,7 +35,8 @@ extension BO {
             switch self {
             case .response(let response):
                 return [NSErrorUserInfoKey.LocalizedTitle: response.errorHeader ?? "Server Error",
-                        NSErrorUserInfoKey.LocalizedDescription: response.errorDescription ?? "Server Error"]
+                        NSErrorUserInfoKey.LocalizedDescription: response.errorDescription ?? "Server Error",
+                        NSErrorUserInfoKey.ApiResponseObject: response]
             case .invalidSignature:
                 return [NSErrorUserInfoKey.LocalizedTitle: "Server Error",
                         NSErrorUserInfoKey.LocalizedDescription: "Invalid Response Signature"]
