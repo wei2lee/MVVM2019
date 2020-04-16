@@ -12,16 +12,16 @@ import RxCocoa
 
 class BaseViewModel: BaseViewModelType, ViewModelType, ErrorHandlingViewModelType, ReactiveCompatible {
     //MARK: Input
-    public var startLoad: Driver<Void> = .never()
-    public var startResume: Driver<Void> = .never()
-    public var startReload: Driver<Void> = .never()
-    public var startLoadMore: Driver<Void> = .never()
-    public var startExit: Driver<Void> = .never()
+    @ViewEvent public var startLoad: Driver<Void> = .never()
+    @ViewEvent public var startResume: Driver<Void> = .never()
+    @ViewEvent public var startReload: Driver<Void> = .never()
+    @ViewEvent public var startLoadMore: Driver<Void> = .never()
+    @ViewEvent public var startExit: Driver<Void> = .never()
     //MARK: Output
-    public var showLoading: Driver<Bool> = .never()
+    @PresentationBinding public var showLoading: Driver<Bool> = .never()
     public var showError: ErrorHandlingOutput = .none()
-    public var contentReady: Driver<Bool> = .never()
-    public var exitWithResult: Driver<DismissResult> = .never()
+    @PresentationBinding public var contentReady: Driver<Bool> = .never()
+    @PresentationBinding public var exitWithResult: Driver<DismissResult> = .never()
     //MARK: Dependency
     @Injected public var buildConfig: BuildConfigType
     @Injected public var dateProvider: DateProviderType
@@ -40,15 +40,7 @@ class BaseViewModel: BaseViewModelType, ViewModelType, ErrorHandlingViewModelTyp
     func dispose() {
         //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
         //Input
-        startLoad = .never()
-        startResume = .never()
-        startReload = .never()
-        startExit = .never()
-        //Output
-        showLoading = .never()
-        showError = .none()
-        contentReady = .never()
-        exitWithResult = .never()
+        disposeDisposableEventProperties(object: self)
         //DisposeBag
         disposeBag = DisposeBag()
     }

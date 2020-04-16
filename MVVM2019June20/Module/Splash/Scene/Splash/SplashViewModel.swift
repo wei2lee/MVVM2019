@@ -43,9 +43,7 @@ final class SplashViewModel: BaseViewModel {
             routeTo.drive()
         )
     }
-    override func dispose() {
-        super.dispose()
-    }
+
     //MARK: Helper
     fileprivate func getAppInfo() -> Driver<BO.ResponseAppInfo> {
         let input = BO.RequestAppInfo()

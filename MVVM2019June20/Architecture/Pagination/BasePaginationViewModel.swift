@@ -28,16 +28,16 @@ protocol BasePaginationViewModelType {
 
 class BasePaginationViewModel<Res, SM, FM> : BaseViewModel, BasePaginationViewModelType where SM: SectionModelType {
     //MARK: Input
-    var filterDidBeginEditing: Driver<Void> = .never()
-    var filterDidEndEditing: Driver<Void> = .never()
-    var itemSelected: Driver<IndexPath> = .never()
+    @ViewEvent var filterDidBeginEditing: Driver<Void> = .never()
+    @ViewEvent var filterDidEndEditing: Driver<Void> = .never()
+    @ViewEvent var itemSelected: Driver<IndexPath> = .never()
     var searchText = BehaviorRelay<String?>(value: nil)
-    var searchTextDidEndEditing: Driver<Void> = .never()
+    @ViewEvent var searchTextDidEndEditing: Driver<Void> = .never()
     //MARK: Output
     var filterModel: BehaviorRelay<FM>!
-    var sections: Driver<[SM]> = .never()
-    var didReload: Driver<Void> = .never()
-    var didLoadMore: Driver<Bool> = .never()
+    @PresentationBinding var sections: Driver<[SM]> = .never()
+    @PresentationBinding var didReload: Driver<Void> = .never()
+    @PresentationBinding var didLoadMore: Driver<Bool> = .never()
 
     weak var view:(BasePaginationViewType)? = nil
     //MARK: State - Pagingation
@@ -95,9 +95,6 @@ class BasePaginationViewModel<Res, SM, FM> : BaseViewModel, BasePaginationViewMo
     
     override func dispose() {
         super.dispose()
-        didReload = .never()
-        didLoadMore = .never()
-        sections = .never()
     }
     //MARK: Helper - Pagination
     func appendPage(output: Res) {

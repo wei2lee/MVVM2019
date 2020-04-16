@@ -12,11 +12,11 @@ import RxCocoa
 
 class DashboardViewModel: BaseViewModel {
     //MARK: Input
-    var movieListDidTap: Driver<Void> = .never()
-    var profileDidTap: Driver<Void> = .never()
-    var logoutDidTap: Driver<Void> = .never()
-    var loginOtherUserDidTap: Driver<Void> = .never()
-    var lockDidTap: Driver<Void> = .never()
+    @ViewEvent var movieListDidTap: Driver<Void> = .never()
+    @ViewEvent var profileDidTap: Driver<Void> = .never()
+    @ViewEvent var logoutDidTap: Driver<Void> = .never()
+    @ViewEvent var loginOtherUserDidTap: Driver<Void> = .never()
+    @ViewEvent var lockDidTap: Driver<Void> = .never()
     //MARK: Output
     weak var view: DashboardViewType? = nil
     //MARK: initializer

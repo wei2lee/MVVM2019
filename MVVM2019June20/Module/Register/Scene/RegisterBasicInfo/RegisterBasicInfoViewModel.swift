@@ -22,7 +22,7 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
     let confirmPassword: BehaviorRelay<String?> = .init(value: "")
     let firstNameState: BehaviorRelay<ValidationState> = .init(value: .initial)
     let lastNameState: BehaviorRelay<ValidationState> = .init(value: .initial)
-    var startNext: Driver<Void> = .never()
+    @ViewEvent var startNext: Driver<Void> = .never()
     //MARK: Output
     public weak var view: RegisterBasicInfoViewType? = nil
 
@@ -57,10 +57,7 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
             routeToNext.drive()
         )
     }
-    override func dispose() {
-        super.dispose()
-    }
-   
+
     fileprivate func updatePlaceholderForm(form: PlaceholderForm) {
         self.firstName.accept(form.firstName)
         self.lastName.accept(form.lastName)

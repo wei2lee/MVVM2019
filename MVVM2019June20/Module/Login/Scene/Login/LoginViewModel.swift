@@ -16,8 +16,8 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     //MARK: Input
     public let username = BehaviorRelay<String?>(value: nil)
     public let password = BehaviorRelay<String?>(value: nil)
-    public var startSubmit: Driver<Void> = .never()
-    public var startRegister: Driver<Void> = .never()
+    @ViewEvent public var startSubmit: Driver<Void> = .never()
+    @ViewEvent public var startRegister: Driver<Void> = .never()
     //MARK: Output
     public weak var view: LoginViewType? = nil
     public let footerText = BehaviorRelay<String?>(value: nil)
@@ -71,9 +71,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
             routeToRegister.drive()
         )
     }
-    override func dispose() {
-        super.dispose()
-    }
+
     //MARK: Helper
     fileprivate func convertForm() -> Driver<Void> {
         return username.asDriver().distinctUntilChanged().do(onNext: { string in

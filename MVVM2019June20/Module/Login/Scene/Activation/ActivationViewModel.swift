@@ -19,8 +19,8 @@ final class ActivationViewModel: BaseViewModel {
     fileprivate static let nonNumberRegex = try! NSRegularExpression(pattern:"[^\\d]", options: .caseInsensitive)
     //MARK: Input
     public let activationCode = BehaviorRelay<String?>(value: nil)
-    public var startRequestActivationCode: Driver<Void> = .never()
-    public var startSubmit: Driver<Void> = .never()
+    @ViewEvent public var startRequestActivationCode: Driver<Void> = .never()
+    @ViewEvent public var startSubmit: Driver<Void> = .never()
     //MARK: Output
     public let requestActivationStatusText = BehaviorRelay<String?>(value: nil)
     public let enableRequestActivate = BehaviorRelay<Bool>(value: false)
@@ -94,12 +94,6 @@ final class ActivationViewModel: BaseViewModel {
             convertForm.drive(),
             doLogout.drive()
         )
-    }
-    
-    override func dispose() {
-        super.dispose()
-        startRequestActivationCode = .never()
-        startSubmit = .never()
     }
     
     //MARK: Helper

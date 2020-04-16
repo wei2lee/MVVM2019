@@ -30,9 +30,5 @@ final class RegisterMigrationViewModel: BaseViewModel {
     //MARK: transform
     override func transform() {
     }
-    override func dispose() {
-        super.dispose()
-    }
-   
 }
 
