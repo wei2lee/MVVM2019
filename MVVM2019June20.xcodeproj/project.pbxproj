@@ -292,6 +292,9 @@
 		66782401244760E100BABB31 /* Error+CustomNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66782400244760E100BABB31 /* Error+CustomNSError.swift */; };
 		6678240324476D0500BABB31 /* BOErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678240224476D0400BABB31 /* BOErrorCode.swift */; };
 		6678240524476D2500BABB31 /* BOError+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678240424476D2500BABB31 /* BOError+Response.swift */; };
+		667824072448705800BABB31 /* DisposableEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667824062448705800BABB31 /* DisposableEvent.swift */; };
+		66782409244876EA00BABB31 /* ViewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66782408244876E900BABB31 /* ViewEvent.swift */; };
+		6678240B244876F600BABB31 /* PresentationBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678240A244876F600BABB31 /* PresentationBinding.swift */; };
 		66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE365C241B7B43007F1319 /* CodableExtensions.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
@@ -602,6 +605,9 @@
 		66782400244760E100BABB31 /* Error+CustomNSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+CustomNSError.swift"; sourceTree = "<group>"; };
 		6678240224476D0400BABB31 /* BOErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOErrorCode.swift; sourceTree = "<group>"; };
 		6678240424476D2500BABB31 /* BOError+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOError+Response.swift"; sourceTree = "<group>"; };
+		667824062448705800BABB31 /* DisposableEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableEvent.swift; sourceTree = "<group>"; };
+		66782408244876E900BABB31 /* ViewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEvent.swift; sourceTree = "<group>"; };
+		6678240A244876F600BABB31 /* PresentationBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationBinding.swift; sourceTree = "<group>"; };
 		66BE365C241B7B43007F1319 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
 		79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_staging.xcconfig"; sourceTree = "<group>"; };
@@ -810,6 +816,9 @@
 				222879CC22BB8BED00C6B842 /* DelegateProxy */,
 				222879D122BB8BED00C6B842 /* DisposeBagHolderType+Extension.swift */,
 				222879D222BB8BED00C6B842 /* DisposeBagHolderType.swift */,
+				667824062448705800BABB31 /* DisposableEvent.swift */,
+				66782408244876E900BABB31 /* ViewEvent.swift */,
+				6678240A244876F600BABB31 /* PresentationBinding.swift */,
 			);
 			path = RxHelper;
 			sourceTree = "<group>";
@@ -2404,6 +2413,7 @@
 				66782401244760E100BABB31 /* Error+CustomNSError.swift in Sources */,
 				22287A5222BB8BEE00C6B842 /* CustomBarItem.swift in Sources */,
 				22F28AF422C6081A0009BE71 /* OMDb.swift in Sources */,
+				6678240B244876F600BABB31 /* PresentationBinding.swift in Sources */,
 				47528A2A240B990B0034F462 /* MovieIntent.swift in Sources */,
 				22287A8E22BB8BEE00C6B842 /* CaseInsenstiveAlphaNumericsStringEnum.swift in Sources */,
 				47528A05240B939F0034F462 /* RegisterMigrationViewController.swift in Sources */,
@@ -2517,6 +2527,7 @@
 				227C9DA822F18FDE00C5A968 /* LoginNavigationController.swift in Sources */,
 				22ABDCEE22E6B3A10051B2F4 /* BOBaseTarget.swift in Sources */,
 				22287A5D22BB8BEE00C6B842 /* DismissWithResultProtocol+Extension.swift in Sources */,
+				667824072448705800BABB31 /* DisposableEvent.swift in Sources */,
 				47F5909F240D0B3200038F4E /* RegisterBasicInfoValidationService.swift in Sources */,
 				22287ACD22BB8EDF00C6B842 /* PresentDialogProtocolImpl.swift in Sources */,
 				229D7C7022CAF6A200D04836 /* App.swift in Sources */,
@@ -2590,6 +2601,7 @@
 				22287A5922BB8BEE00C6B842 /* ShowProgressHUDProtocol+Rx.swift in Sources */,
 				22287A6122BB8BEE00C6B842 /* UIViewController+Disposable.swift in Sources */,
 				47528A11240B947C0034F462 /* RegisterBasicInfoViewTypes.swift in Sources */,
+				66782409244876EA00BABB31 /* ViewEvent.swift in Sources */,
 				47543C6B2407B6CA008E6950 /* BORequestPlugin.swift in Sources */,
 				229D7C0622C9B02C00D04836 /* BuildConfig+Base.swift in Sources */,
 				22287A8922BB8BEE00C6B842 /* Error+Helper.swift in Sources */,
