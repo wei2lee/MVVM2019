@@ -816,9 +816,6 @@
 				222879CC22BB8BED00C6B842 /* DelegateProxy */,
 				222879D122BB8BED00C6B842 /* DisposeBagHolderType+Extension.swift */,
 				222879D222BB8BED00C6B842 /* DisposeBagHolderType.swift */,
-				667824062448705800BABB31 /* DisposableEvent.swift */,
-				66782408244876E900BABB31 /* ViewEvent.swift */,
-				6678240A244876F600BABB31 /* PresentationBinding.swift */,
 			);
 			path = RxHelper;
 			sourceTree = "<group>";
@@ -976,6 +973,9 @@
 		222879FD22BB8BED00C6B842 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				667824062448705800BABB31 /* DisposableEvent.swift */,
+				66782408244876E900BABB31 /* ViewEvent.swift */,
+				6678240A244876F600BABB31 /* PresentationBinding.swift */,
 				222879FE22BB8BED00C6B842 /* ViewType.swift */,
 				222879FF22BB8BED00C6B842 /* ViewModelType.swift */,
 			);
