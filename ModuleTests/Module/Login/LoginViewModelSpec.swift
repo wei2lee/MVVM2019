@@ -15,6 +15,10 @@ import RxCocoa
 @testable import MVVM2019June20
 
 fileprivate class MockLoginView: MockBaseView, LoginViewType {
+    func routeToRegister() {
+        
+    }
+    
     var intent: LoginIntent!
     
     override init() {
