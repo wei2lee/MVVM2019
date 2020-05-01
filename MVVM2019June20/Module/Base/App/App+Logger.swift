@@ -40,5 +40,6 @@ extension AppDelegate {
                   showLineNumbers: true,
                   writeToFile: nil,
                   fileLevel: .debug)
+        Log.filters = [TagFilter(excludeFrom: [LogTag.clearup])]
     }
 }

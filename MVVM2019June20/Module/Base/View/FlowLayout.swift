@@ -29,7 +29,7 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
     private var cellTopBottomPadding: CGFloat = 0
     private var shouldInvalidateDuringScrolling: Bool = false
     private var updateIsScrollingTimer: Timer? = nil
-    var delegate: PinterestFlowLayoutDelegate!
+    weak var delegate: PinterestFlowLayoutDelegate?
     var contentSizeRelay = BehaviorRelay<CGSize>(value: .zero)
     var estimateItemHeight: CGFloat = 223
     var headerHeight: CGFloat = 0
@@ -388,7 +388,7 @@ class PinterestFlowLayout: UICollectionViewFlowLayout {
                                   y: yoffset + cellTopBottomPadding,
                                   width: cellWidth,
                                   height: isEstimateItemHeight ? delegate?.collectionView?(estimatedHeightForCellAtIndexPath: indexPath, withWidth: cellWidth) ?? estimateItemHeight :
-                                    delegate.collectionView(heightForCellAtIndexPath: indexPath, withWidth: cellWidth))
+                                    delegate?.collectionView(heightForCellAtIndexPath: indexPath, withWidth: cellWidth) ?? estimateItemHeight)
         return attributes
     }
     

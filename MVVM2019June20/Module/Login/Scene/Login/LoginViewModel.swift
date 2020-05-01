@@ -16,15 +16,15 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     //MARK: Input
     public let username = BehaviorRelay<String?>(value: nil)
     public let password = BehaviorRelay<String?>(value: nil)
-    @ViewEvent public var startSubmit: Driver<Void> = .never()
-    @ViewEvent public var startRegister: Driver<Void> = .never()
-    //MARK: Output
+    @ViewEvent var startSubmit: Driver<Void> = .never()
+    @ViewEvent var startRegister: Driver<Void> = .never()
+    //MARK: Output, ViewMapping
     public weak var view: LoginViewType? = nil
     public let footerText = BehaviorRelay<String?>(value: nil)
     public let showNavigationBar: Bool
     public let isModalInPresentation: Bool
     public let showClose: Bool
-    //MARK: Dependency
+    //MARK: Dependency //Property Wrapper, write a future unit testable code
     @Injected fileprivate var authService: AuthServiceType
     @Injected fileprivate var validationService: LoginFormValidationServiceType
     //MARK: State
@@ -51,6 +51,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     override func transform() {
         super.transform()
         let footerText = startLoad.map{ SwifterSwift.appVersion.orEmptyReplacement }
+        
         let convertForm = startLoad.flatMapLatest(self.convertForm)
         let form = self.form
         let doSubmit = startSubmit
@@ -158,7 +159,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
                 }
                 
                 //example code for accessing BO response in Error object:
-                let response: BO.BaseResponse? = error.error.boResponse
+                //let response: BO.BaseResponse? = error.error.boResponse
             })
             //example code for accessing Error object
             

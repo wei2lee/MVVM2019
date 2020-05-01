@@ -295,6 +295,7 @@
 		667824072448705800BABB31 /* DisposableEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667824062448705800BABB31 /* DisposableEvent.swift */; };
 		66782409244876EA00BABB31 /* ViewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66782408244876E900BABB31 /* ViewEvent.swift */; };
 		6678240B244876F600BABB31 /* PresentationBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678240A244876F600BABB31 /* PresentationBinding.swift */; };
+		667824132448C1EC00BABB31 /* DisposableEventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667824122448C1EB00BABB31 /* DisposableEventHelper.swift */; };
 		66BE365D241B7B43007F1319 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE365C241B7B43007F1319 /* CodableExtensions.swift */; };
 		A2FAB5570E550E12D520A3E7 /* Pods_MVVM2019June20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFB20E4D857C89E612A073D /* Pods_MVVM2019June20.framework */; };
 		D2B3FC5E175AD5C8E39BFA59 /* Pods_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3000D2B326FA05E106F0781 /* Pods_ModuleTests.framework */; };
@@ -608,6 +609,7 @@
 		667824062448705800BABB31 /* DisposableEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableEvent.swift; sourceTree = "<group>"; };
 		66782408244876E900BABB31 /* ViewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEvent.swift; sourceTree = "<group>"; };
 		6678240A244876F600BABB31 /* PresentationBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationBinding.swift; sourceTree = "<group>"; };
+		667824122448C1EB00BABB31 /* DisposableEventHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableEventHelper.swift; sourceTree = "<group>"; };
 		66BE365C241B7B43007F1319 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		68C5DB191D79711215DDF3C6 /* Pods-ModuleTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTests.staging.xcconfig"; path = "Target Support Files/Pods-ModuleTests/Pods-ModuleTests.staging.xcconfig"; sourceTree = "<group>"; };
 		79B6A124B53B072610A6C299 /* Pods-MVVM2019June20.dev_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM2019June20.dev_staging.xcconfig"; path = "Target Support Files/Pods-MVVM2019June20/Pods-MVVM2019June20.dev_staging.xcconfig"; sourceTree = "<group>"; };
@@ -978,6 +980,7 @@
 				6678240A244876F600BABB31 /* PresentationBinding.swift */,
 				222879FE22BB8BED00C6B842 /* ViewType.swift */,
 				222879FF22BB8BED00C6B842 /* ViewModelType.swift */,
+				667824122448C1EB00BABB31 /* DisposableEventHelper.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -2386,6 +2389,7 @@
 				22ABDCCB22E557CB0051B2F4 /* DateProvider.swift in Sources */,
 				47528A22240B98290034F462 /* LoginNavigationIntent.swift in Sources */,
 				223C15BE22E1CAB100365121 /* DI+View.swift in Sources */,
+				667824132448C1EC00BABB31 /* DisposableEventHelper.swift in Sources */,
 				6678240324476D0500BABB31 /* BOErrorCode.swift in Sources */,
 				227C9DB422F19E7E00C5A968 /* DashboardNavigationTypes.swift in Sources */,
 				22287A4422BB8BEE00C6B842 /* RxOperator.swift in Sources */,

@@ -10,32 +10,27 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+protocol EventDisposable {
+    mutating func dispose()
+}
+
 @propertyWrapper
-class DisposableEvent<T> : Disposable {
-    func dispose() {
+struct DisposableEvent<T> : EventDisposable {
+    mutating func dispose() {
         event = .never()
     }
     
     var event: Driver<T> = .never()
     public var wrappedValue: Driver<T> {
-        get {
+        mutating get {
             return event
         }
-        set {
+        mutating set {
             event = newValue
         }
     }
     
     init(wrappedValue: Driver<T>) {
         self.event = wrappedValue
-    }
-}
-
-func disposeDisposableEventProperties(object: Any) {
-    let mirror = Mirror(reflecting: object)
-    for child in mirror.children {
-        if let child = child.value as? Disposable {
-            child.dispose()
-        }
     }
 }

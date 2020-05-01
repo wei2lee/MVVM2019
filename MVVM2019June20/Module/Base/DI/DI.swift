@@ -46,8 +46,8 @@ extension DIModuleRegistor {
 @propertyWrapper
 struct Injected<Service> {
     private var service: Service?
-    public var container: Resolver?
-    //public var name: String?
+    var container: Resolver?
+    init() { }
     public var wrappedValue: Service {
         mutating get {
             if service == nil {

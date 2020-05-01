@@ -12,7 +12,6 @@ import RxCocoa
 
 class BaseViewController<VM> : UIViewController, BaseViewType, ViewType, BaseNavigationChildViewController where VM : BaseViewModelType {
     //MARK: State
-    var disposeOnWillRemoveFromParent: Bool = true
     var viewModel: VM! {
         didSet {
             if let vm = viewModel {
@@ -28,9 +27,14 @@ class BaseViewController<VM> : UIViewController, BaseViewType, ViewType, BaseNav
         transform()
         subscribe()
     }
+    //MARK: <Disposable>
+    override func dispose() {
+        super.dispose()
+        viewModel = nil
+    }
 
     deinit {
-        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
+        Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
     }
     //MARK: setupView
     func setupView() {

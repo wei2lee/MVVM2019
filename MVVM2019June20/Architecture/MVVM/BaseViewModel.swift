@@ -38,14 +38,16 @@ class BaseViewModel: BaseViewModelType, ViewModelType, ErrorHandlingViewModelTyp
         
     }
     func dispose() {
-        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
+        let retainCount = CFGetRetainCount(self)
         //Input
         disposeDisposableEventProperties(object: self)
         //DisposeBag
         disposeBag = DisposeBag()
+        let retainCount2 = CFGetRetainCount(self)
+        Log.debug("\(self) \(retainCount)->\(retainCount2)", userInfo: LogTag.clearup.dictionary)
     }
     deinit {
-        //Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
+        Log.debug("\(self)", userInfo: LogTag.clearup.dictionary)
     }
     //MARK: Helper
 }

@@ -52,6 +52,10 @@ class LoginViewController: BaseViewController<LoginViewModel>
         _ = returnKeyHandler
     }
     override func setupTransformInput() {
+//iOS vanilla SDK, they providing callback, event like delegate, closure, NotificationCenter, addTarget(self. event)
+        //has convert into Driver(event), ControlProperty,
+        //most of UIComponent library, RxCocoa provide UIComponent binding event
+        
         super.setupTransformInput()
         viewModel.view = self
         viewModel.startExit = rx.leftBarButtonItem(.close())
@@ -63,7 +67,6 @@ class LoginViewController: BaseViewController<LoginViewModel>
         super.subscribe()
         disposeBag.insert(
             //Form
-            formView.usernameTextField.rx.text <-> viewModel.username,
             formView.passwordTextField.rx.text <-> viewModel.password,
             //Footer
             viewModel.footerText.bind(to: footerView.label.rx.text)

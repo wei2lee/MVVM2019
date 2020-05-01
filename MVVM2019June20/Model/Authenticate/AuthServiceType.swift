@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+
 protocol AuthServiceType {
     func login(username: String, password: String) -> Observable<LoginSession>
     func revalidate(loginSession: LoginSession?, catchErrorJustNext: Bool) -> Observable<Void>
