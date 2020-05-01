@@ -19,7 +19,7 @@ class DashboardViewController: BaseViewController<DashboardViewModel> {
     
     override func loadView() {
         super.loadView()
-        viewModel = DI.container.resolve(DashboardViewModel.self)!
+        viewModel = DI.resolver.resolve(DashboardViewModel.self)!
     }
     
     override func setupView() {
@@ -39,25 +39,25 @@ class DashboardViewController: BaseViewController<DashboardViewModel> {
 }
 extension DashboardViewController: DashboardViewType {
     func routeToMovieList() {
-        let screen = DI.container.resolve(MovieListViewControllerType.self)!
+        let screen = DI.resolver.resolve(MovieListViewControllerType.self)!
         navigationController?.pushViewController(screen)
     }
     func routeToLogout() {
-        let screen = DI.container.resolve(LoginNavigationControllerType.self)!
+        let screen = DI.resolver.resolve(LoginNavigationControllerType.self)!
         SwifterSwift.sharedApplication.keyWindow!.rootViewController = screen
     }
     func routeToProfile() {
         
     }
     func promptLoginModal() {
-        var screen = DI.container.resolve(LoginNavigationControllerType.self)!
+        var screen = DI.resolver.resolve(LoginNavigationControllerType.self)!
         screen.intent = LoginNavigationIntent(isModal: true,
                                               initialView: .login,
                                               enableDismiss: true)
         self.present(screen, animated: true, completion: nil)
     }
     func promptLockModal() {
-        var screen = DI.container.resolve(LoginNavigationControllerType.self)!
+        var screen = DI.resolver.resolve(LoginNavigationControllerType.self)!
         screen.intent = LoginNavigationIntent(isModal: true,
                                               initialView: .login,
                                               enableDismiss: false)

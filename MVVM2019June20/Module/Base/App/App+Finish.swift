@@ -12,7 +12,7 @@ import SwifterSwift
 
 extension AppDelegate {
     func onApplicationFinishDidLaunchCompleted() {
-        let Defaults = DI.container.resolve(UserDefaults.self)!
+        let Defaults = DI.resolver.resolve(UserDefaults.self)!
         Defaults[.lastLaunchAppVersion] = SwifterSwift.appVersion ?? ""
         Defaults[.lastLaunchAppBuild] = SwifterSwift.appBuild ?? ""
         Defaults[.appLaunchBefore] = true

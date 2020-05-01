@@ -14,7 +14,7 @@ extension BO {
     public struct ResponsePlugin: PluginType {
         let privateKeyClosure: () -> String
         public init() {
-            let config = DI.container.resolve(BuildConfigType.self)!
+            let config = DI.resolver.resolve(BuildConfigType.self)!
             privateKeyClosure = {
                 return config.boRequestSignaturePrivateKey
             }

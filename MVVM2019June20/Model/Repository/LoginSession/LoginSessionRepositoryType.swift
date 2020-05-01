@@ -11,7 +11,7 @@ import Foundation
 
 extension LoginSession {
     static var current: LoginSession? {
-        return DI.container.resolve(LoginSessionRepositoryType.self)!.currentLoginSession
+        return DI.resolver.resolve(LoginSessionRepositoryType.self)!.currentLoginSession
     }
 }
 

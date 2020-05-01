@@ -14,7 +14,7 @@ class MovieViewController: BaseViewController<MovieViewModel> {
     var intent: MovieIntent!
     override func loadView() {
         super.loadView()
-        viewModel = DI.container.resolve(MovieViewModel.self, argument: intent!)
+        viewModel = DI.resolver.resolve(MovieViewModel.self, argument: intent!)
     }
 }
 //MARK: <MovieViewControllerType>

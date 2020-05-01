@@ -18,7 +18,7 @@ class SplashViewController: BaseViewController<SplashViewModel>
     //MARK: viewCycle
     override func loadView() {
         super.loadView()
-        viewModel = DI.container.resolve(SplashViewModel.self)!
+        viewModel = DI.resolver.resolve(SplashViewModel.self)!
     }
     override func setupView() {
         super.setupView()
@@ -35,7 +35,7 @@ class SplashViewController: BaseViewController<SplashViewModel>
 //MARK: <SplashViewType>
 extension SplashViewController: SplashViewType {
     func routeToLogin() {
-        var screen = DI.container.resolve(LoginNavigationControllerType.self)!
+        var screen = DI.resolver.resolve(LoginNavigationControllerType.self)!
         screen.intent = LoginNavigationIntent(isModal: false,
                                               initialView: .login,
                                               enableDismiss: true)
@@ -43,7 +43,7 @@ extension SplashViewController: SplashViewType {
     }
     
     func routeToActivation() {
-        var screen = DI.container.resolve(LoginNavigationControllerType.self)!
+        var screen = DI.resolver.resolve(LoginNavigationControllerType.self)!
         screen.intent = LoginNavigationIntent(isModal: false,
                                               initialView: .activation,
                                               enableDismiss: true)
@@ -51,7 +51,7 @@ extension SplashViewController: SplashViewType {
     }
     
     func routeToDashboard() {
-        let screen = DI.container.resolve(DashboardNavigationControllerType.self)!
+        let screen = DI.resolver.resolve(DashboardNavigationControllerType.self)!
         SwifterSwift.sharedApplication.keyWindow?.rootViewController = screen
     }
     

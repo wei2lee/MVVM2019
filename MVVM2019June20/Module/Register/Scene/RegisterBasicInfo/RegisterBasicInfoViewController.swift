@@ -29,7 +29,7 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     override func loadView() {
         super.loadView()
         intent = RegisterBasicInfoIntent()
-        viewModel = DI.container.resolve(RegisterBasicInfoViewModel.self, argument: intent!)!
+        viewModel = DI.resolver.resolve(RegisterBasicInfoViewModel.self, argument: intent!)!
     }
     override func setupView() {
         super.setupView()
@@ -82,7 +82,7 @@ class RegisterBasicInfoViewController: BaseViewController<RegisterBasicInfoViewM
     }
     //MARK: <RegisterBasicInfoViewType>
     func routeToNext() {
-        let screen = DI.container.resolve(RegisterMigrationViewControllerType.self)!
+        let screen = DI.resolver.resolve(RegisterMigrationViewControllerType.self)!
         navigationController?.pushViewController(screen)
     }
     

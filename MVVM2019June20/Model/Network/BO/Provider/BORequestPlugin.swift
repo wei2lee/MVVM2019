@@ -16,7 +16,7 @@ extension BO {
         let privateKeyClosure: () -> String
         let timestampFormat: String
         public init() {
-            let config = DI.container.resolve(BuildConfigType.self)!
+            let config = DI.resolver.resolve(BuildConfigType.self)!
             privateKeyClosure = {
                 return config.boRequestSignaturePrivateKey
             }

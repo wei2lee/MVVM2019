@@ -118,7 +118,7 @@ extension BO {
 
 extension BO.BaseTarget where O : Codable {
     func request(provider: BO.Provider? = nil) -> Observable<O> {
-        let provider = provider ?? DI.container.resolve(BO.Provider.self)!
+        let provider = provider ?? DI.resolver.resolve(BO.Provider.self)!
         return Observable.create({ observer -> Disposable in
             let cancellable = provider.typedRequest(self,
                                                     callbackQueue: nil,

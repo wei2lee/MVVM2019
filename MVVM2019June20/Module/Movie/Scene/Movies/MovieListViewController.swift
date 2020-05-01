@@ -65,7 +65,7 @@ class MovieListViewController: BasePaginationCollectionViewController<MovieListV
     
     //MARK: <MovieListViewType>
     func routeToMovieDetail(intent: MovieIntent) {
-        let screen = DI.container.resolve(MovieViewControllerType.self)!
+        let screen = DI.resolver.resolve(MovieViewControllerType.self)!
         screen.intent = intent
         navigationController?.pushViewController(screen)
     }

@@ -22,12 +22,12 @@ class LoginNavigationController: UINavigationController, LoginNavigationViewType
         }
     }
     fileprivate func createLogin() -> UIViewController {
-        let screen = DI.container.resolve(LoginViewControllerType.self)!
+        let screen = DI.resolver.resolve(LoginViewControllerType.self)!
         screen.intent = intent
         return screen
     }
     fileprivate func createActivation() -> UIViewController {
-        let screen = DI.container.resolve(ActivationViewControllerType.self)!
+        let screen = DI.resolver.resolve(ActivationViewControllerType.self)!
         return screen
     }
 }

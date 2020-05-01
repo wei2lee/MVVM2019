@@ -119,7 +119,7 @@ extension OMDb {
 
 extension OMDb.BaseTarget where O : Codable {
     func request(provider: OMDb.Provider? = nil) -> Observable<O> {
-        let provider = provider ?? DI.container.resolve(OMDb.Provider.self)!
+        let provider = provider ?? DI.resolver.resolve(OMDb.Provider.self)!
         return Observable.create({ observer -> Disposable in
             let cancellable = provider.typedRequest(self,
                                                     callbackQueue: nil,

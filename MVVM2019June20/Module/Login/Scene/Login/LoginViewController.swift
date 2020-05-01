@@ -28,7 +28,7 @@ class LoginViewController: BaseViewController<LoginViewModel>
     //MARK: viewCycle
     override func loadView() {
         super.loadView()
-        viewModel = DI.container.resolve(LoginViewModel.self, argument: intent!)!
+        viewModel = DI.resolver.resolve(LoginViewModel.self, argument: intent!)!
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -77,19 +77,19 @@ class LoginViewController: BaseViewController<LoginViewModel>
 extension LoginViewController: LoginViewType {
     func routeToActivation() {
         if intent.isModal {
-            var screen = DI.container.resolve(LoginNavigationControllerType.self)!
+            var screen = DI.resolver.resolve(LoginNavigationControllerType.self)!
             screen.intent = LoginNavigationIntent(isModal: false,
                                                   initialView: .activation,
                                                   enableDismiss: true)
             SwifterSwift.sharedApplication.keyWindow?.rootViewController = screen
         } else {
-            let screen = DI.container.resolve(ActivationViewControllerType.self)!
+            let screen = DI.resolver.resolve(ActivationViewControllerType.self)!
             navigationController?.pushViewController(screen)
         }
     }
     
     func routeToDashboard() {
-        let screen = DI.container.resolve(DashboardNavigationControllerType.self)!
+        let screen = DI.resolver.resolve(DashboardNavigationControllerType.self)!
         SwifterSwift.sharedApplication.keyWindow?.rootViewController = screen
     }
     
@@ -98,7 +98,7 @@ extension LoginViewController: LoginViewType {
     }
     
     func routeToRegister() {
-        let screen = DI.container.resolve(RegisterNavigationControllerType.self)!
+        let screen = DI.resolver.resolve(RegisterNavigationControllerType.self)!
         self.present(screen, animated: true, completion: nil)
     }
 }

@@ -11,11 +11,11 @@ import SwiftDate
 
 extension EnumRegion {
     var now: DateInRegion {
-        let dateProvider = DI.container.resolve(DateProviderType.self)!
+        let dateProvider = DI.resolver.resolve(DateProviderType.self)!
         return DateInRegion(dateProvider.now.date, region: self.region)
     }
     static var local: EnumRegion {
-        let buildConfig = DI.container.resolve(BuildConfigType.self)!
+        let buildConfig = DI.resolver.resolve(BuildConfigType.self)!
         return buildConfig.localRegion
     }
 }

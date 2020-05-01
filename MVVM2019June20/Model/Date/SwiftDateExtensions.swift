@@ -17,7 +17,7 @@ extension Region {
         return EnumRegion.gmt.region
     }
     static var local: Region {
-        let buildConfig = DI.container.resolve(BuildConfigType.self)!
+        let buildConfig = DI.resolver.resolve(BuildConfigType.self)!
         return buildConfig.localRegion.region
     }
 }
@@ -33,7 +33,7 @@ extension DateInRegion {
         return DateInRegion(self.date, region: .local)
     }
     static var now: DateInRegion {
-        let now = DI.container.resolve(DateProviderType.self)!.now
+        let now = DI.resolver.resolve(DateProviderType.self)!.now
         return DateInRegion(now.date, region: .local)
     }
 }
@@ -49,7 +49,7 @@ extension Date {
         return DateInRegion(self, region: .local)
     }
     static var now: Date {
-        let now = DI.container.resolve(DateProviderType.self)!.now
+        let now = DI.resolver.resolve(DateProviderType.self)!.now
         return now.date
     }
 }

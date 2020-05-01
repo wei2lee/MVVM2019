@@ -25,7 +25,7 @@ class ActivationViewController: BaseViewController<ActivationViewModel> {
     //MARK: viewCycle
     override func loadView() {
         super.loadView()
-        viewModel = DI.container.resolve(ActivationViewModel.self)!
+        viewModel = DI.resolver.resolve(ActivationViewModel.self)!
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -65,7 +65,7 @@ extension ActivationViewController: ActivationViewType {
     }
     
     func routeToDashboard() {
-        let screen = DI.container.resolve(DashboardNavigationControllerType.self)!
+        let screen = DI.resolver.resolve(DashboardNavigationControllerType.self)!
         SwifterSwift.sharedApplication.keyWindow?.rootViewController = screen
     }
 }

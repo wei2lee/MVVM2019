@@ -13,6 +13,7 @@ import SwifterSwift
 
 struct DI {
     static let container = Container()
+    static let resolver: Resolver = { return container.synchronize() }()
 }
 
 extension UIStoryboard {
@@ -46,12 +47,11 @@ extension DIModuleRegistor {
 @propertyWrapper
 struct Injected<Service> {
     private var service: Service?
-    var container: Resolver?
     init() { }
     public var wrappedValue: Service {
         mutating get {
             if service == nil {
-                service = DI.container.resolve(Service.self)
+                service = DI.resolver.resolve(Service.self)
             }
             return service!
         }
