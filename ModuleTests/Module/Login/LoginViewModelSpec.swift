@@ -31,7 +31,7 @@ fileprivate class MockLoginView: MockBaseView, LoginViewType {
     }
     
     var isRouteToDashboard = false
-    func routeToDashboard() {
+    @objc func routeToDashboard() {
         isRouteToDashboard = true
     }
     
