@@ -10,15 +10,17 @@ import Foundation
 
 extension BO.Error {
     init?(response: BO.BaseResponse) {
-        switch response.errorCode {
-        case BO.ErrorCode.invalidToken.rawValue:
-            self = .invalidToken(response: response)
-        case BO.ErrorCode.serverDown.rawValue:
-            self = .serverDown(response: response)
-        case BO.ErrorCode.generic.rawValue:
-            self = .response(response: response)
-        default:
+        if response.errorCode.isNilOrEmpty {
             return nil
+        } else {
+            switch response.errorCode {
+            case BO.ErrorCode.invalidToken.rawValue:
+                self = .invalidToken(response: response)
+            case BO.ErrorCode.serverDown.rawValue:
+                self = .serverDown(response: response)
+            default:
+                self = .response(response: response)
+            }
         }
     }
 }

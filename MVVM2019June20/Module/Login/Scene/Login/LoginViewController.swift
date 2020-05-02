@@ -67,6 +67,7 @@ class LoginViewController: BaseViewController<LoginViewModel>
         super.subscribe()
         disposeBag.insert(
             //Form
+            formView.usernameTextField.rx.text <-> viewModel.username,
             formView.passwordTextField.rx.text <-> viewModel.password,
             //Footer
             viewModel.footerText.bind(to: footerView.label.rx.text)
