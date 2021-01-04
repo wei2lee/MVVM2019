@@ -38,6 +38,7 @@ final class RegisterBasicInfoViewModel: BaseViewModel {
 
     //MARK: transform
     override func transform() {
+        super.transform()
         let loadPlaceholderForm = startLoad
             .flatMap(getPlaceholderRegisterForm)
             .do(onNext: updatePlaceholderForm)
