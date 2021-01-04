@@ -11,6 +11,6 @@ import FLEX
 extension AppDelegate {
     func setupFlex() {
         FLEXManager.shared().isNetworkDebuggingEnabled = true
-        FLEXManager.shared()?.showExplorer()
+        //FLEXManager.shared()?.showExplorer()
     }
 }
