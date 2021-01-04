@@ -18,7 +18,6 @@ ${BUILT_PRODUCTS_DIR}/RxBiBinding/RxBiBinding.framework
 ${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
 ${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework
 ${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework
-${BUILT_PRODUCTS_DIR}/RxPermission/RxPermission.framework
 ${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SemanticVersioning/SemanticVersioning.framework

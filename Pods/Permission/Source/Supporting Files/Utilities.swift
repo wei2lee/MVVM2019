@@ -1,7 +1,7 @@
 //
 // Utilities.swift
 //
-// Copyright (c) 2015-2016 Damien (http://delba.io)
+// Copyright (c) 2015-2019 Damien (http://delba.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,17 +23,17 @@
 //
 
 extension UIApplication {
-    fileprivate var topViewController: UIViewController? {
-        var vc = delegate?.window??.rootViewController
-        
+    private var topViewController: UIViewController? {
+        var vc = keyWindow?.rootViewController
+
         while let presentedVC = vc?.presentedViewController {
             vc = presentedVC
         }
 
         return vc
     }
-    
-    internal func presentViewController(_ viewController: UIViewController, animated: Bool = true, completion: (() -> Void)? = nil) {
+
+    func present(_ viewController: UIViewController, animated: Bool = true, completion: (() -> Void)? = nil) {
         topViewController?.present(viewController, animated: animated, completion: completion)
     }
 }
@@ -48,7 +48,47 @@ extension UIControl.State: Hashable {
     public var hashValue: Int { return Int(rawValue) }
 }
 
-internal extension String {
+@propertyWrapper
+struct UserDefault<T> {
+    let key: String
+    let defaultValue: T
+
+    init(_ key: String, defaultValue: T) {
+        self.key = key
+        self.defaultValue = defaultValue
+    }
+
+    var wrappedValue: T {
+        get {
+            return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: key)
+        }
+    }
+}
+
+struct Defaults {
+    @UserDefault("permission.requestedNotifications", defaultValue: false)
+    static var requestedNotifications: Bool
+
+    @UserDefault("permission.requestedLocationAlwaysWithWhenInUse", defaultValue: false)
+    static var requestedLocationAlwaysWithWhenInUse: Bool
+
+    @UserDefault("permission.requestedMotion", defaultValue: false)
+    static var requestedMotion: Bool
+
+    @UserDefault("permission.requestedBluetooth", defaultValue: false)
+    static var requestedBluetooth: Bool
+
+    @UserDefault("permission.statusBluetooth", defaultValue: nil)
+    static var statusBluetooth: PermissionStatus?
+
+    @UserDefault("permission.stateBluetoothManagerDetermined", defaultValue: false)
+    static var stateBluetoothManagerDetermined: Bool
+}
+
+extension String {
     static let locationWhenInUseUsageDescription = "NSLocationWhenInUseUsageDescription"
     static let locationAlwaysUsageDescription    = "NSLocationAlwaysUsageDescription"
     static let microphoneUsageDescription        = "NSMicrophoneUsageDescription"
@@ -57,52 +97,12 @@ internal extension String {
     static let cameraUsageDescription            = "NSCameraUsageDescription"
     static let mediaLibraryUsageDescription      = "NSAppleMusicUsageDescription"
     static let siriUsageDescription              = "NSSiriUsageDescription"
-    
-    
-    static let requestedNotifications               = "permission.requestedNotifications"
-    static let requestedLocationAlwaysWithWhenInUse = "permission.requestedLocationAlwaysWithWhenInUse"
-    static let requestedMotion                      = "permission.requestedMotion"
-    static let requestedBluetooth                   = "permission.requestedBluetooth"
-    static let statusBluetooth                      = "permission.statusBluetooth"
-    static let stateBluetoothManagerDetermined      = "permission.stateBluetoothManagerDetermined"
 }
 
-internal extension Selector {
+extension Selector {
     static let tapped = #selector(PermissionButton.tapped(_:))
     static let highlight = #selector(PermissionButton.highlight(_:))
     static let settingsHandler = #selector(DeniedAlert.settingsHandler)
-}
-
-extension UserDefaults {
-    var requestedLocationAlwaysWithWhenInUse: Bool {
-        get { return bool(forKey: .requestedLocationAlwaysWithWhenInUse) }
-        set { set(newValue, forKey: .requestedLocationAlwaysWithWhenInUse) }
-    }
-    
-    var requestedNotifications: Bool {
-        get { return bool(forKey: .requestedNotifications) }
-        set { set(newValue, forKey: .requestedNotifications) }
-    }
-    
-    var requestedMotion: Bool {
-        get { return bool(forKey: .requestedMotion) }
-        set { set(newValue, forKey: .requestedMotion) }
-    }
-    
-    var requestedBluetooth: Bool {
-        get { return bool(forKey: .requestedBluetooth) }
-        set { set(newValue, forKey: .requestedBluetooth) }
-    }
-    
-    var statusBluetooth: PermissionStatus? {
-        get { return PermissionStatus(string: string(forKey: .statusBluetooth)) }
-        set { set(newValue?.rawValue, forKey: .statusBluetooth) }
-    }
-    
-    var stateBluetoothManagerDetermined: Bool {
-        get { return bool(forKey: .stateBluetoothManagerDetermined) }
-        set { set(newValue, forKey: .stateBluetoothManagerDetermined) }
-    }
 }
 
 extension OperationQueue {
@@ -112,11 +112,11 @@ extension OperationQueue {
     }
 }
 
-internal extension NotificationCenter {
+extension NotificationCenter {
     func addObserver(_ observer: AnyObject, selector: Selector, name: NSNotification.Name?) {
         addObserver(observer, selector: selector, name: name!, object: nil)
     }
-    
+
     func removeObserver(_ observer: AnyObject, name: NSNotification.Name?) {
         removeObserver(observer, name: name, object: nil)
     }

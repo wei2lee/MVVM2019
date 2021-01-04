@@ -20,10 +20,10 @@ PODS:
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - Permission/Camera (2.0.5):
+  - Permission/Camera (3.1.2):
     - Permission/Core
-  - Permission/Core (2.0.5)
-  - Permission/Photos (2.0.5):
+  - Permission/Core (3.1.2)
+  - Permission/Photos (3.1.2):
     - Permission/Core
   - Quick (2.1.0)
   - Result (4.1.0)
@@ -98,8 +98,8 @@ DEPENDENCIES:
   - Moya (~> 12.0.1)
   - NibDesignable (from `https://github.com/wei2lee/NibDesignable.git`)
   - Nimble (~> 8.0.2)
-  - Permission/Camera (from `https://github.com/aiaagentapp/Permission`)
-  - Permission/Photos (from `https://github.com/aiaagentapp/Permission`)
+  - Permission/Camera (~> 3.1.2)
+  - Permission/Photos (~> 3.1.2)
   - Quick (~> 2.1.0)
   - RxBiBinding (~> 0.2.3)
   - RxBlocking (~> 5.0.0)
@@ -134,6 +134,7 @@ SPEC REPOS:
     - Moya
     - Nimble
     - ObjcExceptionBridging
+    - Permission
     - Quick
     - Result
     - RxBiBinding
@@ -157,16 +158,11 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   NibDesignable:
     :git: https://github.com/wei2lee/NibDesignable.git
-  Permission:
-    :git: https://github.com/aiaagentapp/Permission
 
 CHECKOUT OPTIONS:
   NibDesignable:
     :commit: 9ceb0df0633a27678e56c0d646381d11b04fa7e5
     :git: https://github.com/wei2lee/NibDesignable.git
-  Permission:
-    :commit: c4966c4a37f0a958ce1c5a4df6470997ac249468
-    :git: https://github.com/aiaagentapp/Permission
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -183,7 +179,7 @@ SPEC CHECKSUMS:
   NibDesignable: d84087cac5cdd9a1464792dc1c224789c5b4e6a3
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  Permission: 8a7a9440a9c22bb9095c377aea381f733304c84a
+  Permission: 4821359fb4d4367fb59aa16df38fbba5722ac842
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxBiBinding: 1eb9091d17cb6ac4e450709054da80f5041fa92e
@@ -204,6 +200,6 @@ SPEC CHECKSUMS:
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
   XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
 
-PODFILE CHECKSUM: 2ba96a1a7f2baec332a0c8a02051a441c1a4eea3
+PODFILE CHECKSUM: 7c78ed3f59abb14913375231539df87c9eb21605
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0

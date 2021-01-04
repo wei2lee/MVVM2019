@@ -29,11 +29,19 @@ post_install do |installer|
             end
         end
     end
+    
+    installer.pods_project.targets.each do |t|
+        t.build_configurations.each do |bc|
+            bc.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+        end
+    end
 end
+
 
 target 'MVVM2019June20' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  platform :ios, '11.0'
   
   inhibit_all_warnings!  # ignore all warnings from all pods
 
@@ -68,8 +76,10 @@ target 'MVVM2019June20' do
     pod 'TagListView', '~> 1.0'
 
     # Permission
-    pod 'Permission/Photos', :git => 'https://github.com/aiaagentapp/Permission'
-    pod 'Permission/Camera', :git => 'https://github.com/aiaagentapp/Permission'
+    #pod 'Permission/Photos', :git => 'https://github.com/aiaagentapp/Permission'
+    #pod 'Permission/Camera', :git => 'https://github.com/aiaagentapp/Permission'
+    pod 'Permission/Photos', '~> 3.1.2'
+    pod 'Permission/Camera', '~> 3.1.2'
     pod 'RxPermission/Photos'
     pod 'RxPermission/Camera'
 
@@ -102,6 +112,7 @@ end
 target 'ModuleTests' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  platform :ios, '11.0'
   
   # ignore all warnings from all pods
   inhibit_all_warnings!
@@ -137,10 +148,10 @@ target 'ModuleTests' do
     pod 'TagListView', '~> 1.0'
 
     # Permission
-    pod 'Permission/Photos', :git => 'https://github.com/aiaagentapp/Permission'
-    pod 'Permission/Camera', :git => 'https://github.com/aiaagentapp/Permission'
-    pod 'RxPermission/Photos'
-    pod 'RxPermission/Camera'
+    #pod 'Permission/Photos', :git => 'https://github.com/aiaagentapp/Permission'
+    #pod 'Permission/Camera', :git => 'https://github.com/aiaagentapp/Permission'
+    pod 'Permission/Photos', '~> 3.1.2'
+    pod 'Permission/Camera', '~> 3.1.2'
 
     # keyboard
     pod 'IQKeyboardManagerSwift', '~> 6.4.0'

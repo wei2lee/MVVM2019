@@ -24,7 +24,7 @@
 ```swift
 let permission: Permission = .contacts
 
-print(permission.status) // PermissionStatus.NotDetermined
+print(permission.status) // .notDetermined
 
 permission.request { status in
     switch status {
@@ -39,23 +39,22 @@ permission.request { status in
 ##### Supported Permissions
 
 > [`PermissionType.swift`](https://github.com/delba/Permission/blob/master/Source/PermissionType.swift)
-> [`PermissionTypes/`](https://github.com/delba/Permission/tree/master/Source/PermissionTypes)
+> [`Types/`](https://github.com/delba/Permission/tree/master/Source/Types)
 
-- [`AddressBook`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/AddressBook.swift) (Deprecated in iOS 9.0)
-- [`Bluetooth`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Bluetooth.swift)
-- [`Camera`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Camera.swift)
-- [`Contacts`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Contacts.swift)
-- [`Events`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Events.swift)
-- [`Motion`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Motion.swift)
-- [`Microphone`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Microphone.swift)
-- [`Notifications`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Notifications.swift)
-- [`Photos`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Photos.swift)
-- [`Reminders`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Reminders.swift)
-- [`LocationAlways`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/LocationAlways.swift)
-- [`LocationWhenInUse`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/LocationWhenInUse.swift)
-- [`MediaLibrary`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/MediaLibrary.swift)
-- [`SpeechRecognizer`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/SpeechRecognizer.swift)
-- [`Siri`](https://github.com/delba/Permission/blob/master/Source/PermissionTypes/Siri.swift)
+- [`Bluetooth`](https://github.com/delba/Permission/blob/master/Source/Types/Bluetooth.swift)
+- [`Camera`](https://github.com/delba/Permission/blob/master/Source/Types/Camera.swift)
+- [`Contacts`](https://github.com/delba/Permission/blob/master/Source/Types/Contacts.swift)
+- [`Events`](https://github.com/delba/Permission/blob/master/Source/Types/Events.swift)
+- [`Motion`](https://github.com/delba/Permission/blob/master/Source/Types/Motion.swift)
+- [`Microphone`](https://github.com/delba/Permission/blob/master/Source/Types/Microphone.swift)
+- [`Notifications`](https://github.com/delba/Permission/blob/master/Source/Types/Notifications.swift)
+- [`Photos`](https://github.com/delba/Permission/blob/master/Source/Types/Photos.swift)
+- [`Reminders`](https://github.com/delba/Permission/blob/master/Source/Types/Reminders.swift)
+- [`LocationAlways`](https://github.com/delba/Permission/blob/master/Source/Types/LocationAlways.swift)
+- [`LocationWhenInUse`](https://github.com/delba/Permission/blob/master/Source/Types/LocationWhenInUse.swift)
+- [`MediaLibrary`](https://github.com/delba/Permission/blob/master/Source/Types/MediaLibrary.swift)
+- [`SpeechRecognizer`](https://github.com/delba/Permission/blob/master/Source/Types/SpeechRecognizer.swift)
+- [`Siri`](https://github.com/delba/Permission/blob/master/Source/Types/Siri.swift)
 
 #### PermissionAlert
 
@@ -105,7 +104,7 @@ Use a `PermissionSet` to check the status of a group of `Permission` and to reac
 let permissionSet = PermissionSet(.contacts, .camera, .microphone, .photos)
 permissionSet.delegate = self
 
-print(permissionSet.status) // PermissionStatus.NotDetermined
+print(permissionSet.status) // .notDetermined
 
 // ...
 
@@ -188,7 +187,7 @@ class PermissionsViewController: UIViewController, PermissionSetDelegate {
 
         permissionSet.delegate = self
 
-        label.text = String(permissionSet.status)
+        label.text = String(describing: permissionSet.status)
 
         for subview in [label, contacts, camera, microphone, photos] {
             view.addSubview(subview)
@@ -236,7 +235,6 @@ you want to use, and compile the framework.
 
 To compile with only notifications and photos permissions:
 ```
-PERMISSION_ADDRESS_BOOK      = // PERMISSION_ADDRESS_BOOK
 PERMISSION_BLUETOOTH         = // PERMISSION_BLUETOOTH
 PERMISSION_CAMERA            = PERMISSION_CAMERA
 PERMISSION_CONTACTS          = // PERMISSION_CONTACTS
@@ -251,7 +249,7 @@ PERMISSION_SPEECH_RECOGNIZER = // PERMISSION_SPEECH_RECOGNIZER
 PERMISSION_MEDIA_LIBRARY     = // PERMISSION_MEDIA_LIBRARY
 
 // Do not modify this line. Instead, remove comments above as needed to enable the categories your app uses.
-PERMISSION_FLAGS= $(PERMISSION_ADDRESS_BOOK) $(PERMISSION_BLUETOOTH) $(PERMISSION_CAMERA) $(PERMISSION_CONTACTS) $(PERMISSION_EVENTS) $(PERMISSION_LOCATION) $(PERMISSION_MICROPHONE) $(PERMISSION_MOTION) $(PERMISSION_NOTIFICATIONS) $(PERMISSION_PHOTOS) $(PERMISSION_REMINDERS) $(PERMISSION_SPEECH_RECOGNIZER) $(PERMISSION_MEDIA_LIBRARY)
+PERMISSION_FLAGS= $(PERMISSION_BLUETOOTH) $(PERMISSION_CAMERA) $(PERMISSION_CONTACTS) $(PERMISSION_EVENTS) $(PERMISSION_LOCATION) $(PERMISSION_MICROPHONE) $(PERMISSION_MOTION) $(PERMISSION_NOTIFICATIONS) $(PERMISSION_PHOTOS) $(PERMISSION_REMINDERS) $(PERMISSION_SPEECH_RECOGNIZER) $(PERMISSION_MEDIA_LIBRARY)
 
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) $(PERMISSION_FLAGS)
 ```
@@ -279,7 +277,7 @@ Please see `Permission.podspec` for more information about which subspecs are av
 
 ## License
 
-Copyright (c) 2015-2016 Damien (http://delba.io)
+Copyright (c) 2015-2019 Damien (http://delba.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

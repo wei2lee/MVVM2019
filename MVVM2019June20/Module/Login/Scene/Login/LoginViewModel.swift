@@ -24,6 +24,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
     public let showNavigationBar: Bool
     public let isModalInPresentation: Bool
     public let showClose: Bool
+    public var startConvertForm: Driver<Void> = .never()
     //MARK: Dependency //Property Wrapper, write a future unit testable code
     @Injected fileprivate var authService: AuthServiceType
     @Injected fileprivate var validationService: LoginFormValidationServiceType
@@ -52,8 +53,10 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
         super.transform()
         let footerText = startLoad.map{ SwifterSwift.appVersion.orEmptyReplacement }
         
-        let convertForm = startLoad.flatMapLatest(self.convertForm)
-        let form = self.form
+        self.startConvertForm = self.startLoad.flatMapLatest({ args in
+            self.convertForm()
+        })
+        let form = self.form //var form: FormObject //var form: Driver<Form>
         let doSubmit = startSubmit
             .withLatestFrom(form)
             .flatMapLatest(self.validate)
@@ -66,7 +69,7 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
         //subscribe
         disposeBag.insert(
             footerText.drive(self.footerText),
-            convertForm.drive(),
+            startConvertForm.drive(),
             doSubmit.drive(),
             doDismissView.drive(),
             routeToRegister.drive()
@@ -162,9 +165,9 @@ final class LoginViewModel: BaseViewModel, LoginViewModelType {
                 //let response: BO.BaseResponse? = error.error.boResponse
             })
             //example code for accessing Error object
-            
-            .trackActivity(self.activityIndicator)
-            .trackError(self.errorTracker)
+            //Observable
+            .trackActivity(self.activityIndicator)//+1 if observable is subscribed, -1 if objserv able is dispose
+            .trackError(self.errorTracker) //emit value if observable emit eror value
             .asDriverOnErrorJustComplete()
     }
     
